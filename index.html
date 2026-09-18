@@ -118,7 +118,10 @@ img{max-width:100%; display:block;}
   padding:92px 0 44px; will-change:transform, opacity;
 }
 .mark{width:clamp(96px,12vw,136px); height:auto; margin:0 auto 30px; display:block;}
-.mark.img{width:clamp(200px,32vw,420px);}
+.mark.img{width:clamp(220px,36vw,480px); filter:drop-shadow(0 6px 26px rgba(30,60,110,.3));}
+/* le logo dit deja AION 2, on n'ecrit pas le titre deux fois */
+.hero.has-logo h1{display:none;}
+.hero.has-logo .sub{margin-top:4px;}
 .sigil{
   filter:drop-shadow(0 6px 22px rgba(30,90,150,.28));
   animation:breathe 8s ease-in-out infinite;
@@ -511,8 +514,9 @@ var GUIDES = {
   "gladiator": "https://ryuusandbox.github.io/Gladiator-guide-de-Ryuu/"
 };
 
-var SCENE = "art/fond.png";
-var LOGO  = "art/logo.png";
+var SCENE  = "art/fond.png";   /* votre image de fond      */
+var LOGO   = "art/logo.png";   /* votre image en haut      */
+var VOILE  = 0.72;             /* 0 = image brute, 1 = tres voilee */
 
 var EMBLEM = {
   "codex":     "",
@@ -577,6 +581,7 @@ var ART = {
       var img = document.createElement("img");
       img.src = LOGO; img.alt = "AION 2"; img.className = "mark img in-up d1";
       old.parentNode.replaceChild(img, old);
+      document.getElementById("hero").classList.add("has-logo");
     };
     lp.src = LOGO;
   }
@@ -592,8 +597,13 @@ var ART = {
       bg.style.cssText = "left:-6%; top:-6%; width:112%; height:112%;" +
         "background-image:url('" + SCENE + "');";
       scene.insertBefore(bg, scene.firstChild);
+      var v = (typeof VOILE === "number") ? Math.max(0, Math.min(1, VOILE)) : 0.72;
       var scrim = document.createElement("div");
       scrim.className = "photo-scrim";
+      scrim.style.background =
+        "radial-gradient(56% 46% at 50% 44%, rgba(255,255,255," + v + ") 0%, rgba(255,255,255," +
+        (v * 0.46).toFixed(3) + ") 46%, transparent 74%)," +
+        "linear-gradient(180deg, transparent 0%, transparent 56%, rgba(237,242,250,.82) 86%, var(--sky) 100%)";
       scene.insertBefore(scrim, scene.querySelector(".grain"));
       ["l-wl","l-wr","l-c1","l-c2","l-c3","l-spire"].forEach(function(c){
         var el = scene.querySelector("." + c); if(el) el.style.display = "none";
