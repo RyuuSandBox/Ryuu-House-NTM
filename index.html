@@ -272,17 +272,25 @@ html:not(.js) .rv{opacity:1; transform:none;}
 .art.has-emblem > svg{display:none;}
 .art > img.cover{
   position:absolute; inset:0; z-index:0; width:100%; height:100%;
-  object-fit:contain; object-position:center; opacity:.9;
+  object-fit:cover; object-position:center; opacity:.9;
   transition:transform .5s cubic-bezier(.22,.7,.3,1);
 }
-.art.fit-cover > img.cover{object-fit:cover;}
+.art.fit-contain > img.cover{object-fit:contain;}
 .deck:hover .art > img.cover{transform:scale(1.04);}
 /* avec une image derriere, on garde juste ce qu'il faut pour que les
    symboles restent nets par-dessus */
 .art.has-img::before{
-  background:radial-gradient(52% 48% at 50% 50%, rgba(255,255,255,.55) 0%, rgba(255,255,255,.18) 58%, rgba(255,255,255,0) 82%);
+  background:
+    radial-gradient(50% 46% at 50% 48%, rgba(255,255,255,.16) 0%, rgba(255,255,255,0) 72%),
+    linear-gradient(180deg, rgba(8,16,34,.16) 0%, rgba(8,16,34,0) 34%, rgba(8,16,34,.22) 100%);
   opacity:1; z-index:0;
 }
+/* les symboles doivent tenir aussi bien sur une image sombre que claire */
+.art.has-img > img.emblem,
+.art.has-img .duo img{
+  filter:drop-shadow(0 2px 10px rgba(6,12,26,.72)) drop-shadow(0 0 16px rgba(255,255,255,.35));
+}
+.art.has-img .duo .sep{opacity:.95;}
 
 .deck .body{padding:24px 23px 25px; display:flex; flex-direction:column; flex:1; min-width:0;}
 .deck .tag{
@@ -451,7 +459,7 @@ html:not(.js) .rv{opacity:1; transform:none;}
       <path d="M204 8 L195 4.5 L195 11.5 Z" fill="currentColor" opacity=".8"/>
     </svg>
 
-    <p class="dek in-up d5">De quoi arriver pr&ecirc;t le jour de l'ouverture. Un codex g&eacute;n&eacute;ral sur la progression, et les guides de classe. Tout ce qui est &eacute;crit vient d'au moins deux sources qui se recoupent, et ce qui n'en a qu'une est signal&eacute;.</p>
+    <p class="dek in-up d5">De quoi arriver pr&ecirc;t le jour de l'ouverture. Un codex g&eacute;n&eacute;ral sur la progression, et les guides de classe.</p>
 
     <dl class="cd in-up d6">
       <div><dt>Acc&egrave;s anticip&eacute;</dt><dd id="cd-ea"><span class="num">&mdash;</span><span class="when">30 septembre, packs fondateur</span></dd></div>
@@ -529,7 +537,7 @@ html:not(.js) .rv{opacity:1; transform:none;}
             <li class="on">Classe jou&eacute;e</li>
             <li>Macro incluse</li>
           </ul>
-          <p class="txt">La classe que je joue. Le build, les sp&eacute;s et quand les changer, les quatre slots de stigma et ce qu'il faut sacrifier, la macro ligne par ligne, et la rotation. &Eacute;crit &agrave; la premi&egrave;re personne, avec mes arbitrages assum&eacute;s.</p>
+          <p class="txt">La classe que je joue. Le build, les sp&eacute;s et quand les changer, les quatre slots de stigma et ce qu'il faut sacrifier, la macro ligne par ligne, et la rotation.</p>
           <a class="go" data-key="assassin" href="#" rel="noopener">Ouvrir le guide <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8 H13 M9 4 L13 8 L9 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
         </div>
       </article>
@@ -579,8 +587,8 @@ html:not(.js) .rv{opacity:1; transform:none;}
      EMBLEM : le symbole au centre de la carte. Deux chemins entre
               crochets affichent les deux blasons cote a cote.
      CARTE_FOND : l'image posee dans la case illustree des cartes,
-              derriere les symboles. CARTE_CADRAGE vaut "contain" pour
-              voir l'image entiere ou "cover" pour qu'elle remplisse.
+              derriere les symboles. CARTE_CADRAGE vaut "cover" pour
+              qu'elle remplisse la case, "contain" pour la voir entiere.
      ART    : un fond different pour une carte precise, il passe devant
               CARTE_FOND.
      Les espaces dans les chemins s'ecrivent %20, et la casse compte
@@ -623,10 +631,10 @@ var EMBLEM = {
 /* Le fond de la case illustree, derriere les symboles.
    CARTE_FOND s'applique aux trois cartes. ART permet d'en donner un
    different a une carte precise, il passe devant CARTE_FOND.
-   CARTE_CADRAGE : "contain" montre l'image entiere, "cover" la fait
-   remplir la case quitte a la rogner.                                  */
+   CARTE_CADRAGE : "cover" remplit la case quitte a rogner les bords,
+   "contain" montre l'image entiere avec des bandes autour.             */
 var CARTE_FOND    = ["art/carte.png", "art/carte.jpg", "art/carte.webp"];
-var CARTE_CADRAGE = "contain";
+var CARTE_CADRAGE = "cover";
 var CARTE_OPACITE = 0.9;
 
 var ART = {
@@ -715,7 +723,7 @@ var ART = {
       img.src = url; img.alt = ""; img.loading = "lazy";
       img.setAttribute("aria-hidden", "true"); img.className = cls;
       if(cls === "cover"){
-        if(typeof CARTE_CADRAGE === "string" && CARTE_CADRAGE === "cover") box.classList.add("fit-cover");
+        if(typeof CARTE_CADRAGE === "string" && CARTE_CADRAGE === "contain") box.classList.add("fit-contain");
         if(typeof CARTE_OPACITE === "number") img.style.opacity = CARTE_OPACITE;
       }
       box.insertBefore(img, box.firstChild);
