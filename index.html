@@ -270,8 +270,19 @@ html:not(.js) .rv{opacity:1; transform:none;}
 }
 .deck:hover .art > img.emblem{transform:scale(1.12) rotate(-3deg);}
 .art.has-emblem > svg{display:none;}
-.art > img.cover{position:absolute; inset:0; z-index:0; width:100%; height:100%; object-fit:cover; opacity:.85;}
-.art.has-img::before{background:linear-gradient(180deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.62) 100%); opacity:1;}
+.art > img.cover{
+  position:absolute; inset:0; z-index:0; width:100%; height:100%;
+  object-fit:contain; object-position:center; opacity:.9;
+  transition:transform .5s cubic-bezier(.22,.7,.3,1);
+}
+.art.fit-cover > img.cover{object-fit:cover;}
+.deck:hover .art > img.cover{transform:scale(1.04);}
+/* avec une image derriere, on garde juste ce qu'il faut pour que les
+   symboles restent nets par-dessus */
+.art.has-img::before{
+  background:radial-gradient(52% 48% at 50% 50%, rgba(255,255,255,.55) 0%, rgba(255,255,255,.18) 58%, rgba(255,255,255,0) 82%);
+  opacity:1; z-index:0;
+}
 
 .deck .body{padding:24px 23px 25px; display:flex; flex-direction:column; flex:1; min-width:0;}
 .deck .tag{
@@ -567,7 +578,11 @@ html:not(.js) .rv{opacity:1; transform:none;}
      LOGO   : votre image en haut de page, a la place du sigil dessine.
      EMBLEM : le symbole au centre de la carte. Deux chemins entre
               crochets affichent les deux blasons cote a cote.
-     ART    : une image de fond pleine carte.
+     CARTE_FOND : l'image posee dans la case illustree des cartes,
+              derriere les symboles. CARTE_CADRAGE vaut "contain" pour
+              voir l'image entiere ou "cover" pour qu'elle remplisse.
+     ART    : un fond different pour une carte precise, il passe devant
+              CARTE_FOND.
      Les espaces dans les chemins s'ecrivent %20, et la casse compte
      sur GitHub Pages. Si un fichier manque, la page garde le dessin. Si un fichier manque, la page garde le dessin.
      ================================================================== -->
@@ -591,7 +606,7 @@ var FONDS = [
 ];
 
 var VOILE = 0.55;   /* 0 = image brute, 1 = tres voilee */
-var BLANC = 0.55;   /* la respiration blanche entre deux fonds, 0 pour l'enlever */
+var BLANC = 0.22;   /* la respiration blanche entre deux fonds, 0 pour l'enlever */
 
 var LOGO  = "";     /* votre image en haut de page, vide = le sigil dessine */
 
@@ -604,6 +619,15 @@ var EMBLEM = {
   "assassin":  ["art/assassin.avif",  "Symbole%20class/Assassin-icon-aion2-wiki-guide.avif"],
   "gladiator": ["art/gladiator.avif", "Symbole%20class/Gladiator-icon-aion2-wiki-guide.avif"]
 };
+
+/* Le fond de la case illustree, derriere les symboles.
+   CARTE_FOND s'applique aux trois cartes. ART permet d'en donner un
+   different a une carte precise, il passe devant CARTE_FOND.
+   CARTE_CADRAGE : "contain" montre l'image entiere, "cover" la fait
+   remplir la case quitte a la rogner.                                  */
+var CARTE_FOND    = ["art/carte.png", "art/carte.jpg", "art/carte.webp"];
+var CARTE_CADRAGE = "contain";
+var CARTE_OPACITE = 0.9;
 
 var ART = {
   "codex":     "",
@@ -690,13 +714,18 @@ var ART = {
       var img = document.createElement("img");
       img.src = url; img.alt = ""; img.loading = "lazy";
       img.setAttribute("aria-hidden", "true"); img.className = cls;
+      if(cls === "cover"){
+        if(typeof CARTE_CADRAGE === "string" && CARTE_CADRAGE === "cover") box.classList.add("fit-cover");
+        if(typeof CARTE_OPACITE === "number") img.style.opacity = CARTE_OPACITE;
+      }
       box.insertBefore(img, box.firstChild);
       box.classList.add(flag);
     }, quoi);
   }
   Array.prototype.forEach.call(document.querySelectorAll(".art"), function(box){
     var key = box.id.replace("art-", "");
-    swap(box, (typeof ART === "object" && ART[key]) || "", "cover", "has-img", "fond de carte " + key);
+    var fondCase = (typeof ART === "object" && ART[key]) || (typeof CARTE_FOND !== "undefined" ? CARTE_FOND : "");
+    swap(box, fondCase, "cover", "has-img", "fond de carte " + key);
     swap(box, (typeof EMBLEM === "object" && EMBLEM[key]) || "", "emblem", "has-emblem", key);
   });
 
@@ -776,8 +805,11 @@ var ART = {
     if(a + 1 < 3 && C > tops[a + 1] - vh * 1.6) charger(a + 1);
 
     if(white){
-      var b = (typeof BLANC === "number") ? BLANC : 0.5;
-      white.style.opacity = (4 * t * (1 - t) * b).toFixed(3);
+      var b = (typeof BLANC === "number") ? BLANC : 0.22;
+      /* courbe resserree : le blanc n'existe qu'autour du point de bascule,
+         au lieu de s'etaler sur toute la duree du fondu */
+      var s = Math.sin(Math.PI * t);
+      white.style.opacity = (s * s * s * s * b).toFixed(3);
     }
   }
 
