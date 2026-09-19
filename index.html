@@ -198,9 +198,21 @@ img{max-width:100%; display:block;}
    CARTES
    ================================================================ */
 main{position:relative; padding:clamp(60px,9vw,104px) 0 clamp(72px,11vw,132px);}
+/* La respiration claire qui ouvre le corps de page. Elle demarre au-dessus
+   du bandeau et s'eteint un ecran plus bas, pour qu'aucune arete ne se voie
+   a la jonction. Sa taille suit la fenetre, pas la hauteur de <main>. */
 main::before{
-  content:""; position:absolute; inset:0; z-index:-1;
-  background:linear-gradient(180deg, rgba(240,244,251,.55) 0%, rgba(240,244,251,.3) 14%, transparent 34%);
+  content:""; position:absolute; left:0; right:0; z-index:-1; pointer-events:none;
+  top:-46svh; height:132svh;
+  background:linear-gradient(180deg,
+    rgba(240,244,251,0)    0%,
+    rgba(240,244,251,.10) 16%,
+    rgba(240,244,251,.30) 29%,
+    rgba(240,244,251,.46) 38%,
+    rgba(240,244,251,.52) 47%,
+    rgba(240,244,251,.44) 60%,
+    rgba(240,244,251,.22) 78%,
+    rgba(240,244,251,0)  100%);
 }
 .zone{
   position:relative; overflow-x:clip;
@@ -475,7 +487,7 @@ html:not(.js) .rv{opacity:1; transform:none;}
 
 <main id="guides">
 
-  <!-- ============ La base ============ -->
+  <!-- ============ la base ============ -->
   <section class="zone" id="codex">
     <div class="wrap">
       <div class="lead rv">
