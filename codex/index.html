@@ -1,0 +1,1417 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="96x96" href="data:image/png;base64,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">
+<meta name="description" content="Codex d'Atreia par Ryuu. La progression, les syst&egrave;mes et les pi&egrave;ges d'AION 2, toutes classes, pour la Saison 1 globale du 5 octobre 2026.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Codex d'Atreia &mdash; AION 2">
+<meta property="og:description" content="Du niveau 1 &agrave; l'endgame. La route &agrave; suivre, les syst&egrave;mes qui font monter un perso, et les pi&egrave;ges qui vont bloquer la moiti&eacute; du serveur la premi&egrave;re semaine.">
+<meta property="og:type" content="article">
+<title>Codex d'Atreia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;700&display=swap">
+
+<style>
+/* ============ tokens — light is the base ============ */
+:root{
+  --ground:#F2F3F8; --surface:#FFFFFF; --surface-2:#E8EAF2; --surface-3:#DCDFEB;
+  --ink:#151827; --ink-2:#454A60; --ink-3:#727892; --line:#D3D7E3;
+  --aether:#0B7A85; --aether-ink:#0B6C76; --aether-soft:#D8EDEF;
+  --gold:#96700F; --gold-ink:#7A5B0B; --gold-soft:#F3E9CD;
+  --violet:#584A96; --violet-ink:#4C3F87; --violet-soft:#E3E0F3;
+  --warn:#9E3A29; --warn-soft:#F7E1DC;
+  --shadow:0 1px 2px rgba(21,24,39,.06), 0 10px 30px -20px rgba(21,24,39,.35);
+  --maxw:70ch;
+  /* the hero band keeps its own fixed dark palette in both themes */
+  --abyss:#0A0D1A; --abyss-2:#111633; --abyss-ink:#EAEDF8; --abyss-ink-2:#9AA3C4;
+  --abyss-gold:#DDB25C; --abyss-aether:#57CEDC; --abyss-violet:#A492EE;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#0C0F1C; --surface:#141829; --surface-2:#1C2135; --surface-3:#252B44;
+    --ink:#E9EBF5; --ink-2:#AEB5CD; --ink-3:#7C84A2; --line:#2A3049;
+    --aether:#4FC7D5; --aether-ink:#7BDCE7; --aether-soft:#0F2F37;
+    --gold:#DCB05E; --gold-ink:#E8C68A; --gold-soft:#2E2611;
+    --violet:#A08FE6; --violet-ink:#B7ABEF; --violet-soft:#221D3D;
+    --warn:#E58573; --warn-soft:#39201B;
+    --shadow:0 1px 2px rgba(0,0,0,.45), 0 10px 30px -20px rgba(0,0,0,.9);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0C0F1C; --surface:#141829; --surface-2:#1C2135; --surface-3:#252B44;
+  --ink:#E9EBF5; --ink-2:#AEB5CD; --ink-3:#7C84A2; --line:#2A3049;
+  --aether:#4FC7D5; --aether-ink:#7BDCE7; --aether-soft:#0F2F37;
+  --gold:#DCB05E; --gold-ink:#E8C68A; --gold-soft:#2E2611;
+  --violet:#A08FE6; --violet-ink:#B7ABEF; --violet-soft:#221D3D;
+  --warn:#E58573; --warn-soft:#39201B;
+  --shadow:0 1px 2px rgba(0,0,0,.45), 0 10px 30px -20px rgba(0,0,0,.9);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:"Archivo","Segoe UI",system-ui,-apple-system,sans-serif;
+  font-size:16.5px; line-height:1.62; -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%}
+
+/* ============ hero ============ */
+.hero{
+  position:relative; background:var(--abyss); color:var(--abyss-ink);
+  overflow:hidden; isolation:isolate;
+  border-bottom:1px solid rgba(221,178,92,.28);
+}
+.hero canvas{position:absolute; inset:0; width:100%; height:100%; z-index:0; opacity:.85;}
+.hero::after{
+  content:""; position:absolute; inset:0; z-index:1; pointer-events:none;
+  background:
+    radial-gradient(120% 80% at 50% -10%, rgba(87,206,220,.16), transparent 60%),
+    radial-gradient(90% 70% at 12% 110%, rgba(221,178,92,.13), transparent 62%),
+    radial-gradient(90% 70% at 88% 110%, rgba(164,146,238,.13), transparent 62%);
+}
+.hero-in{
+  position:relative; z-index:2; max-width:1180px; margin:0 auto;
+  padding-inline:20px; padding-block:46px 34px;
+}
+.wingmark{display:block; width:min(300px,68vw); height:auto; margin:0 0 20px;}
+.eyebrow{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:11px; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--abyss-aether); margin:0 0 12px;
+}
+h1{
+  font-family:"Cinzel",Georgia,serif; font-weight:700; letter-spacing:.03em;
+  font-size:clamp(2.4rem,7.6vw,4rem); line-height:1.02; margin:0 0 16px; text-wrap:balance;
+  color:var(--abyss-ink);
+}
+.sig{display:flex; align-items:center; gap:clamp(14px,2.2vw,22px); margin:2px 0 22px; flex-wrap:wrap;}
+.sig .mark{
+  width:clamp(86px,10vw,116px); height:clamp(86px,10vw,116px); border-radius:50%; flex:none;
+  object-fit:cover; object-position:52% center;
+  background:linear-gradient(150deg, rgba(87,206,220,.28), rgba(221,178,92,.16));
+  border:1px solid rgba(87,206,220,.55);
+  box-shadow:0 0 0 4px rgba(87,206,220,.09), 0 0 38px -8px rgba(87,206,220,.55);
+}
+.sig .who{display:flex; flex-direction:column; line-height:1.24;}
+.sig .nom{font-family:"Cinzel",Georgia,serif; font-size:clamp(1.5rem,3vw,1.9rem); font-weight:700; letter-spacing:.05em; color:var(--abyss-ink);}
+.sig .nom .par{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10px; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--abyss-aether); display:block; margin-bottom:5px; font-weight:400;
+}
+.sig .quoi{font-size:.88rem; color:var(--abyss-ink-2); margin-top:3px;}
+.dek{font-size:1.06rem; color:var(--abyss-ink-2); max-width:60ch; margin:0;}
+.byline{
+  margin-top:20px; font-size:.82rem; color:var(--abyss-ink-2); opacity:.85;
+  font-family:"JetBrains Mono",ui-monospace,monospace;
+}
+.strip{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(156px,1fr)); gap:1px;
+  background:rgba(154,163,196,.22); border:1px solid rgba(154,163,196,.24);
+  border-radius:3px; overflow:hidden; margin-top:30px;
+}
+.strip > div{background:rgba(10,13,26,.72); padding:14px 16px; backdrop-filter:blur(2px);}
+.strip dt{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10px; letter-spacing:.15em;
+  text-transform:uppercase; color:var(--abyss-ink-2); margin:0 0 6px;
+}
+.strip dd{margin:0; font-weight:600; font-size:.95rem; line-height:1.35; color:var(--abyss-ink);}
+.strip .num{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:1.5rem; font-weight:700;
+  color:var(--abyss-gold); display:block; font-variant-numeric:tabular-nums; line-height:1.1;
+}
+.strip .sub{display:block; font-weight:400; font-size:.78rem; color:var(--abyss-ink-2);}
+
+/* ============ shell ============ */
+.shell{max-width:1180px; margin:0 auto; padding-inline:20px; padding-block:0 80px;}
+.body-grid{display:block;}
+@media (min-width:1000px){
+  .body-grid{display:grid; grid-template-columns:216px minmax(0,1fr); gap:54px; align-items:start;}
+}
+nav.toc{margin-top:34px;}
+@media (min-width:1000px){
+  nav.toc{position:sticky; top:18px; max-height:calc(100vh - 36px); overflow-y:auto; padding-bottom:10px;}
+}
+nav.toc h2{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10px; letter-spacing:.17em;
+  text-transform:uppercase; color:var(--ink-3); margin:0 0 12px; font-weight:400;
+}
+nav.toc ol{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:1px;}
+nav.toc a{
+  display:flex; gap:9px; text-decoration:none; color:var(--ink-2); font-size:.855rem;
+  padding:4px 8px; border-radius:3px; line-height:1.34;
+}
+nav.toc a:hover{color:var(--ink); background:var(--surface-2);}
+nav.toc a .n{
+  font-family:"JetBrains Mono",ui-monospace,monospace; color:var(--ink-3); font-size:.74rem; padding-top:2px;
+}
+main{min-width:0;}
+
+/* ============ sections ============ */
+section{padding-block:48px; border-top:1px solid var(--line);}
+section:first-of-type{border-top:none;}
+h2.sec{
+  font-family:"Cinzel",Georgia,serif; font-weight:700; font-size:clamp(1.5rem,3.6vw,2.05rem);
+  line-height:1.14; margin:0 0 8px; text-wrap:balance; letter-spacing:.015em;
+}
+.sec-num{
+  display:flex; align-items:center; gap:9px; margin-bottom:11px;
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10.5px; letter-spacing:.17em;
+  color:var(--aether-ink); text-transform:uppercase;
+}
+.sec-num svg{flex:none; opacity:.9;}
+.sec-intro{color:var(--ink-2); max-width:var(--maxw); margin:0 0 26px; font-size:1.02rem;}
+h3{font-size:1.1rem; font-weight:700; margin:34px 0 8px; letter-spacing:-.005em; text-wrap:balance;}
+h4{font-size:.95rem; font-weight:700; margin:22px 0 6px;}
+p{margin:0 0 14px; max-width:var(--maxw);}
+main ul, main ol{max-width:var(--maxw); padding-left:1.15em; margin:0 0 16px;}
+main li{margin-bottom:7px;}
+a{color:var(--aether-ink);}
+code, .mono{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.88em; font-variant-numeric:tabular-nums;}
+code{background:var(--surface-2); padding:1px 5px; border-radius:3px;}
+
+/* ============ callouts ============ */
+.note{
+  border-left:3px solid var(--aether); background:var(--surface); padding:14px 18px;
+  margin:0 0 18px; max-width:var(--maxw); border-radius:0 3px 3px 0; box-shadow:var(--shadow);
+}
+.note.trap{border-left-color:var(--warn);}
+.note.gold{border-left-color:var(--gold);}
+.note.ndlr{border-left-color:var(--violet); background:var(--violet-soft);}
+.note p:last-child{margin-bottom:0;}
+.note .lab{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10.5px; letter-spacing:.14em;
+  text-transform:uppercase; display:block; margin-bottom:6px; font-weight:700; color:var(--warn);
+}
+.note .lab.a{color:var(--aether-ink);}
+.note .lab.g{color:var(--gold-ink);}
+.note .lab.n{color:var(--violet-ink);}
+
+/* ============ tables ============ */
+.tw{overflow-x:auto; margin:0 0 20px; border:1px solid var(--line); border-radius:3px; background:var(--surface);}
+table{border-collapse:collapse; width:100%; font-size:.885rem; min-width:540px;}
+th,td{text-align:left; padding:9px 13px; border-bottom:1px solid var(--line); vertical-align:top;}
+thead th{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.8px; letter-spacing:.11em;
+  text-transform:uppercase; color:var(--ink-3); font-weight:400; background:var(--surface-2); white-space:nowrap;
+}
+tbody tr:last-child td{border-bottom:none;}
+td.num, th.num{font-family:"JetBrains Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums; white-space:nowrap;}
+td.k{font-weight:600;}
+
+/* ============ pyramid ============ */
+.pyr{display:flex; flex-direction:column; gap:8px; margin:6px 0 22px; max-width:var(--maxw);}
+.pyr .tier{border:1px solid var(--line); background:var(--surface); border-radius:3px; padding:13px 16px; position:relative; overflow:hidden;}
+.pyr .tier::before{content:""; position:absolute; left:0; top:0; bottom:0; width:4px;}
+.pyr .t1::before{background:var(--gold);}
+.pyr .t2::before{background:var(--aether);}
+.pyr .t3::before{background:var(--ink-3);}
+.pyr .hd{display:flex; flex-wrap:wrap; align-items:baseline; gap:10px; margin-bottom:5px;}
+.pyr .nm{font-weight:700; font-size:.98rem;}
+.pyr .mult{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.79rem; font-weight:700; padding:2px 7px; border-radius:2px;}
+.pyr .t1 .mult{background:var(--gold-soft); color:var(--gold-ink);}
+.pyr .t2 .mult{background:var(--aether-soft); color:var(--aether-ink);}
+.pyr .t3 .mult{background:var(--surface-2); color:var(--ink-3);}
+.pyr .lst{font-size:.87rem; color:var(--ink-2); margin:0;}
+.pyr .arrow{text-align:center; color:var(--ink-3); font-size:.72rem; letter-spacing:.12em; font-family:"JetBrains Mono",ui-monospace,monospace; text-transform:uppercase;}
+
+/* ============ enhancement scale ============ */
+.scale{max-width:var(--maxw); margin:4px 0 22px;}
+.scale .bar{display:flex; height:36px; border:1px solid var(--line); border-radius:3px; overflow:hidden;}
+.scale .seg{display:flex; align-items:center; justify-content:center; font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.74rem; font-weight:700; text-align:center; padding:0 4px;}
+.scale .s1{flex:15; background:var(--aether-soft); color:var(--aether-ink);}
+.scale .s2{flex:5; background:var(--violet-soft); color:var(--violet-ink); border-left:2px solid var(--violet);}
+.scale .s3{flex:7; background:var(--gold-soft); color:var(--gold-ink); border-left:2px solid var(--gold);}
+.scale .legend{display:flex; margin-top:8px; font-size:.83rem; color:var(--ink-2); gap:12px; flex-wrap:wrap;}
+.scale .legend div{flex:1 1 150px;}
+
+/* ============ faction split ============ */
+.factions{display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); margin:6px 0 22px;}
+.fac{border:1px solid var(--line); border-radius:3px; padding:15px 17px; background:var(--surface); border-top:3px solid var(--gold);}
+.fac.asmo{border-top-color:var(--violet);}
+.fac h4{margin:0 0 6px; font-family:"Cinzel",Georgia,serif; font-size:1.12rem; letter-spacing:.02em; color:var(--gold-ink);}
+.fac.asmo h4{color:var(--violet-ink);}
+.fac p{margin:0; font-size:.89rem; color:var(--ink-2); max-width:none;}
+
+/* ============ cards ============ */
+.grid{display:grid; gap:14px; margin:6px 0 22px; grid-template-columns:repeat(auto-fit,minmax(232px,1fr));}
+.card{border:1px solid var(--line); background:var(--surface); border-radius:3px; padding:15px 17px;}
+.card h4{margin:0 0 6px; font-size:.95rem;}
+.card p{margin:0; font-size:.875rem; color:var(--ink-2); max-width:none;}
+.card .tag{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.6px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); display:block; margin-bottom:7px;}
+
+/* ============ stat priority slots ============ */
+.slots{display:grid; gap:1px; background:var(--line); border:1px solid var(--line); border-radius:3px; overflow:hidden; margin:6px 0 22px; max-width:var(--maxw); grid-template-columns:repeat(auto-fit,minmax(168px,1fr));}
+.slots div{background:var(--surface); padding:11px 14px;}
+.slots dt{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.6px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); margin:0 0 3px;}
+.slots dd{margin:0; font-size:.9rem; font-weight:600;}
+
+/* ============ source compare ============ */
+.cmp{margin:6px 0 22px; border:1px solid var(--line); border-radius:3px; overflow:hidden; background:var(--surface);}
+.cmp .row{display:grid; grid-template-columns:1fr; border-bottom:1px solid var(--line);}
+.cmp .row:last-child{border-bottom:none;}
+@media (min-width:640px){ .cmp .row{grid-template-columns:150px 1fr 1fr;} }
+.cmp .q{padding:12px 14px; font-weight:700; font-size:.88rem; background:var(--surface-2);}
+.cmp .a, .cmp .b{padding:12px 14px; font-size:.86rem; color:var(--ink-2);}
+@media (min-width:640px){ .cmp .a{border-left:1px solid var(--line); border-right:1px solid var(--line);} }
+.cmp .who{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.6px; letter-spacing:.11em; text-transform:uppercase; display:block; margin-bottom:4px;}
+.cmp .a .who{color:var(--aether-ink);}
+.cmp .b .who{color:var(--gold-ink);}
+
+/* ============ checklists ============ */
+.check{max-width:var(--maxw); margin:0 0 22px; border:1px solid var(--line); border-radius:3px; background:var(--surface); overflow:hidden;}
+.check .ck-hd{background:var(--surface-2); padding:9px 15px; font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10.2px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); display:flex; justify-content:space-between; gap:12px; align-items:center;}
+.check .ck-hd .cnt{color:var(--aether-ink); font-weight:700;}
+.check label{display:flex; gap:11px; padding:9px 15px; border-bottom:1px solid var(--line); cursor:pointer; align-items:flex-start; font-size:.91rem;}
+.check label:last-of-type{border-bottom:none;}
+.check label:hover{background:var(--surface-2);}
+.check input[type=checkbox]{margin:4px 0 0; accent-color:var(--aether); width:15px; height:15px; flex:none;}
+.check input:checked + span{color:var(--ink-3); text-decoration:line-through;}
+.reset-btn{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.6px; letter-spacing:.11em; text-transform:uppercase; background:none; border:1px solid var(--line); color:var(--ink-3); padding:3px 8px; border-radius:2px; cursor:pointer;}
+.reset-btn:hover{color:var(--ink); border-color:var(--ink-3);}
+
+/* ============ sources ============ */
+.srclist{list-style:none; padding:0; max-width:none;}
+.srclist li{display:grid; grid-template-columns:112px 1fr; gap:14px; padding:10px 0; border-bottom:1px solid var(--line); font-size:.88rem; align-items:baseline;}
+.srclist li:last-child{border-bottom:none;}
+.srclist .lvl{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.2px; letter-spacing:.11em; text-transform:uppercase; font-weight:700; padding:2px 6px; border-radius:2px; text-align:center;}
+.lvl.off{background:var(--aether-soft); color:var(--aether-ink);}
+.lvl.com{background:var(--gold-soft); color:var(--gold-ink);}
+.lvl.tw{background:var(--violet-soft); color:var(--violet-ink);}
+
+footer{border-top:1px solid var(--line); padding-top:26px; margin-top:16px; color:var(--ink-3); font-size:.85rem;}
+footer p{max-width:var(--maxw);}
+
+a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible{outline:2px solid var(--aether); outline-offset:2px;}
+@media (prefers-reduced-motion:reduce){*{animation:none !important; transition:none !important;}}
+details.mobile-toc{margin-top:30px;}
+@media (min-width:1000px){details.mobile-toc{display:none;}}
+details.mobile-toc summary{cursor:pointer; font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10.5px; letter-spacing:.15em; text-transform:uppercase; color:var(--ink-3); padding:11px 14px; border:1px solid var(--line); border-radius:3px; background:var(--surface);}
+nav.toc.desk{display:none;}
+@media (min-width:1000px){nav.toc.desk{display:block;}}
+
+/* --- relevés du Launch Scale Test, 17-18 septembre --- */
+.bta{
+  display:inline-flex; align-items:center; gap:4px; vertical-align:2px;
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.2px; letter-spacing:.1em;
+  text-transform:uppercase; font-weight:700; white-space:nowrap; line-height:1.6;
+  color:var(--aether-ink); background:var(--aether-soft); border:1px solid var(--aether);
+  border-radius:999px; padding:1px 8px; margin-left:7px;
+}
+.bta::before{content:""; width:5px; height:5px; border-radius:50%; background:var(--aether); flex:none;}
+.betabox{
+  border:1px solid var(--aether); border-left:5px solid var(--aether); background:var(--surface);
+  border-radius:0 7px 7px 0; padding:22px 24px; margin:0 0 30px; box-shadow:var(--shadow);
+}
+.betabox .lab{color:var(--aether-ink); margin-bottom:9px;}
+.betabox h2{font-family:"Cinzel",serif; font-size:1.45rem; line-height:1.18; margin:0 0 8px; color:var(--ink);}
+.betabox > p{margin:0 0 18px; color:var(--ink-2); max-width:var(--maxw);}
+.betabox > p:last-child{margin:18px 0 0; font-size:.9rem; color:var(--ink-3);}
+.betabox ul{list-style:none; margin:0; padding:0; display:grid; gap:11px;}
+.betabox li{
+  background:var(--surface-2); border:1px solid var(--line); border-top:2px solid var(--aether);
+  border-radius:5px; padding:12px 14px; font-size:.92rem; color:var(--ink-2); min-width:0;
+}
+.betabox li b{display:block; color:var(--ink); margin-bottom:3px; font-size:.95rem;}
+.betabox li.wip{border-top-color:var(--gold);}
+.betabox li.wip b{color:var(--gold-ink);}
+@media (min-width:900px){ .betabox ul{grid-template-columns:1fr 1fr;} }
+@media (max-width:620px){ .betabox{padding:18px 16px;} .bta{margin-left:5px;} }
+.strip .num{overflow-wrap:anywhere;}
+@media (max-width:620px){ .strip{grid-template-columns:1fr 1fr;} .strip .num{font-size:1.1rem;} }
+
+/* --- relevés du jour 1 du test, source unique --- */
+.j1{
+  display:inline-flex; align-items:center; gap:4px; vertical-align:2px; text-decoration:none;
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.2px; letter-spacing:.1em;
+  text-transform:uppercase; font-weight:700; white-space:nowrap; line-height:1.6;
+  color:var(--gold-ink); background:var(--gold-soft); border:1px solid var(--gold);
+  border-radius:999px; padding:1px 8px; margin-left:7px;
+}
+.j1::before{content:""; width:5px; height:5px; border-radius:50%; background:var(--gold); flex:none;}
+.j1:hover{filter:brightness(1.12);}
+.j1box{
+  border:1px solid var(--gold); border-left:5px solid var(--gold); background:var(--surface);
+  border-radius:0 7px 7px 0; padding:22px 24px; margin:0 0 30px; box-shadow:var(--shadow);
+}
+.j1box .lab{color:var(--gold-ink); margin-bottom:9px;}
+.j1box h2{font-family:"Cinzel",Georgia,serif; font-size:1.45rem; line-height:1.18; margin:0 0 8px; color:var(--ink);}
+.j1box > p{margin:0 0 18px; color:var(--ink-2); max-width:var(--maxw);}
+.j1box > p:last-child{margin:18px 0 0; font-size:.9rem; color:var(--ink-3);}
+.j1box ul{list-style:none; margin:0; padding:0; display:grid; gap:11px;}
+.j1box li{
+  background:var(--surface-2); border:1px solid var(--line); border-top:2px solid var(--gold);
+  border-radius:5px; padding:12px 14px; font-size:.92rem; color:var(--ink-2); min-width:0;
+}
+.j1box li b{display:block; color:var(--ink); margin-bottom:3px; font-size:.95rem;}
+.j1box li.att{border-top-color:var(--blood, #A02138);}
+@media (min-width:900px){ .j1box ul{grid-template-columns:1fr 1fr;} }
+@media (max-width:620px){ .j1box{padding:18px 16px;} .j1{margin-left:5px;} }
+
+/* --- bilan du test de lancement, deux niveaux de fiabilite --- */
+.j1box h3{
+  font-family:"Cinzel",Georgia,serif; font-size:1.04rem; line-height:1.25;
+  margin:26px 0 11px; color:var(--ink);
+}
+.j1box h3:first-of-type{margin-top:2px;}
+.j1box h3 .cnt{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.62em; font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; margin-left:9px; vertical-align:2px;
+}
+.j1box h3.deux .cnt{color:var(--aether);}
+.j1box h3.une .cnt{color:var(--gold-ink);}
+.j1box li.ok{border-top-color:var(--aether);}
+/* --- releve d'infobulles du client --- */
+.tipbox{
+  border:1px solid var(--aether); border-left:5px solid var(--aether); background:var(--surface);
+  border-radius:0 7px 7px 0; padding:22px 24px; margin:0 0 30px; box-shadow:var(--shadow);
+}
+.tipbox .lab{color:var(--aether); margin-bottom:9px;}
+.tipbox h2{font-family:"Cinzel",Georgia,serif; font-size:1.45rem; line-height:1.18; margin:0 0 8px; color:var(--ink);}
+.tipbox > p{margin:0 0 18px; color:var(--ink-2); max-width:var(--maxw);}
+.tipbox > p:last-child{margin:18px 0 0; font-size:.9rem; color:var(--ink-3);}
+.tipbox ul{list-style:none; margin:0; padding:0; display:grid; gap:11px;}
+.tipbox li{
+  background:var(--surface-2); border:1px solid var(--line); border-top:2px solid var(--aether);
+  border-radius:5px; padding:12px 14px; font-size:.92rem; color:var(--ink-2); min-width:0;
+}
+.tipbox li b{display:block; color:var(--ink); margin-bottom:3px; font-size:.95rem;}
+.tipbox li.corr{border-top-color:var(--blood, #A02138);}
+.tipbox code{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.86em;
+  background:var(--gold-soft); border:1px solid var(--line); border-radius:3px; padding:0 4px;
+}
+@media (min-width:900px){ .tipbox ul{grid-template-columns:1fr 1fr;} }
+@media (max-width:620px){ .tipbox{padding:18px 16px;} }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <canvas id="aether" aria-hidden="true"></canvas>
+  <div class="hero-in">
+    <svg class="wingmark" viewBox="0 0 400 96" role="img" aria-label="Emblème : une paire d'ailes stylisées encadrant une pierre d'aether">
+      <defs>
+        <linearGradient id="wgL" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#DDB25C" stop-opacity=".15"/>
+          <stop offset="1" stop-color="#DDB25C" stop-opacity=".95"/>
+        </linearGradient>
+        <linearGradient id="wgR" x1="1" y1="0" x2="0" y2="0">
+          <stop offset="0" stop-color="#A492EE" stop-opacity=".15"/>
+          <stop offset="1" stop-color="#A492EE" stop-opacity=".95"/>
+        </linearGradient>
+        <radialGradient id="core" cx="0.5" cy="0.5" r="0.5">
+          <stop offset="0" stop-color="#BFF4FA"/>
+          <stop offset="0.55" stop-color="#57CEDC"/>
+          <stop offset="1" stop-color="#57CEDC" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <g fill="url(#wgL)">
+        <path d="M180 46 C140 34 96 20 52 4 C88 26 136 42 178 52 Z"/>
+        <path d="M180 49 C144 41 104 31 62 22 C98 38 140 48 178 54 Z"/>
+        <path d="M180 52 C148 48 112 44 74 40 C108 50 142 54 178 56 Z"/>
+        <path d="M180 50 C148 54 112 60 74 66 C108 58 142 52 178 46 Z" opacity=".8"/>
+        <path d="M180 47 C144 55 104 67 62 78 C98 62 140 52 178 44 Z" opacity=".8"/>
+        <path d="M180 44 C140 58 96 76 52 92 C88 70 136 52 178 42 Z" opacity=".8"/>
+      </g>
+      <g fill="url(#wgR)">
+        <path d="M220 46 C260 34 304 20 348 4 C312 26 264 42 222 52 Z"/>
+        <path d="M220 49 C256 41 296 31 338 22 C302 38 260 48 222 54 Z"/>
+        <path d="M220 52 C252 48 288 44 326 40 C292 50 258 54 222 56 Z"/>
+        <path d="M220 50 C252 54 288 60 326 66 C292 58 258 52 222 46 Z" opacity=".8"/>
+        <path d="M220 47 C256 55 296 67 338 78 C302 62 260 52 222 44 Z" opacity=".8"/>
+        <path d="M220 44 C260 58 304 76 348 92 C312 70 264 52 222 42 Z" opacity=".8"/>
+      </g>
+      <circle cx="200" cy="48" r="26" fill="url(#core)" opacity=".55"/>
+      <path d="M200 28 L210 48 L200 68 L190 48 Z" fill="#BFF4FA"/>
+      <path d="M200 34 L206 48 L200 62 L194 48 Z" fill="#0A0D1A" opacity=".55"/>
+    </svg>
+    <p class="eyebrow">Aion 2 &middot; Lancement global &middot; 5 octobre 2026</p>
+    <h1>Codex d'Atreia</h1>
+    <div class="sig">
+      <img class="mark" src="data:image/webp;base64,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" alt="" aria-hidden="true" width="116" height="116">
+      <span class="who">
+        <span class="nom"><span class="par">Écrit par</span>Ryuu</span>
+        <span class="quoi">Version taïwanaise jouée en amont &middot; dossier tenu à jour pour le lancement global</span>
+      </span>
+    </div>
+
+    <p class="dek">Du niveau&nbsp;1 à l'endgame : la route à suivre, les systèmes qui font monter un personnage, et les pièges qui vont bloquer la moitié du serveur la première semaine. Écrit à partir de mon temps de jeu sur la version taïwanaise, recoupé avec deux guides de joueurs TW et les annonces de NC.</p>
+    <p class="byline">PC / Steam &amp; PURPLE &middot; Saison&nbsp;1 &middot; mis à jour le 13 septembre 2026</p>
+
+    <dl class="strip">
+      <div><dt>Test de charge</dt><dd id="cd-lst"><span class="num">—</span><span class="sub">17–18 septembre</span></dd></div>
+      <div><dt>Accès anticipé</dt><dd id="cd-ea"><span class="num">—</span><span class="sub">30 sept. — packs fondateur</span></dd></div>
+      <div><dt>Lancement global</dt><dd id="cd-gl"><span class="num">—</span><span class="sub">5 octobre, free-to-play</span></dd></div>
+      <div><dt>Objectif jour&nbsp;J</dt><dd>Niveau&nbsp;45<span class="sub">une dizaine d'heures si la jauge ne vous bloque pas</span></dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="shell">
+
+  <section class="betabox" id="sbeta">
+    <span class="lab a">Mise &agrave; jour du 18 septembre</span>
+    <h2>Ce que la b&ecirc;ta a tranch&eacute;</h2>
+    <p>Les deux journ&eacute;es du Launch Scale Test sont pass&eacute;es, et j'y ai mont&eacute; un perso jusqu'au niveau 37. Ce codex a &eacute;t&eacute; &eacute;crit avant, sur la version ta&iuml;wanaise et les annonces officielles. Voil&agrave; ce que les douze heures de jeu sur le client global ont confirm&eacute;, corrig&eacute; et laiss&eacute; ouvert. Le d&eacute;tail est rep&eacute;r&eacute; dans les chapitres par la pastille <span class="bta">vu en b&ecirc;ta</span></p>
+    <ul>
+      <li><b>Quatre emplacements de stigma</b>Confirm&eacute;, et pr&eacute;sent&eacute; comme une limite de Saison&nbsp;1. La Saison&nbsp;2 devrait en rajouter, en m&ecirc;me temps qu'elle ajoutera le Pugiliste.</li>
+      <li><b>Les stigmas s'ouvrent au niveau 22</b>Par la qu&ecirc;te &laquo;&nbsp;&Agrave; l'&eacute;coute des voix&nbsp;&raquo;. Avant &ccedil;a le panneau entier est cadenass&eacute;.</li>
+      <li><b>Correction &mdash; les stigmas ont bien des nodes</b>J'&eacute;crivais le contraire au chapitre&nbsp;7. Ils en ont quatre, automatiques, aux niveaux 5, 10, 15 et 20. C'est l'erreur que la b&ecirc;ta a corrig&eacute;e.</li>
+      <li><b>Trois nodes sur cinq, c'est le bon chiffre</b>La barre &laquo;&nbsp;Sp&eacute;cialis&eacute;&nbsp;&raquo; affiche bien trois emplacements, et les cinq options sont verrouill&eacute;es &agrave; 8, 8, 8, 12 et 16.</li>
+      <li><b>Le calendrier tient</b>Acc&egrave;s anticip&eacute; le 30 septembre, ouverture le 5 octobre. Rien du test n'est conserv&eacute;, ni personnage ni monnaie.</li>
+      <li><b>Le deuxi&egrave;me emplacement de sp&eacute;cialisation s'ouvre au niveau 12</b>Vu en jeu. Le troisi&egrave;me doit donc tomber au niveau 16 du sort, ce qui collerait aux paliers d'options, mais le cap du playtest m'a emp&ecirc;ch&eacute; de le v&eacute;rifier.</li>
+    </ul>
+    <p>Douze heures de jeu sur un Assassin, sur les deux journ&eacute;es, personnages effac&eacute;s &agrave; la fin. Tout ce qui porte la pastille est relev&eacute; &agrave; l'&eacute;cran. Le reste du codex vient toujours de Ta&iuml;wan et des annonces.</p>
+  </section>
+
+  <section class="j1box" id="j1">
+    <span class="lab">19 septembre &middot; bilan du Launch Scale Test</span>
+    <h2>Ce que le test de lancement a montr&eacute;</h2>
+    <p>Le Launch Scale Test est termin&eacute;. Depuis, des retours sont sortis dessus, en vid&eacute;o et &agrave; l'&eacute;crit, et j'y ai moi-m&ecirc;me mont&eacute; mon perso jusqu'au <strong>niveau 37</strong>. Ce qui revient dans plusieurs retours, ou que j'ai eu &agrave; l'&eacute;cran, je le tiens pour acquis. Ce qui ne sort que d'une seule source reste ici en attendant. Dans tous les cas c'est le playtest, pas la version qui ouvrira le 5 octobre, et quand un retour d&eacute;crit autre chose que ce que j'ai vu en jeu, c'est mon exp&eacute;rience qui passe devant.</p>
+    <h3 class="deux">Ce que les retours recoupent<span class="cnt">solide</span></h3>
+    <ul>
+      <li class="ok"><b>L'&eacute;quipement fabriqu&eacute; perd son bonus PvE</b>Le modificateur en pourcentage saute sur les armes, les armures et les bijoux. En &eacute;change les stats brutes montent fort, une &eacute;p&eacute;e Ebony passe de 485 &agrave; 606 d'attaque l&agrave; o&ugrave; Ta&iuml;wan affiche 372 &agrave; 465.</li>
+      <li class="ok"><b>Les bijoux changent de r&ocirc;le</b>Tous gagnent might et precision, le collier prend du combat speed, les boucles du movement speed. Ce sont les emplacements qui bougent le plus.</li>
+      <li class="ok"><b>Le Genus Insight est refait de fond en comble</b>Le smite tombe de 4,8&nbsp;% par genus &agrave; 3&nbsp;%, et seulement sur le genus sp&eacute;cial. Les lignes d&eacute;fensives ne portent plus que du d&eacute;fensif. Accuracy, crit, boss attack, block et evasion deviennent rares, donc les caps d'accuracy seront plus durs &agrave; atteindre. Arrivent en &eacute;change status effect resist, status effect chance et des PV en pourcentage.</li>
+      <li class="ok"><b>Les familiers plafonnent au niveau 3</b>Contre 5 ailleurs, et ce n'est pas une mont&eacute;e raccourcie qui garde le m&ecirc;me total. C'est un plafond pos&eacute; sur les stats, avec des lignes chang&eacute;es au passage. Le Superior Wind Spirit donne stamina, crit res et precision l&agrave; o&ugrave; la Cor&eacute;e donne MP, precision, willpower, crit res et nature damage.</li>
+      <li class="ok"><b>Le Monolithe ne donne plus de points de comp&eacute;tence</b>Les retours se rejoignent sur la disparition, pas sur la destination. D'un c&ocirc;t&eacute; ils seraient redistribu&eacute;s en gain par niveau, de l'autre ils passeraient dans les donjons scell&eacute;s. Dans les deux cas la route change.</li>
+      <li class="ok"><b>Les &eacute;clats de stigma s'ach&egrave;tent chez le Shugo</b>35 &eacute;clats, sans palier d&eacute;gressif, &agrave; l'emplacement o&ugrave; la Cor&eacute;e met des points de comp&eacute;tence. On les retrouve dans la boutique de l'Ab&icirc;me et celle du mode cauchemar. L'&eacute;clat instable, lui, a disparu de partout.</li>
+      <li class="ok"><b>Nerf des ailes et des tableaux</b>Plus de fragments &agrave; assembler ni de duvets &agrave; empiler. Les tableaux du Panth&eacute;on s'ach&egrave;tent finis contre des jetons dans la boutique d&eacute;coration, et le mini-jeu des tuiles se cheese toujours, donc on pourra les prendre tous. En revanche les tableaux de boss de monde demandent toujours 20&nbsp;000 &eacute;clats, et les ailes ont perdu leur meilleure sortie au passage. Chapitres 8 et 9.</li>
+      <li class="ok"><b>L'&eacute;conomie free-to-play est plus large qu'en Cor&eacute;e</b>Trois cl&eacute;s Shugo par jour au lieu d'une, trois Odyle radieuse achetables chaque mois, et le rechargement d'&eacute;nergie des donjons est d&eacute;j&agrave; celui des abonn&eacute;s sans avoir l'abonnement. Le reset est cal&eacute; sur le mercredi. Chapitre 12.</li>
+    </ul>
+    <h3 class="une">Ce qui ne sort que d'une seule source<span class="cnt">&agrave; confirmer</span></h3>
+    <ul>
+      <li class="att"><b>Le tableau Divin dispara&icirc;t, le Daevanion est coup&eacute; de moiti&eacute;</b>Le board Divin n'est plus dans le jeu. Il donnait beaucoup de d&eacute;g&acirc;ts PvE et de tol&eacute;rance, et c'&eacute;tait une porte d'entr&eacute;e au pay-to-win. Sur le Daevanion, les nodes majeurs sont divis&eacute;s par deux. Combat speed 1,5&nbsp;% au lieu de 2,5, r&eacute;duction de cooldown pareil, damage boost 2,5 au lieu de 5, attaque 3 au lieu de 5, crit 5 au lieu de 10. Le board Asphel PvP, lui, reste. Chapitre 8.</li>
+      <li class="att"><b>On ne fabrique plus directement au-dessus du palier 1</b>La fabrication garantie pay&eacute;e en boutique de saison dispara&icirc;t, il ne reste que celle qui peut rater. Et pour monter au-dessus du premier palier il faut passer par le transfert depuis Star Dragon ou True Dragon, sans br&ucirc;ler d'&eacute;tape. En contrepartie les ingr&eacute;dients draconiques deviennent tous &eacute;changeables, donc bien plus faciles &agrave; trouver. Chapitre 6.</li>
+      <li><b>Les cubes cach&eacute;s donnent 1000 cristaux d'&acirc;me &agrave; tous les coups</b>Contre 100 ailleurs. &Ccedil;a fait des cubes la vraie source de Genus, d'autant que les quotidiens ont &eacute;t&eacute; r&eacute;duits &agrave; celui des pierres d'am&eacute;lioration et que le reste du farm se fait sur les mobs du monde ouvert. Chapitre 9.</li>
+      <li><b>Tickets de pity partout, et un guard fabricable</b>Tous les donjons qui n'en avaient pas en ont maintenant. L'arme se convertit pour un ticket au lieu de deux, et surtout on peut se fabriquer un guard pour deux tickets. En Cor&eacute;e, sortir un guard correct en d&eacute;but de saison relevait du miracle. Chapitres 5 et 6.</li>
+      <li><b>Le bracelet du Sanctuaire passe en or et arrive tout de suite</b>Trois tickets de pity et 5 millions de kinah d&egrave;s l'ouverture, l&agrave; o&ugrave; Ta&iuml;wan demandait deux tickets et 20 millions en fin de saison 2. M&ecirc;mes stats, m&ecirc;mes liens d'&acirc;me, iLevel un peu plus haut. Chapitre 6.</li>
+      <li><b>Les plafonds d'am&eacute;lioration baissent</b>Le vert s'arr&ecirc;te &agrave; +5 au lieu de 10, le bleu &agrave; +10 au lieu de 15. Chapitre 6.</li>
+      <li><b>Les paliers d'entr&eacute;e en Conqu&ecirc;te baissent</b>Crow Cave passe de 1000 &agrave; 700, Urugu Canyon de 1600 &agrave; 1400, le Temple du Feu et Ferious Horn de 2200 &agrave; 2100. Chapitre 10.</li>
+      <li><b>Les ailes ne donnent plus de cristaux d'&acirc;me</b>L'aile scell&eacute;e se dissout en 10&nbsp;000 pierres d'am&eacute;lioration, mais l'aile mont&eacute;e n'est ni &eacute;changeable ni dissoluble. En Cor&eacute;e on achetait des ailes &agrave; l'h&ocirc;tel des ventes pour les casser en 90&nbsp;000 pierres. Chapitre 9.</li>
+      <li><b>M&eacute;dailles d'argent seulement</b>Donc de l'&eacute;quipement Centurion en saison 1, et rien au-dessus. Les m&eacute;dailles ne sont pas list&eacute;es en r&eacute;compense de qu&ecirc;te, elles ne semblent donc pas li&eacute;es aux saisonni&egrave;res. L'amulette PvP passe par vert, bleu, or comme la PvE, et le plafond d'AP est &agrave; 500&nbsp;000. Chapitre 10.</li>
+      <li><b>Les titres sont nerf&eacute;s, et plus aucun ne donne de smite</b>M&ecirc;me logique que partout ailleurs sur le playtest, on nous veut plus faibles pour que le contenu tienne plus longtemps. Chapitre 8.</li>
+      <li><b>Le Daevanion Ariel est absent du test</b>Peut-&ecirc;tre repouss&eacute; apr&egrave;s le lancement. Mes quatre arbres du chapitre 8 restent donc le pari le plus s&ucirc;r.</li>
+      <li class="att"><b>Chat de faction au niveau 10, r&eacute;colte sans palier</b>En Cor&eacute;e les deux sont bloqu&eacute;s au 45, et c'est une mesure anti-bot. Le premier jour de test a d&eacute;j&agrave; vu du spam de vendeurs d'or.</li>
+    </ul>
+    <p>Le serveur n'a ouvert que douze heures en tout, r&eacute;parties sur deux jours, douze jours avant l'acc&egrave;s anticip&eacute;, et rien ne dit que le playtest soit exactement ce qui ouvrira le 5 octobre. Je remonterai ce qui bouge.</p>
+  </section>
+
+  <details class="mobile-toc">
+    <summary>Sommaire — 14 chapitres + annexes</summary>
+    <nav class="toc" aria-label="Sommaire"><ol id="toc-mobile"></ol></nav>
+  </details>
+
+  <div class="body-grid">
+    <nav class="toc desk" aria-label="Sommaire">
+      <h2>Sommaire</h2>
+      <ol id="toc-desk"></ol>
+    </nav>
+
+    <main>
+
+      <!-- ============ 1 ============ -->
+      <section id="s1">
+        <span class="sec-num"><svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" aria-hidden="true"><path d="M7 0 L9 4.5 L7 9 L5 4.5 Z"/><path d="M0 4.5 L4 3.6 L4 5.4 Z"/><path d="M14 4.5 L10 3.6 L10 5.4 Z"/></svg>Chapitre 01 — <span id="ey-1">Avant le jour J</span></span>
+        <h2 class="sec">Le calendrier</h2>
+        <p class="sec-intro">Premier réflexe à avoir, la version globale n'est pas la version coréenne. On démarre sur le jeu de base, sans le Chapitre&nbsp;1 sorti en Corée le 1<sup>er</sup> juillet. Donc tous les guides qui parlent de niveau&nbsp;50, du Pugiliste, du pendentif ou des régions d'Eltnen et Morheim décrivent un jeu que vous n'aurez pas le 5 octobre.</p>
+
+        <h3>Les trois dates</h3>
+        <div class="tw">
+          <table>
+            <thead><tr><th>Étape</th><th>Quand (heure de Paris)</th><th>Ce qu'il faut faire</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Pré-téléchargement du test</td><td class="num">16 sept. 15:00 → 17 sept. 15:00</td><td>Via Steam ou PURPLE. Gratuit, aucune clé.</td></tr>
+              <tr><td class="k">Launch Scale Test, jour 1</td><td class="num">17 sept. 15:00 → 21:00</td><td>Essayer les classes, screener les sliders de création.</td></tr>
+              <tr><td class="k">Launch Scale Test, jour 2</td><td class="num">18 sept. 21:00 → 19 sept. 03:00</td><td>La progression du jour 1 est conservée, puis tout est wipé.</td></tr>
+              <tr><td class="k">Accès anticipé</td><td class="num">30 sept. → 4 oct.</td><td>Réservé aux packs fondateur. 5 jours d'avance.</td></tr>
+              <tr><td class="k">Lancement global</td><td class="num">5 octobre 2026</td><td>Free-to-play, Steam + PURPLE.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="note gold">
+          <span class="lab g" id="lst-lab">Ce que le test de charge a montr&eacute;</span>
+          <p><span id="lst-lead">Cap niveau&nbsp;37, les 8 classes jouables, trois donjons ouverts</span> (Grotte de Krao, Canyon d'Urugugu, Temple du Feu). H&ocirc;tel des ventes, march&eacute;, &eacute;change entre joueurs, garde-robe et tout le PvP &eacute;taient coup&eacute;s, et les personnages ont &eacute;t&eacute; effac&eacute;s &agrave; la fin. <span id="lst-tail">Douze heures de jeu en tout, six par journ&eacute;e, assez pour v&eacute;rifier une bonne partie de ce chapitre et pour corriger une erreur du chapitre&nbsp;7.</span><span class="bta">vu en bêta</span></p>
+          <p>Deux choses valaient d'y passer, et elles valent encore pour le 30 septembre. <strong>Essayer sa classe en jeu</strong> plut&ocirc;t que sur le papier, et <strong>photographier ses r&eacute;glages de cr&eacute;ation</strong>, qui ne se sauvegardent toujours pas d'une session &agrave; l'autre.</p>
+        </div>
+
+        <h3>Ce que la version globale change</h3>
+        <div class="grid">
+          <div class="card"><span class="tag">Contenu</span><h4>Cap niveau 45, 8 classes</h4><p>Six épisodes de quête principale. Le Pugiliste, le niveau&nbsp;50, le pendentif et les nouvelles régions arriveront plus tard.</p></div>
+          <div class="card"><span class="tag">Équipement</span><h4>Pas d'équipement héroïque en Saison 1</h4><p>NC a retiré le palier héroïque du lancement et relevé les seuils d'iLevel. Courbe plus plate, la puissance vient des cartes d'arcane et de la synergie, pas de la course au gear score.</p></div>
+          <div class="card"><span class="tag">Compétences</span><h4>4 emplacements de stigma</h4><p>Contre 6 en Asie. Arbitrage obligatoire entre survie et burst. Compétences et stigmas plafonnés au niveau&nbsp;20. La bêta confirme les quatre emplacements, et la limite est annoncée pour la Saison 1 seulement.<span class="bta">vu en bêta</span></p></div>
+          <div class="card"><span class="tag">Groupes</span><h4>Expéditions à 5, raids à 10</h4><p>Revues à la hausse (4→5, 8→10). Groupes inter-factions autorisés en PvE.<span class="bta">vu en bêta</span></p></div>
+          <div class="card"><span class="tag">Serveurs</span><h4>Quatre régions</h4><p>Amérique du Nord, Amérique du Sud, Europe, Japon. Pas d'Océanie. 4 slots de personnage, 3 familiers maximum.</p></div>
+          <div class="card"><span class="tag">Boutique</span><h4>≈ 15 €/mois pour le marché</h4><p>Le Membership débloque le Marché et l'échange de monnaie. Boutique cosmétique, passes de combat par personnage.</p></div>
+        </div>
+        <p>Une inconnue subsiste, personne ne sait si l'Europe démarre sur le découpage en saisons (Saison&nbsp;1, 2, 3) comme Taïwan, ou plus loin dans le calendrier. Je table sur la Saison&nbsp;1, avec les améliorations de confort accumulées depuis.</p>
+
+        <h3>Les packs fondateur</h3>
+        <p>Un seul pack par compte, sur Steam et PURPLE. Les trois donnent les mêmes 5 jours d'accès anticipé et 30 jours de Membership. Au-dessus, vous payez du cosmétique. Prix relevés sur le Steam français. Bonne surprise, l'euro est nettement moins cher que l'affichage américain (24,99&nbsp;$ / 49,99&nbsp;$ / 99,99&nbsp;$ hors taxes).</p>
+        <div class="tw">
+          <table>
+            <thead><tr><th>Pack</th><th class="num">Prix</th><th>Contenu additionnel</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Standard</td><td class="num">21,25 €</td><td>Accès anticipé 5 jours, coffre d'approvisionnement, titre « Avant-garde d'Atreia », 30 j de Membership</td></tr>
+              <tr><td class="k">Deluxe</td><td class="num">42,49 €</td><td>+ skin d'armure « Ascended Daeva », skin d'arme « Eternal Sun »</td></tr>
+              <tr><td class="k">Ultimate</td><td class="num">84,99 €</td><td>+ coffre de style, skin « Moonlit Aria », familier Dragon Noir, ailes « Blazing Sun »</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="note trap">
+          <span class="lab">Le piège du pack</span>
+          <p>Les skins, les ailes et les familiers achetés en boutique <strong>ne comptent pas</strong> dans les systèmes de collection qui donnent des statistiques permanentes. Un pack fondateur s'achète pour les 5 jours d'avance et le mois d'abonnement, pas pour de la puissance.</p>
+        </div>
+      </section>
+
+      <!-- ============ 2 ============ -->
+      <section id="s2">
+        <span class="sec-num"><svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" aria-hidden="true"><path d="M7 0 L9 4.5 L7 9 L5 4.5 Z"/><path d="M0 4.5 L4 3.6 L4 5.4 Z"/><path d="M14 4.5 L10 3.6 L10 5.4 Z"/></svg>Chapitre 02 — Création</span>
+        <h2 class="sec">Faction, serveur, classe</h2>
+        <p class="sec-intro">Une seule décision est structurante ici, et ce n'est pas la classe, sur Aion&nbsp;2, <strong>le serveur détermine la faction</strong>.</p>
+
+        <h3>Un serveur = une faction</h3>
+        <p>Il n'y a pas les deux camps sur un même serveur. En choisissant votre serveur, vous choisissez votre faction. Le PvP fonctionne ensuite par appariement entre serveurs, avec une <strong>rotation toutes les deux semaines</strong>, pendant quinze jours vous affrontez tel serveur adverse, puis un autre, avec un système d'équilibrage qui évite qu'un gros serveur PvP tombe systématiquement sur un petit.</p>
+        <p>Côté PvE en revanche, rien à craindre : donjons, raids et transcendances sont <strong>inter-serveurs et inter-factions</strong>. Vous trouverez toujours du monde, gros serveur ou petit, et vous pouvez même grouper avec le camp d'en face. Le seul critère qui compte au moment de choisir reste donc là où sont vos amis.</p>
+
+
+        <h3>Deux vagues de serveurs, et ce qui les relie</h3>
+        <p>Il y aura <strong>deux familles de serveurs</strong>. Ceux de l'acc&egrave;s anticip&eacute;, ouverts le
+        30 septembre aux packs fondateur, et ceux du lancement, ouverts le 5 octobre avec le free-to-play. Le
+        5 octobre, les joueurs sans pack pourront quand m&ecirc;me s'installer sur les serveurs d'acc&egrave;s
+        anticip&eacute; <strong>s'il reste de la place</strong>. Ce ne sont pas des serveurs ferm&eacute;s, juste des
+        serveurs qui auront cinq jours d'avance et qui risquent d'&ecirc;tre pleins.</p>
+        <p>Entre les deux vagues, l'essentiel communique. Liste d'amis commune, et files inter-serveurs
+        partag&eacute;es pour les donjons et le PvP. Si vos potes prennent le pack et pas vous, vous jouerez
+        ensemble, sauf pour ce qui demande d'&ecirc;tre sur le m&ecirc;me serveur, &agrave; commencer par le
+        march&eacute;. Les <strong>transferts de personnage</strong> sont annonc&eacute;s comme un engagement et pas
+        comme une date, NCSOFT veut d'abord regarder les populations et la congestion. Aucun prix, aucun
+        calendrier.</p>
+
+        <div class="note gold">
+          <span class="lab g">Le march&eacute; reste local les premi&egrave;res semaines</span>
+          <p>Il y a deux march&eacute;s. Le <strong>march&eacute; de serveur</strong>, limit&eacute; au v&ocirc;tre,
+          et le <strong>march&eacute; inter-serveurs</strong> qui couvre toute la r&eacute;gion et tourne en kinah.
+          Le second <strong>n'ouvre pas au lancement</strong>, il arrivera quand les serveurs auront atteint un
+          stade de progression comparable. D'ici l&agrave;, votre h&ocirc;tel des ventes c'est votre serveur et rien
+          d'autre, les prix vont diverger de l'un &agrave; l'autre, et ceux de l'acc&egrave;s anticip&eacute; auront
+          cinq jours d'avance sur le stock comme sur les prix. Ajoutez que le March&eacute; et l'&eacute;change de
+          monnaie demandent le Membership, et vous avez la vraie question &agrave; vous poser avant de prendre un
+          pack.</p>
+        </div>
+
+        <h3>Quatre r&eacute;gions, et pas une de plus</h3>
+        <p>Am&eacute;rique du Nord, Am&eacute;rique du Sud, Europe, Japon. <strong>Pas d'Oc&eacute;anie</strong>,
+        NCSOFT l'a confirm&eacute; d&eacute;but septembre et renvoie les joueurs de cette zone vers la version
+        ta&iuml;wanaise, qui supporte l'anglais. La Cor&eacute;e et Ta&iuml;wan restent des versions s&eacute;par&eacute;es,
+        aucun pont avec la globale.</p>
+        <p>&Agrave; l'heure o&ugrave; j'&eacute;cris, <strong>les noms de serveurs ne sont toujours pas
+        publi&eacute;s</strong>, ni les heures d'ouverture du 30 septembre et du 5 octobre. C'est la derni&egrave;re
+        chose qui manque pour se caler avec sa guilde, et je mets la page &agrave; jour d&egrave;s que &ccedil;a
+        tombe.</p>
+
+        <div class="factions">
+          <div class="fac">
+            <h4>Elyos</h4>
+            <p>Les anges d'Atreia, la lumière et la grâce. Deux villages de départ, où se trouvent les monolithes d'échange de plumes.</p>
+          </div>
+          <div class="fac asmo">
+            <h4>Asmodiens</h4>
+            <p>Le camp des ténèbres, teint pâle et esthétique sombre. Mêmes classes, même progression, contenus miroir.</p>
+          </div>
+        </div>
+
+        <h3>Les huit classes du lancement</h3>
+        <div class="tw">
+          <table>
+            <thead><tr><th>Classe</th><th>Nom EN</th><th>Rôle</th><th>Arme</th><th>Profil</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Templier</td><td>Templar</td><td>Tank</td><td>Épée + garde</td><td>Absorption, le tank de référence</td></tr>
+              <tr><td class="k">Gladiateur</td><td>Gladiator</td><td>Tank/DPS mêlée</td><td>Épée à deux mains</td><td>Dégâts de mêlée avec de la résistance</td></tr>
+              <tr><td class="k">Assassin</td><td>Assassin</td><td>DPS mêlée</td><td>Dagues</td><td>Monocible, poisons, invisibilité</td></tr>
+              <tr><td class="k">Pisteur</td><td>Ranger</td><td>DPS distance</td><td>Arc</td><td>Polyvalent, très bien noté au lancement</td></tr>
+              <tr><td class="k">Sorcier</td><td>Sorcerer</td><td>DPS magique</td><td>Lanceur de sorts</td><td>Glass cannon, contrôle de foule</td></tr>
+              <tr><td class="k">Élémentaliste</td><td>Spiritmaster</td><td>DPS invocateur</td><td>Lanceur de sorts</td><td>Esprits, debuffs, très bien noté</td></tr>
+              <tr><td class="k">Clerc</td><td>Cleric</td><td>Soigneur</td><td>Lanceur de sorts</td><td>Soins lourds, dissipation</td></tr>
+              <tr><td class="k">Enchanteur</td><td>Chanter</td><td>Support/hybride</td><td>Lanceur de sorts</td><td>Buffs de groupe + soins légers</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Tout le monde commence « Aventurier » avant de se spécialiser. Le Pugiliste (gantelets) existe en Corée mais n'est pas du lancement global.</p>
+
+        <div class="note">
+          <span class="lab a">Pour un rush endgame</span>
+          <p>La bonne question n'est pas « quelle classe tape le plus fort », c'est « avec quelle classe je trouve un groupe à 3 h du matin le deuxième jour ». Tanks et soigneurs partent instantanément, les DPS font la queue. Si vous tenez à jouer DPS pur, arrivez avec un groupe fixe. Sur les premières semaines, ça vous fera gagner bien plus de temps que le choix de classe lui-même.</p>
+        </div>
+      </section>
+
+      <!-- ============ 3 ============ -->
+      <section id="s3">
+        <span class="sec-num"><svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" aria-hidden="true"><path d="M7 0 L9 4.5 L7 9 L5 4.5 Z"/><path d="M0 4.5 L4 3.6 L4 5.4 Z"/><path d="M14 4.5 L10 3.6 L10 5.4 Z"/></svg>Chapitre 03 — Niveau 1 → 45</span>
+        <h2 class="sec">La montée, et le mur qui va bloquer tout le monde</h2>
+        <p class="sec-intro">Comptez une dizaine d'heures pour le 45. Voyez cette montée comme <strong>un très long tutoriel</strong> plutôt que comme un leveling classique, il faut tout faire, mais sans traîner dessus. Le personnage se construit après.</p>
+
+        <h3>Ce qu'il y a à nettoyer sur chaque carte</h3>
+        <div class="grid">
+          <div class="card"><span class="tag">Quêtes jaunes</span><h4>Quête principale</h4><p>Six épisodes au lancement global. Le fil conducteur, et la source principale d'XP.</p></div>
+          <div class="card"><span class="tag">Quêtes vertes / bleues</span><h4>Quêtes secondaires</h4><p>Remplissent la jauge d'ascension et donnent des cristaux de Daevanion. À faire toutes.</p></div>
+          <div class="card"><span class="tag">Quêtes roses</span><h4>Quêtes tutoriel</h4><p>Souvent zappées alors qu'elles donnent des récompenses de départ utiles. Faites-les aussi.</p></div>
+          <div class="card"><span class="tag">Petit rond</span><h4>Donjons scellés</h4><p>Une soixantaine, en solo. Cochez-les tous, c'est la source principale de cristaux de Daevanion.</p></div>
+          <div class="card"><span class="tag">Feu de camp</span><h4>Bastions</h4><p>Moins nombreux, même logique : 100&nbsp;% obligatoire. Ils servent ensuite à monter la ceinture.</p></div>
+          <div class="card"><span class="tag">Plume</span><h4>Plumes / traces</h4><p>Environ 560 sur la carte principale. Il faut <strong>zoomer</strong> pour les voir, dézoomée la carte ne les affiche pas du tout.</p></div>
+        </div>
+
+        <div class="note trap">
+          <span class="lab">Le piège n°1 : la jauge d'ascension</span>
+          <p>Au-dessus du journal de quête, il y a une <strong>jauge rouge</strong>. Elle ne sert pas qu'à débloquer les quêtes d'ascension, elle sert aussi de <strong>prérequis pour continuer la quête principale</strong>, et le premier blocage tombe <strong>dès le niveau&nbsp;21</strong>. Attendez-vous à voir le chat se remplir de gens persuadés d'avoir un bug ou d'avoir loupé une quête. Il n'y a rien de cassé, vous enchaînez quêtes secondaires, donjons scellés et bastions jusqu'à 100&nbsp;%, et la principale repart.</p>
+        </div>
+
+        <h3>Les quêtes d'ascension</h3>
+        <p>Elles arrivent aux niveaux <span class="mono">5</span>, <span class="mono">22</span>, <span class="mono">32</span> et <span class="mono">45</span>. Elles donnent vos <strong>ailes</strong>, vos <strong>premières statues de Panthéon</strong>, et votre <strong>premier bracelet gold au niveau 45</strong>. Ce bracelet-là est unique, le deuxième ne tombe qu'en raid.</p>
+
+        <h3>Deux méthodes, et celle que je prends</h3>
+        <div class="tw">
+          <table>
+            <thead><tr><th>Méthode</th><th>Principe</th><th>Pour qui</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Rush 45</td><td>Enchaîner la quête principale, et ne faire du contenu annexe que quand la jauge bloque.</td><td>La plus rapide vers le 45. Débloque les expéditions plus tôt, donc l'énergie Odyle démarre plus tôt.</td></tr>
+              <tr><td class="k">100 % par région</td><td>Dans chaque zone : quête principale, puis nettoyage complet avant de passer à la suivante.</td><td>Un peu plus lent, mais zéro blocage et aucun aller-retour.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="note ndlr">
+          <span class="lab n">NDLR — Ryuu</span>
+          <p>Perso, je suis adepte du <strong>clean 100&nbsp;% par zone</strong>. Je ne quitte une région qu'une fois tout ramassé : secondaires, bastions, donjons scellés, plumes et kibélisques. C'est marginalement plus lent sur le papier, mais ça supprime tous les allers-retours, tous les blocages de jauge, et ça met le stock de cristaux de Daevanion au maximum en arrivant au 45. Sur un rush, le temps perdu à revenir en arrière coûte plus cher que le temps « perdu » à nettoyer.</p>
+        </div>
+
+        <p>Dans les deux cas vous arriverez au 45 en ayant tout fait, c'est juste l'ordre qui change.</p>
+
+        <h3>Le 100 % ne s'arrête pas à votre faction</h3>
+        <p>Une fois niveau&nbsp;45 et votre carte terminée, des <strong>portails violets</strong> s'ouvrent à heure fixe, deux à trois par carte, toutes les trois heures sur Taïwan. Ils mènent chez la faction adverse, et vous y refaites exactement la même chose : donjons scellés, bastions et quêtes secondaires du camp d'en face. Il y en a moins, mais c'est autant de cristaux de Daevanion à récupérer.</p>
+
+        <h3>Deux réflexes à prendre dès la première heure</h3>
+        <h4>Les kibélisques</h4>
+        <p>Les points de téléportation. Ils s'enregistrent <strong>automatiquement quand vous passez à proximité</strong>, et vous vous y téléportez ensuite avec un parchemin acheté chez n'importe quel marchand général. Faites le détour de quelques secondes à chaque fois.</p>
+
+        <h4>Les plumes et le monolithe</h4>
+        <p>Ramassez tout ce que vous voyez. Les plumes s'échangent aux <strong>monolithes</strong> de votre capitale, et le monolithe n'a rien de décoratif, il donne des <strong>points de compétence</strong> (actifs et passifs), des clés, des livres qui serviront plus tard à l'amélioration de l'équipement, du cosmétique. Surtout, c'est le <strong>seul moyen de faire monter votre amulette</strong>. Montez-le à fond dès que possible.</p>
+
+        <h4>Les cubes et les clés</h4>
+        <p>Des petits paquets cadeaux sont posés partout sur les cartes. Les <strong>rouges demandent une clé</strong>, les <strong>jaunes s'ouvrent avec ou sans</strong> (plus de butin avec). On y trouve des pierres de mana, du cosmétique, du kinah. Les clés ne servent à rien d'autre, alors n'en stockez jamais, ouvrez tout ce que vous croisez.</p>
+
+        <h3>Niveau 22 : les expéditions et l'énergie Odyle</h3>
+        <p>Les expéditions sont des donjons de groupe qui consomment de l'<strong>énergie Odyle</strong>, l'énergie de donjon du jeu. Elle se recharge toute seule, sert aussi aux transcendances, et le jeu en distribue beaucoup par courrier et via les événements.</p>
+        <div class="note gold">
+          <span class="lab g">La règle Odyle</span>
+          <p>Le stock plafonne à <strong>840</strong>. Une jauge pleine, c'est de la recharge perdue. Dès que vous approchez du plafond, videz-en dans n'importe quel contenu de votre niveau, même pour trois bouts de compo. C'est la logique d'une énergie de gacha, ce qui ne s'accumule pas ne se rattrape jamais.</p>
+        </div>
+      </section>
+
+      <!-- ============ 4 ============ -->
+      <section id="s4">
+        <span class="sec-num"><svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" aria-hidden="true"><path d="M7 0 L9 4.5 L7 9 L5 4.5 Z"/><path d="M0 4.5 L4 3.6 L4 5.4 Z"/><path d="M14 4.5 L10 3.6 L10 5.4 Z"/></svg>Chapitre 04 — Le nerf de la guerre</span>
+        <h2 class="sec">Gear score contre puissance de combat</h2>
+        <p class="sec-intro">Le leveling est la partie courte. Tout ce qui suit prendra des mois, et ça commence par savoir quel chiffre regarder.</p>
+        <p>Le <strong>gear score</strong> ne veut à peu près rien dire. N'importe qui le gonfle en enfilant des pièces oranges bourrées de stats inutiles. La <strong>puissance de combat</strong> a justement été ajoutée après coup pour contrer cette obsession, elle mesure la force réelle du personnage, et elle monte surtout avec les <strong>statistiques offensives</strong>.</p>
+        <div class="note trap">
+          <span class="lab">Le piège n°2 : jouer pour le chiffre</span>
+          <p>Prenez deux cartes d'arcane gold, même gear score affiché. Si la première monte quatre compétences que vous ne lancez jamais et la seconde le cœur de votre rotation, elles n'ont rien à voir. Pareil pour le stuff, un joueur en unique bien monté sort plus de dégâts qu'un full héroïque construit à l'envers, pour une fraction du coût.</p>
+        </div>
+        <p>Pour l'ordre de grandeur, sur Taïwan un joueur avancé qui n'a pas mis un centime dans son personnage tourne autour de <span class="mono">686 000</span> de puissance de combat et fait la quasi-totalité de l'endgame. On parle donc de centaines de milliers, sans rapport avec les petits nombres qui circulent dans certains tableaux communautaires (j'y reviens au chapitre&nbsp;10).</p>
+
+        <h3>Les huit sources de puissance</h3>
+        <div class="grid">
+          <div class="card"><span class="tag">Chapitre 06</span><h4>Équipement</h4><p>Amélioration, étoiles, pierres de mana, soul blending. Le plus gros morceau.</p></div>
+          <div class="card"><span class="tag">Chapitre 07</span><h4>Compétences</h4><p>Monter 4 sorts au niveau 20 et poser leurs nodes. Aussi puissant que le stuff.</p></div>
+          <div class="card"><span class="tag">Chapitre 08</span><h4>Daevanion</h4><p>Arbres de talents. 1 cristal = 1 point + 1 gear score.</p></div>
+          <div class="card"><span class="tag">Chapitre 08</span><h4>Panthéon</h4><p>Tableaux, statues et Colossus : la source des statistiques de divinité.</p></div>
+          <div class="card"><span class="tag">Chapitre 08</span><h4>Cartes d'arcane</h4><p>Niveaux de sorts au-delà du plafond de base.</p></div>
+          <div class="card"><span class="tag">Chapitre 09</span><h4>Familiers &amp; Genus Insight</h4><p>Sous-estimé, et l'un des plus rentables. Les nodes 3 et 9 portent le smite.</p></div>
+          <div class="card"><span class="tag">Chapitre 09</span><h4>Ailes</h4><p>Effet porté + effet de collection permanent, et amélioration 0 → 10.</p></div>
+          <div class="card"><span class="tag">Chapitre 09</span><h4>Garde-robe</h4><p>Chaque skin collecté donne des statistiques. Salvagez tout.</p></div>
+        </div>
+      </section>
+
+      <!-- ============ 5 ============ -->
+      <section id="s5">
+        <span class="sec-num"><svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" aria-hidden="true"><path d="M7 0 L9 4.5 L7 9 L5 4.5 Z"/><path d="M0 4.5 L4 3.6 L4 5.4 Z"/><path d="M14 4.5 L10 3.6 L10 5.4 Z"/></svg>Chapitre 05 — Le concept clé</span>
+        <h2 class="sec">La pyramide des statistiques</h2>
+        <p class="sec-intro">La logique qui gouverne tout le reste du jeu. Si vous ne retenez qu'un chapitre, prenez celui-ci.</p>
+
+        <div class="pyr">
+          <div class="tier t1">
+            <div class="hd"><span class="nm">Statistiques principales : les divinités</span><span class="mult">1 pt = +0,2 % × 2 stats</span></div>
+            <p class="lst">Les 10 seigneurs empiréens d'Atreia : <strong>Nezekan, Vaizel, Kaisinel, Yustiel, Siel, Israphel, Marchutan, Lumiel, Triniel, Zikel</strong>. Chacun couvre une paire de statistiques. <em>Zikel</em> (destruction) = attaque + résistance aux attaques parfaites, la stat des DPS. <em>Triniel</em> (mort) = coup critique + pénétration. <em>Nezekan</em> = défense + chance de coup parfait. On les lit comme des doubles statistiques, jamais comme une stat brute.</p>
+          </div>
+          <div class="arrow">alimente ↓</div>
+          <div class="tier t2">
+            <div class="hd"><span class="nm">Statistiques secondaires</span><span class="mult">1 pt = +0,1 %</span></div>
+            <p class="lst">Force, Dextérité, Précision, Volonté, Intelligence, Santé. Des passerelles, pas des sources, même mécanique que les principales, multiplicateur deux fois plus faible.</p>
+          </div>
+          <div class="arrow">alimente ↓</div>
+          <div class="tier t3">
+            <div class="hd"><span class="nm">Statistiques brutes</span><span class="mult">valeur nominale</span></div>
+            <p class="lst">Attaque, défense, coup critique, précision, PV, PM, résistance critique, évasion, vitesse de déplacement, vitesse d'attaque. Ce sont elles qui entrent dans le calcul de dégâts, et c'est justement pour ça qu'il ne faut pas les acheter en direct.</p>
+          </div>
+        </div>
+
+        <div class="note">
+          <span class="lab a">Le test à faire à chaque arbitrage</span>
+          <p>Entre <strong>+40 d'attaque</strong> et <strong>+20 de Zikel</strong>, l'instinct dit « attaque ». C'est faux. Les 20 de Zikel donnent plus d'attaque que les 40 bruts <em>et</em> ajoutent une seconde statistique par-dessus, pour un seul investissement. Cette logique se répète partout : cartes d'arcane, pierres de mana, Panthéon.</p>
+        </div>
+
+        <h3>La statistique qui prime sur toutes les autres</h3>
+        <div class="note gold">
+          <span class="lab g">Le smite</span>
+          <p>Quelle que soit votre classe, <strong>le smite est aujourd'hui la statistique la plus importante du jeu, et de loin</strong>. Vous en voulez partout où il est possible d'en mettre : sur le casque en priorité, et sur les nodes 3 et 9 du Genus Insight. Le nom français n'est pas encore sorti, il faudra la repérer à la traduction du client.</p>
+        </div>
+        <p>Juste derrière viennent trois statistiques à surveiller de près :</p>
+        <ul>
+          <li><strong>La précision</strong>, mais avec un plafond : <strong>ce sont les raids qui fixent le cap</strong>. Une fois le cap du raid en cours atteint, tout point supplémentaire est perdu.</li>
+          <li><strong>Le critique</strong>, plafonné lui aussi selon votre stuff.</li>
+          <li><strong>L'attaque</strong>, à maximiser sans limite.</li>
+        </ul>
+        <p>Vitesse de combat et vitesse de déplacement font du bien au confort de jeu mais ne rendent pas plus puissant. <strong>Damage boost</strong> et <strong>weapon damage boost</strong> comptent en revanche parmi les plus fortes du jeu, et le <strong>PvE damage boost</strong>, réservé aux pièces craftées, est sans doute la meilleure de toutes en PvE.</p>
+      </section>
+
+      <!-- ============ 6 ============ -->
+      <section id="s6">
+        <span class="sec-num"><svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" aria-hidden="true"><path d="M7 0 L9 4.5 L7 9 L5 4.5 Z"/><path d="M0 4.5 L4 3.6 L4 5.4 Z"/><path d="M14 4.5 L10 3.6 L10 5.4 Z"/></svg>Chapitre 06 — Équipement</span>
+        <h2 class="sec">Amélioration, étoiles, soul blending</h2>
+        <p class="sec-intro">Le plus gros morceau du jeu. Une pièce se travaille sur cinq axes différents, et il faut les faire tous.</p>
+
+        <h3>L'échelle d'amélioration</h3>
+        <p>Bonne nouvelle d'entrée : l'amélioration <strong>ne casse jamais et ne rétrograde jamais</strong>. Un clic raté est juste un clic raté, on ne perd pas la pièce. Ça évite la frustration habituelle des MMO coréens et ça rend la progression prévisible.</p>
+        <div class="scale" role="img" aria-label="Échelle d'amélioration : plus 0 à plus 15 pour une pièce unique, plus 20 pour une héroïque, puis les cinq étoiles">
+          <div class="bar">
+            <div class="seg s1">+0 → +15</div>
+            <div class="seg s2">→ +20</div>
+            <div class="seg s3">1★ → 5★</div>
+          </div>
+          <div class="legend">
+            <div>Monte les <strong>statistiques de base</strong> de la pièce. Le maximum d'une pièce <strong>unique (jaune)</strong>.</div>
+            <div>Réservé aux pièces <strong>héroïques (orange)</strong>, bien plus coûteuses.</div>
+            <div>C'est là que se joue le gain, les étoiles débloquent les <strong>statistiques orange</strong>. Offensives sur les bijoux, défensives sur l'armure.</div>
+          </div>
+        </div>
+
+        <div class="note gold">
+          <span class="lab g">Unique ou héroïque ?</span>
+          <p>L'héroïque est meilleur sur le papier, une ligne de stat en plus et un pool plus élevé. Sauf qu'il faut le monter à +20 avant de toucher aux étoiles, et la facture est plusieurs fois plus salée. <strong>Mon conseil, visez l'unique.</strong> C'est beaucoup moins cher, ça donne un personnage solide tout de suite, et ça évite de s'enliser sur une pièce qu'on n'arrive plus à assumer. Et de toute façon, la Saison&nbsp;1 globale n'a pas d'équipement héroïque, donc la question ne se posera pas avant un moment.</p>
+        </div>
+
+        <div class="note trap">
+          <span class="lab">Le piège n°3 : monter les étoiles sur l'armure</span>
+          <p>Priorité absolue : <strong>armes et bijoux à 5★</strong>. C'est là que le gain est énorme. Sur les pièces d'armure, 1★ à 3★ suffit largement. Pousser une armure à 5★ coûte une fortune pour un impact quasi nul sur la puissance du personnage.</p>
+        </div>
+
+        <h3>Craft ou donjon : la répartition</h3>
+        <p>Les pièces craftées portent une statistique que les autres n'ont pas, le <strong>PvE damage boost</strong>, autour de <strong>5&nbsp;% de base</strong>. C'est la stat la plus forte du jeu en PvE, et à elle seule elle justifie de crafter certaines pièces au lieu de les farmer.</p>
+        <div class="tw">
+          <table>
+            <thead><tr><th>Pièce</th><th>Source recommandée</th><th>Pourquoi</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Arme, garde</td><td>Craft en priorité</td><td>PvE damage boost à 5 %. À défaut, une bonne arme de donjon 3 étoiles pour tenir longtemps.</td></tr>
+              <tr><td class="k">Bijoux (boucles, collier, anneaux)</td><td>Craft</td><td>Stats offensives + PvE damage boost. Ce sont eux qui montent la puissance de combat.</td></tr>
+              <tr><td class="k">Bracelets</td><td>Raid</td><td>Le premier vient de la quête d'ascension du 45, les suivants du raid.</td></tr>
+              <tr><td class="k">Armure (casque, plastron, jambes, gants, bottes, épaules, cape)</td><td>Donjons uniquement</td><td>Crafter l'armure coûte une fortune pour un gain défensif. Prenez ce qui tombe.</td></tr>
+              <tr><td class="k">Ceinture, amulette</td><td>Données par le jeu</td><td>Voir le piège du morphing ci-dessous.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Le système de <strong>potentiel</strong> permet d'ajouter après coup la stat de craft sur une pièce qui n'en est pas une, en consommant des pierres de potentiel obtenues en salvageant des pièces de rang équivalent. C'est un bon rattrapage, mais ça plafonne largement en dessous des 5&nbsp;% d'une pièce craftée.</p>
+
+        <div class="note trap">
+          <span class="lab">Le piège n°4 : l'amulette et la ceinture bloquées</span>
+          <p>Les deux démarrent en bleu, montent jusqu'au niveau&nbsp;10, et se bloquent là. Il faut alors les <strong>morpher</strong> (Alt+H, Substance Morph) pour passer à la rareté au-dessus. Le hic, c'est que la pièce doit être <strong>dans l'inventaire</strong>, déséquipée, et <strong>absente de vos presets de tenue 2 et 3</strong>, sinon le jeu la compte comme portée et refuse. Le jeu ne l'explique nulle part, et c'est le genre de détail sur lequel on peut bloquer une soirée.</p>
+        </div>
+
+        <h3>Pierres de mana et thostone</h3>
+        <p>Une châsse par pièce. Les pierres existent en basique, intermédiaire et supérieure, et <strong>les vertes sont celles du PvP</strong>. Les stats obtenues sont aléatoires et classées par couleur : <strong>les jaunes sont les plus fortes</strong>, ce sont des pourcentages. Une fois que vous optimisez sérieusement, visez deux stats jaunes, trois si la chance est avec vous. Au début, sertissez n'importe quoi, ça fait monter la note.</p>
+        <p>La <strong>thostone</strong> ne se pose que sur l'arme et la garde. Elle donne un effet à déclenchement, du type 1&nbsp;% de chance d'infliger 10&nbsp;000 dégâts de feu. Au DPS meter le gain est franchement décevant, donc posez la meilleure que vous avez et passez à autre chose.</p>
+
+        <h3>Le soul blending, la partie qui fait la différence</h3>
+        <p>C'est ici qu'on retouche une pièce en profondeur. Trois onglets :</p>
+        <div class="tw">
+          <table>
+            <thead><tr><th>Onglet</th><th>Ce qu'il fait</th><th>Conseil</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Reset</td><td>Réinitialise toutes les lignes avec un livre.</td><td>Les livres sont rares. <strong>Uniquement</strong> sur une pièce orange ou unique que vous comptez garder et dont aucune ligne ne vous intéresse. Jamais en early, jamais sur du transitoire.</td></tr>
+              <tr><td class="k">Synchro</td><td>Change une ligne précise, en sacrifiant une pièce ou une pierre de synchronisation.</td><td>Le cœur de l'optimisation. Sacrifiez toujours des pièces <strong>inférieures</strong> à celle que vous montez, parce qu'une pièce de rang équivalent, mieux vaut la salvager en pierre de potentiel.</td></tr>
+              <tr><td class="k">Bind</td><td>Monte les statistiques obtenues à 100 %, avec des livres.</td><td>Une fois la pièce à 100 %, vous pouvez ouvrir un <strong>emplacement supplémentaire</strong> avec une pierre philosophale.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="note gold">
+          <span class="lab g">La règle de la ligne du bas</span>
+          <p>L'emplacement ouvert à la pierre philosophale est le seul qui <strong>ne se transfère pas</strong> vers une pièce supérieure. Mettez-y donc systématiquement la stat la <strong>moins importante</strong> de la pièce, typiquement l'attaque brute, qui est la plus facile à retrouver. Le réflexe naturel est d'y coller sa meilleure ligne, et on la perd au premier transfert.</p>
+        </div>
+
+        <h3>Quelles statistiques sur quel emplacement</h3>
+        <p>La logique de base : <strong>armes et bijoux = offensif, armure = défensif</strong>. Mais au-delà des stats brutes, ce qu'on cherche surtout ce sont les <strong>niveaux de compétences</strong>, et ils ne tombent pas n'importe où.</p>
+        <div class="tw">
+          <table>
+            <thead><tr><th>Emplacement</th><th>Ce qu'on y cherche</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Arme &amp; garde</td><td>Pas de compétences ici, on y met les grosses stats. Weapon damage boost, précision, vitesse de combat, smite, damage boost, attaque, chance de multihit.</td></tr>
+              <tr><td class="k">Anneaux (×2)</td><td><strong>Compétences actives.</strong> Un même sort ne peut figurer qu'une fois par anneau, donc en le mettant sur les deux vous gagnez 2 niveaux sur votre sort principal. Visez clic gauche, clic droit et deux sorts clés, à l'identique sur les deux anneaux.</td></tr>
+              <tr><td class="k">Autres bijoux</td><td>Compétences passives, et stats offensives.</td></tr>
+              <tr><td class="k">Armure</td><td>Compétences passives, plus une statistique prioritaire par pièce (ci-dessous).</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <dl class="slots">
+          <div><dt>Casque</dt><dd>Smite</dd></div>
+          <div><dt>Épaules</dt><dd>Critical damage boost</dd></div>
+          <div><dt>Plastron</dt><dd>Damage boost</dd></div>
+          <div><dt>Gants</dt><dd>Combat speed, perfect chance</dd></div>
+          <div><dt>Bottes</dt><dd>Move speed</dd></div>
+          <div><dt>Jambes</dt><dd>Rien de prioritaire, perfect chance à défaut</dd></div>
+        </dl>
+
+        <h3>Les runes</h3>
+        <div class="note trap">
+          <span class="lab">Le piège n°5 : cliquer ses runes</span>
+          <p>Contrairement à l'équipement, <strong>les runes cassent</strong>, et le taux de réussite est infâme. La méthode tient en une phrase, vous montez une rune tant que le clic affiche 100&nbsp;%, et vous vous arrêtez là. Vous équipez deux runes de même niveau, et <strong>vous ne cliquez jamais une rune équipée sans avoir une rune de secours</strong>. Ensuite vous tentez sur celles que vous lootez, et quand l'une passe au niveau au-dessus, elle remplace une des deux et vous recommencez le cycle. C'est lent, mais c'est le seul moyen de ne jamais se retrouver avec un slot vide.</p>
+        </div>
+
+        <h3>Le transfert</h3>
+        <p>Mécanique arrivée après le lancement coréen, donc probablement absente au démarrage global, mais elle change tout le calcul à moyen terme. Elle permet de <strong>transférer le niveau et les lignes d'une pièce vers une autre</strong>, à l'exception de la ligne de pierre philosophale. Sur les serveurs actuels le coût en kinah a même été supprimé, il ne reste que des pierres de transfert obtenues en détruisant des pièces équivalentes. Concrètement, votre stuff de donjon 3 étoiles se reverse dans le 4 étoiles, puis dans le 5 étoiles, en gardant tout le travail d'optimisation derrière.</p>
+      </section>
+
+      <!-- ============ 7 ============ -->
+      <section id="s7">
+        <span class="sec-num"><svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" aria-hidden="true"><path d="M7 0 L9 4.5 L7 9 L5 4.5 Z"/><path d="M0 4.5 L4 3.6 L4 5.4 Z"/><path d="M14 4.5 L10 3.6 L10 5.4 Z"/></svg>Chapitre 07 — Compétences</span>
+        <h2 class="sec">Monter ses sorts au niveau 20</h2>
+        <p class="sec-intro">Deuxième pilier de la puissance, à égalité avec l'équipement, et de loin le plus négligé par les joueurs qui débarquent d'autres MMO.</p>
+        <p>Un sort atteint son plein potentiel au <strong>niveau 20</strong>. Les points de compétence gratuits (plumes, monolithe) ne vous emmènent qu'au <strong>niveau 10</strong> . Au-delà, il faut passer par les cartes d'arcane et les bonus d'équipement.<a class="j1" href="#j1">test de lancement</a></p>
+
+        <h3>Les paliers qui comptent</h3>
+        <div class="tw">
+          <table>
+            <thead><tr><th class="num">Niveau</th><th>Ce qui se débloque</th></tr></thead>
+            <tbody>
+              <tr><td class="num">12</td><td>La <strong>2<sup>e</sup> node</strong> du sort, et une première rune d'amélioration</td></tr>
+              <tr><td class="num">16</td><td>Une seconde rune</td></tr>
+              <tr><td class="num">20</td><td>La <strong>3<sup>e</sup> et dernière node</strong>, et l'intégralité des améliorations du sort</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Les nodes sont des modifications profondes, pas des bonus chiffrés, un grappin qui devient une charge quand il rate, un sort qui rend des PV, un sort qui réduit des temps de recharge, un sort qui étourdit trois secondes une fois sur deux. On peut en équiper <strong>trois</strong>, choisies parmi cinq, et la bêta le confirme à l'écran.<span class="bta">vu en bêta</span> Chaque option porte son propre palier, et ce sont toujours les mêmes, <strong>8, 8, 8, 12 et 16</strong>. Trois options sont donc déjà disponibles quand le sort passe au 8, mais un seul emplacement est ouvert à ce moment-là. Entre un sort de base et un sort à trois nodes, l'écart est considérable.</p>
+
+        <div class="note">
+          <span class="lab a">Quels sorts monter</span>
+          <p>Le <strong>clic gauche</strong> et le <strong>clic droit</strong> sont, dans 99&nbsp;% des cas et quelle que soit la classe, vos deux sorts majeurs. Ajoutez-en deux autres propres à votre build et vous avez <strong>quatre sorts à pousser au niveau 20</strong>, cinq si vous êtes très patient. Ne vous dispersez pas au-delà, un sort au 20 vaut bien plus que quatre sorts au 14.</p>
+        </div>
+
+        <p>Les <strong>compétences passives</strong> marchent autrement, pas de nodes à choisir, c'est la montée en niveau seule qui les renforce. Certaines sont en plus verrouillées par votre <strong>niveau de personnage</strong> et pas par vos points, j'en ai vu apparaître aux niveaux 21, 23 et 25.<span class="bta">vu en bêta</span> Les <strong>stigmas</strong>, eux, montent jusqu'au niveau 20 en version globale et sont alimentés surtout par les points d'Abîme.</p>
+        <div class="note trap">
+          <span class="lab">Correction apr&egrave;s la b&ecirc;ta</span>
+          <p>Ce chapitre affirmait que les stigmas n'ont pas de nodes. C'est faux, et c'est le seul vrai correctif que le test m'a impos&eacute;.<span class="bta">vu en bêta</span> Chaque stigma en porte <strong>quatre</strong>, aux niveaux <strong>5, 10, 15 et 20</strong>. La diff&eacute;rence avec les actifs, c'est qu'ils sont <strong>automatiques</strong>, il n'y a rien &agrave; choisir, ils s'activent tout seuls en montant le stigma.</p>
+          <p>&Ccedil;a change la fa&ccedil;on de d&eacute;penser vos shards. Un stigma laiss&eacute; &agrave; 14 n'est pas &laquo;&nbsp;presque au 15&nbsp;&raquo;, il lui manque un node entier. Les paliers 5, 10, 15 et 20 sont les seuls chiffres qui comptent, le reste n'est que du remplissage entre deux.</p>
+        </div>
+
+        <p>C'est aussi pour cette raison que les <strong>anneaux</strong> comptent tant, ce sont les seules pièces qui donnent des niveaux de compétences actives, et un même sort peut y figurer deux fois.</p>
+      </section>
+
+      <!-- ============ 8 ============ -->
+      <section id="s8">
+        <span class="sec-num"><svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" aria-hidden="true"><path d="M7 0 L9 4.5 L7 9 L5 4.5 Z"/><path d="M0 4.5 L4 3.6 L4 5.4 Z"/><path d="M14 4.5 L10 3.6 L10 5.4 Z"/></svg>Chapitre 08 — Systèmes parallèles</span>
+        <h2 class="sec">Daevanion, Panthéon, cartes d'arcane, stigmas</h2>
+
+        <h3>Les Daevanions</h3>
+        <p>Un arbre de talents orienté statistiques et compétences. Chaque <strong>cristal de Daevanion</strong> donne 1 point à dépenser <em>et</em> 1 point de gear score.</p>
+        <div class="tw">
+          <table>
+            <thead><tr><th>Case</th><th class="num">Coût</th><th>Ce qu'elle donne</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Grise</td><td class="num">1 pt</td><td>Une statistique brute</td></tr>
+              <tr><td class="k">Verte</td><td class="num">2 pts</td><td>Un bonus sur un sort passif</td></tr>
+              <tr><td class="k">Bleue</td><td class="num">3 pts</td><td>+1 niveau sur une compétence active</td></tr>
+              <tr><td class="k">Jaune</td><td class="num">4 pts</td><td>Les gros bonus : vitesse d'attaque, réduction de temps de recharge, multihit, résistances</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Quatre arbres attendus au lancement global (<strong>Nezekan, Zikel, Vaizel, Triniel</strong>), dont un entièrement PvE et un entièrement PvP. Les serveurs taïwanais en comptent six aujourd'hui, avec Ariel et Azphel. <strong>Où trouver les cristaux :</strong> quêtes secondaires, donjons scellés de votre faction, donjons scellés adverses via les failles, boutique Cauchemar, transmutation. La branche PvP se nourrit de la boutique PvP.</p>
+        <p>Ordre de grandeur, sur Taïwan les joueurs avancés tournent autour de 500 à 600 points de Daevanion.</p>
+
+        <h3>Le Panthéon</h3>
+        <p>Une salle instanciée qui vous appartient, une sorte de vitrine personnelle. On y accroche <strong>des tableaux</strong>, on y pose <strong>quatre statuettes</strong> et <strong>un Colossus</strong> au centre. Tout ça donne des <strong>statistiques de divinité</strong>, donc du haut de la pyramide. Mis bout à bout, l'apport est énorme.</p>
+        <ul>
+          <li><strong>Tableaux</strong> : fragments récupérés dans tous les donjons, assemblés en Substance Morph (Alt+H) avec un taux de réussite d'environ 20&nbsp;%. Achetables aussi. Rareté verte → bleue → jaune → héroïque.</li>
+          <li><strong>Statuettes</strong> : quatre emplacements. Achievements, boutique Shugo, contenus divers.</li>
+          <li><strong>Colossus</strong> : un seul emplacement, et la pièce la plus forte. Il s'obtient dans le <strong>Cauchemar</strong>, en battant le boss final de la saison.</li>
+        </ul>
+        <div class="note gold">
+          <span class="lab g">Gardez 14 000 points</span>
+          <p>Le Cauchemar de la Saison&nbsp;1 se termine sur Zikel, et son Colossus coûte <strong>14 000 points</strong> de la monnaie du Cauchemar. Cette même monnaie sert à acheter des consommables, des ailes et des pierres, donc elle part vite sans qu'on y prenne garde. Mettez les 14 000 de côté dès le début et achetez le reste avec ce qui dépasse.</p>
+        </div>
+
+        <h3>Les transcendances</h3>
+        <p>Débloquées au niveau&nbsp;45. Donjons chronométrés où l'on remplit une jauge jusqu'à 100&nbsp;% avant de faire apparaître le boss final, avec une note de performance qui conditionne les récompenses. Elles donnent les deux ressources qui font progresser vos compétences : <strong>fragments de stigma</strong> et <strong>cartes d'arcane</strong>. Une par jour, contenu obligatoire.</p>
+
+        <h3>Les stigmas</h3>
+        <p>Première chose, le panneau ne s'ouvre pas avant le <strong>niveau 22</strong>, et il faut pour ça finir la quête &laquo;&nbsp;À l'écoute des voix&nbsp;&raquo;.<span class="bta">vu en bêta</span> Avant, tout est cadenassé, inutile de chercher à préparer un build de stigma pendant le début du leveling.</p>
+        <p>Les fragments de transcendance se transmutent en points de stigma. L'autre robinet, c'est la <strong>boutique PvP, à 25 000 points d'Abîme le point</strong>, et pour la plupart des joueurs ce sera la source principale. Avec seulement <strong>4 emplacements en version globale</strong>, il va falloir trancher, ne montez que ce que votre rotation utilise pour de bon.</p>
+
+        <h3>Les cartes d'arcane</h3>
+        <p>Attention, la version que l'Europe recevra est la <strong>version d'origine</strong>, pas celle en vigueur aujourd'hui sur les serveurs asiatiques, qui a beaucoup évolué. Cinq types :</p>
+        <div class="tw">
+          <table>
+            <thead><tr><th>Type de carte</th><th>Agit sur</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Coupes, parchemins, boussoles</td><td>Niveaux supplémentaires sur les compétences <strong>actives</strong></td></tr>
+              <tr><td class="k">Cloches, miroirs</td><td>Niveaux supplémentaires sur les compétences <strong>passives</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Chaque rareté rapporte du gear score : <span class="mono">blanche 20</span>, <span class="mono">verte 40</span>, <span class="mono">bleue 60</span>, <span class="mono">gold 80</span>. Une carte donne aussi des statistiques de divinité et <strong>+1 niveau à quatre compétences tirées au hasard</strong>. Elles s'améliorent jusqu'au niveau&nbsp;5 en sacrifiant d'autres cartes.</p>
+        <div class="note trap">
+          <span class="lab">Le piège n°6 : jeter ses cartes sans les lire</span>
+          <p>Les cartes utilisées comme matériau <strong>influencent quelles compétences montent</strong> sur la carte principale. Si vos matériaux portent le sort que vous voulez pousser, vous favorisez sa progression, et il peut prendre jusqu'à quatre niveaux d'un coup. Une carte « inutile » qui porte votre sort principal vaut donc plus qu'une gold prise au hasard dans le tas.</p>
+        </div>
+        <p>Mon ordre de tri : la <strong>rareté</strong> d'abord, pour le gear score et les stats immédiates, puis les <strong>statistiques de divinité</strong> selon la classe, puis les <strong>compétences</strong> inscrites dessus, qui est le critère le plus important sur la durée. Stigmas et cartes se montent en parallèle, les deux viennent des transcendances, il n'y a pas d'ordre à respecter entre les deux.</p>
+      </section>
+
+      <!-- ============ 9 ============ -->
+      <section id="s9">
+        <span class="sec-num"><svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" aria-hidden="true"><path d="M7 0 L9 4.5 L7 9 L5 4.5 Z"/><path d="M0 4.5 L4 3.6 L4 5.4 Z"/><path d="M14 4.5 L10 3.6 L10 5.4 Z"/></svg>Chapitre 09 — Collections</span>
+        <h2 class="sec">Familiers, Genus Insight, garde-robe et ailes</h2>
+        <p class="sec-intro">Quatre systèmes qui ont l'air d'être du cosmétique et qui n'en sont pas du tout. Leurs bonus sont permanents et s'empilent sans limite.</p>
+
+        <h3>Les familiers</h3>
+        <p>Cinq familles : <strong>Conis, Feras, Nature, Variants, Spéciaux</strong>. Les <strong>Spéciaux sont purement cosmétiques</strong>, ce sont ceux de la boutique et des événements, ils ne donnent aucune stat. Sortez-les du calcul tout de suite.</p>
+        <p>Pour les quatre autres, l'objectif tient en une phrase : <strong>capturer et monter au max tous les familiers du jeu</strong>, plus de 200 créatures. Chacune montée donne des stats, et chaque famille des stats différentes. Inutile de vous focaliser sur telle ou telle, vous finirez par toutes les faire.</p>
+        <p>On monte un familier avec des <strong>éclats</strong>, par exemple 100 pour passer au niveau 4. Ils tombent en tuant le monstre correspondant sur la carte, ou beaucoup plus vite dans le <strong>donjon quotidien dédié aux familiers</strong>, qui rend le farm en monde ouvert quasiment inutile. Au niveau&nbsp;3 le familier devient monture, au niveau&nbsp;5 vous pouvez prendre son apparence.</p>
+
+        <h3>Le Genus Insight</h3>
+        <p>Lié aux familiers, et l'un des systèmes les plus rentables du jeu. Cinq arbres, un par famille, quasiment identiques, alimentés par des <strong>cristaux d'âme</strong> de la couleur correspondante : Conis bleu, Feras rouge, Nature vert, Variants jaune, Spéciaux turquoise.</p>
+        <div class="note gold">
+          <span class="lab g">La marche à suivre</span>
+          <p>En early, <strong>montez les cinq arbres au niveau 10</strong><a class="j1" href="#j1">test de lancement</a> à fond les ballons, sans regarder les stats que ça débloque. Chaque niveau ouvre un emplacement. Une fois au niveau&nbsp;10, le clic ne monte plus rien, il sert à <strong>relancer</strong> les stats non verrouillées, et c'est seulement là que commence l'optimisation. Une exception pendant la montée, si vous tombez sur une stat <strong>héroïque orange</strong> qui vous intéresse, verrouillez-la tout de suite.</p>
+        </div>
+        <p>Chaque arbre compte <strong>neuf nodes</strong>, et <strong>les nodes 3 et 9 sont les plus importantes, ce sont elles qui portent le smite</strong><a class="j1" href="#j1">test de lancement</a>. Pour le reste, cherchez de l'offensif : attaque, précision et critique tant que vous n'êtes pas au cap, puis front attack et back attack selon votre classe.</p>
+        <div class="note trap">
+          <span class="lab">Le piège n°7 : verrouiller trop tôt</span>
+          <p>Chaque ligne verrouillée <strong>fait grimper le coût de la relance suivante</strong>, et pas qu'un peu, on passe de quelques centaines à plusieurs dizaines de milliers. Sécuriser sa première stat correcte par réflexe se paie en milliers de cristaux d'âme sur la durée.</p>
+        </div>
+
+        <h3>La garde-robe</h3>
+        <p>Chaque skin débloqué rapporte des points dans sa catégorie : <span class="mono">blanc 1</span>, <span class="mono">vert 2</span>, jusqu'à <span class="mono">héroïque 5</span>. Ces points débloquent des <strong>bonus permanents</strong> : armes → attaque, armure → défense, bijoux → attaque et défense. Ordre de grandeur mesuré sur Taïwan : 30 points sur les 70 disponibles pour les espadons donnent déjà <strong>+7,1 % d'attaque à l'espadon</strong>.</p>
+        <p>Pour la remplir : <strong>salvagez</strong> tout l'équipement dont vous n'avez plus l'usage. Le quick select attrape le commun, le rare et l'épique, mais <strong>décochez l'unique et l'héroïque</strong>, qui servent à autre chose. Chaque salvage donne une <em>chance</em> de débloquer le skin, jamais une garantie. Pensez aussi à <strong>combiner vos doublons</strong> dans la garde-robe pour quelques kinah, c'est une roulette, mais elle coûte trois fois rien.</p>
+        <div class="note trap">
+          <span class="lab">Le piège n°8 : croire que la boutique compte</span>
+          <p><strong>Les skins achetés en boutique ne comptent pas dans le système de collection.</strong> Purement cosmétiques. Ceux achetés à l'hôtel des ventes peuvent y entrer, mais avec un simple <em>pourcentage de chance</em> à l'enregistrement.</p>
+        </div>
+
+        <h3>Les ailes</h3>
+        <p>Chaque paire porte deux effets : un <strong>effet d'équipement</strong>, actif seulement quand vous la portez, et un <strong>effet de collection</strong>, acquis définitivement dès que la paire entre dans votre inventaire. Sur l'ensemble de la collection, l'apport est loin d'être anecdotique, avec notamment du damage boost, l'une des meilleures stats du jeu.</p>
+        <ul>
+          <li><strong>D'où elles viennent</strong> : chaque donjon a sa paire. Vous en récupérez des <strong>fragments</strong> nommés d'après le donjon, que vous assemblez en Substance Morph (Alt+H) avec des <strong>Odyles radieuses</strong>.</li>
+          <li><strong>Equip skin</strong> : une case à cocher qui vous permet de porter la paire la plus intéressante en statistiques tout en affichant celle qui vous plaît.</li>
+          <li><strong>Les ailes turquoises</strong>, vendues à l'hôtel des ventes, sont purement cosmétiques. Comme certaines montures.</li>
+          <li><strong>Amélioration 0 → 10</strong> (arrivée après le lancement coréen). Toutes gagnent du temps de vol, le reste dépend de la paire. Le +1 passe à 100&nbsp;% et ne coûte presque rien. À partir du niveau&nbsp;5 on tombe autour de 50&nbsp;%. Un échec ne casse ni ne rétrograde. Ne montez que les paires offensives, ce sont les seules qui font bouger la puissance de combat.</li>
+        </ul>
+        <div class="note gold">
+          <span class="lab g">Surveillez l'Odyle radieuse</span>
+          <p>C'est le composant le plus précieux du jeu, et il en faut une cinquantaine par paire d'ailes. Avant de crafter des ailes pour les revendre, sortez la calculette : prix de l'Odyle radieuse à l'hôtel des ventes × la quantité consommée, contre le prix de vente de la paire, <strong>taxe déduite</strong>. On peut très bien vendre à perte en croyant faire une bonne affaire.</p>
+        </div>
+      </section>
+
+      <!-- ============ 10 ============ -->
+      <section id="s10">
+        <span class="sec-num"><svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" aria-hidden="true"><path d="M7 0 L9 4.5 L7 9 L5 4.5 Z"/><path d="M0 4.5 L4 3.6 L4 5.4 Z"/><path d="M14 4.5 L10 3.6 L10 5.4 Z"/></svg>Chapitre 10 — Routine</span>
+        <h2 class="sec">La semaine type au niveau 45</h2>
+        <p class="sec-intro">Aion&nbsp;2 ne prend pas en otage, il n'y a pas de quoi y passer huit heures par jour. En revanche tout marche par tickets et par recharge, et ce sont les compteurs non consommés qui coûtent cher sur la durée.</p>
+
+        <h3>Les compteurs à surveiller</h3>
+        <div class="tw">
+          <table>
+            <thead><tr><th>Contenu</th><th>Compteur</th><th>Ce qu'on y cherche</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Énergie Odyle</td><td class="num">stack max 840</td><td>Le carburant des donjons, expéditions et transcendances. Ne jamais rester au plafond.</td></tr>
+              <tr><td class="k">Donjon quotidien</td><td class="num">14 tickets / semaine</td><td>Pierres d'amélioration, éclats de familiers, kinah. Répartissables librement dans la semaine.</td></tr>
+              <tr><td class="k">Cauchemar</td><td class="num">14 tickets, +2 / jour</td><td>Statuettes et Colossus du Panthéon, ailes, monnaie de boutique. Ne jamais rester à 14/14.</td></tr>
+              <tr><td class="k">Test d'Ascension</td><td class="num">3 tickets / semaine</td><td>Beaucoup de kinah, fragments de stigma, fragments d'Ariel, pierres d'amélioration.</td></tr>
+              <tr><td class="k">Transcendance</td><td class="num">1 / jour</td><td>Cartes d'arcane et fragments de stigma. Le contenu à ne jamais sauter.</td></tr>
+              <tr><td class="k">Quêtes de devoir</td><td class="num">5 / jour</td><td>Cristaux d'âme (Genus Insight) et clés. Touche G → Duty. Rafraîchissables.</td></tr>
+              <tr><td class="k">Parchemins du marchand</td><td class="num">12 / semaine</td><td>Achetés en kinah, rendent plus de kinah. Cristaux, loots jaunes, points d'Abîme. Jusqu'à 10 rafraîchissements par parchemin.</td></tr>
+              <tr><td class="k">Conquête</td><td class="num">2 / jour</td><td>Équipement et kinah.</td></tr>
+              <tr><td class="k">Raid</td><td class="num">7 / semaine</td><td>Fragments d'amplification, bracelets.</td></tr>
+              <tr><td class="k">Sanctuaire</td><td class="num">2 / semaine</td><td>Le contenu de haut niveau, réservé aux personnages bien montés.</td></tr>
+              <tr><td class="k">Failles temporelles</td><td class="num">toutes les 4 h</td><td>Points d'Abîme, accès aux donjons scellés adverses.</td></tr>
+              <tr><td class="k">Abîme</td><td class="num">≈ 7 h / semaine</td><td>Monnaie d'Abîme, territoire, boss de monde.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="note gold">
+          <span class="lab g">Une astuce qui fait gagner des heures</span>
+          <p>Le donjon quotidien et le Cauchemar acceptent des <strong>tickets de clear instantané</strong>, que le jeu distribue à la pelle. La méthode tient en deux temps, vous faites le donjon <strong>une fois, proprement</strong>, en visant le haut du barème puisque les récompenses tombent par palier, puis vous répliquez ce résultat sur les treize passages restants. Et surtout, ne validez jamais un clear instantané sur un mauvais score, vous le dupliquez treize fois.</p>
+        </div>
+
+        <div class="note trap">
+          <span class="lab">Sur les seuils de puissance de combat</span>
+          <p>Plusieurs compilations communautaires font circuler des seuils d'accès par contenu, de l'ordre de 150 à 2700. Ces chiffres <strong>ne sont pas sur la même échelle</strong> que la puissance de combat affichée en jeu, qui se compte en centaines de milliers. Il s'agit sans doute d'un item level ou d'un gear score, mais je n'ai pas retrouvé la correspondance. Vérifiez-les en jeu la première semaine au lieu de les recopier.</p>
+        </div>
+
+        <h3>Ce qui rapporte en dehors des instances</h3>
+        <ul>
+          <li><strong>Quêtes régionales et donjons scellés</strong> : points de Daevanion, plafonnés à 50 par cycle.</li>
+          <li><strong>Bastions</strong> : amélioration progressive de la ceinture.</li>
+          <li><strong>Événements de zone</strong> : PvE à 20 joueurs, puis mini-boss et boss global.</li>
+          <li><strong>Plumes</strong> : points de compétence, à ramasser en continu.</li>
+          <li><strong>Titres</strong> : trois emplacements actifs (offensif, défensif, et un troisième), gagnés par achievements. Ils donnent des stats bien réelles, et il y a toujours des gens qui oublient tout bonnement de les équiper.</li>
+          <li><strong>Le courrier</strong> : le jeu distribue en permanence de l'Odyle, des consommables et des tickets. Videz-le tous les jours.</li>
+        </ul>
+      </section>
+
+      <!-- ============ 11 ============ -->
+      <section id="s11">
+        <span class="sec-num"><svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" aria-hidden="true"><path d="M7 0 L9 4.5 L7 9 L5 4.5 Z"/><path d="M0 4.5 L4 3.6 L4 5.4 Z"/><path d="M14 4.5 L10 3.6 L10 5.4 Z"/></svg>Chapitre 11 — PvP</span>
+        <h2 class="sec">L'Abîme, les failles et les arènes</h2>
+        <p class="sec-intro">Le PvP n'est pas un contenu à part, il alimente directement la progression PvE. Les points d'Abîme achètent les points de stigma et l'arbre de Daevanion PvP, donc <strong>même en jouant exclusivement PvE, il va falloir y passer</strong>.</p>
+
+        <h3>L'Abîme</h3>
+        <p>La zone de guerre de faction, en trois dimensions. Le vol y est un axe de combat à part entière, et <strong>la jauge de vol se gère comme une ressource</strong>, au même titre que les PV. Environ 7 heures d'ouverture par semaine. On y gagne des points d'Abîme, du territoire et des boss de monde. L'équipement PvP est une voie de progression parallèle à celle des donjons, avec ses propres priorités de stats, et ce sont les pierres de mana vertes qui l'alimentent.</p>
+
+        <h3>Les failles</h3>
+        <p>Des passages temporaires vers les zones adverses, ouverts à heure fixe, toutes les trois heures sur Taïwan. Les deux camps sont prévenus, donc c'est du PvPvE organisé plutôt que du gank. Elles rapportent des points d'Abîme <em>et</em> l'accès aux donjons scellés adverses, donc des cristaux de Daevanion.</p>
+
+        <h3>Les arènes</h3>
+        <div class="tw">
+          <table>
+            <thead><tr><th>Format</th><th>Composition</th><th>Note</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Arène 1v1</td><td>Duel</td><td>Pas d'égalisation d'équipement. Assassin, Sorcier et Pisteur y sont réputés forts.</td></tr>
+              <tr><td class="k">Arène 4v4</td><td>1 tank, 1 soigneur, 2 DPS</td><td>La communication fait la différence à équipement égal.</td></tr>
+              <tr><td class="k">Champ de bataille</td><td>10v10 en global</td><td>Statistiques normalisées, donc le format le plus accessible quand on démarre.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="note">
+          <span class="lab a">Conseil de démarrage</span>
+          <p>N'attendez pas d'avoir le stuff parfait pour aller dans l'Abîme : <strong>les points s'accumulent dès le premier jour</strong>, et à 25 000 AP le point de stigma, vous allez en avoir besoin pendant des mois. Emportez aussi des consommables de restauration de vol à chaque session, la plupart des morts évitables viennent d'une jauge de vol à sec.</p>
+        </div>
+
+        <p>Côté guilde, ne vous attendez à rien pour l'instant, le contenu dédié est quasi inexistant sur les serveurs asiatiques, une légion sert surtout de hub communautaire (128 places). NC a annoncé du contenu de guilde PvE, sans calendrier.</p>
+      </section>
+
+      <!-- ============ 12 ============ -->
+      <section id="s12">
+        <span class="sec-num"><svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" aria-hidden="true"><path d="M7 0 L9 4.5 L7 9 L5 4.5 Z"/><path d="M0 4.5 L4 3.6 L4 5.4 Z"/><path d="M14 4.5 L10 3.6 L10 5.4 Z"/></svg>Chapitre 12 — Économie</span>
+        <h2 class="sec">Kinah, Quna, Odyle radieuse</h2>
+        <p class="sec-intro">NC annonce une monétisation sans loot boxes ni gacha agressif, centrée sur les passes de combat et le cosmétique. Reste à trier ce qui a une conséquence réelle sur le jeu.</p>
+        <div class="grid">
+          <div class="card"><span class="tag">Monnaie de jeu</span><h4>Kinah</h4><p>Quêtes, revente, amélioration. Votre plus gros gouffre sera l'enchantement, d'où la règle « une pièce jusqu'au bout ».</p></div>
+          <div class="card"><span class="tag">Monnaie premium</span><h4>Quna</h4><p>Achetée. Boutique cosmétique, confort, palier premium du passe de combat.</p></div>
+          <div class="card"><span class="tag">Composant</span><h4>Odyle radieuse</h4><p>Le nerf de la guerre côté craft. Vérifiez son cours avant chaque dépense.</p></div>
+          <div class="card"><span class="tag">Abonnement</span><h4>Membership, ≈ 15 €/mois</h4><p>Annoncé à 15 $. Débloque le Marché, l'échange kinah ↔ Quna et une boutique payable en kinah. Sans lui, vous ne pouvez rien vendre.</p></div>
+        </div>
+
+        <h3>Les deux hôtels des ventes</h3>
+        <p>Il y en a deux, avec des taxes différentes : <strong>10&nbsp;% sur le marché de serveur, 20&nbsp;% sur le marché mondial</strong>. Sur une paire d'ailes craftée revendue plusieurs millions, la commission n'a rien d'anecdotique, et c'est exactement ce qu'on oublie dans son calcul de rentabilité. Le marché mondial n'ouvrira qu'une fois la progression stabilisée entre régions.</p>
+        <p>Autre rentrée de kinah régulière et sous-exploitée, le <strong>silentium</strong> récupéré au Test d'Ascension, qui se revend à un PNJ dédié. Gardez-en 500 à 1000 pour les demandes d'approvisionnement et revendez tout le reste, ça ne sert à rien d'autre.</p>
+
+        <div class="note">
+          <span class="lab a">Pour un joueur qui veut limiter la dépense</span>
+          <p>L'ordre de rentabilité est net : <strong>Membership (≈&nbsp;15&nbsp;€/mois) &gt; pack fondateur Standard (21,25&nbsp;€) &gt; tout le reste</strong>. Le Membership ouvre le marché, donc l'économie. Le pack Standard achète cinq jours d'avance et inclut déjà 30 jours de Membership. Les 21&nbsp;€ de plus du Deluxe et les 64&nbsp;€ de plus de l'Ultimate ne paient que du cosmétique, qui ne compte même pas dans les collections. Et pour situer, sur Taïwan on atteint 686 000 de puissance de combat sans mettre un centime.</p>
+        </div>
+      </section>
+
+      <!-- ============ 13 ============ -->
+      <section id="s13">
+        <span class="sec-num"><svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" aria-hidden="true"><path d="M7 0 L9 4.5 L7 9 L5 4.5 Z"/><path d="M0 4.5 L4 3.6 L4 5.4 Z"/><path d="M14 4.5 L10 3.6 L10 5.4 Z"/></svg>Chapitre 13 — Recoupements</span>
+        <h2 class="sec">Là où mes deux sources ne disent pas la même chose</h2>
+        <p class="sec-intro">Pour bâtir ce dossier j'ai recoupé mes propres notes avec deux joueurs TW : <strong>St4rline_TV</strong>, sur la roadmap de lancement, et <strong>Aiola</strong>, sur l'optimisation PvE en trois parties. Ils s'accordent sur l'essentiel. Restent quelques points de friction, que je préfère afficher plutôt que trancher à votre place.</p>
+
+        <div class="cmp">
+          <div class="row">
+            <div class="q">Rush ou 100 % ?</div>
+            <div class="a"><span class="who">St4rline</span>Présente les deux comme viables. Le rush débloque les expéditions plus tôt, donc l'Odyle démarre plus tôt.</div>
+            <div class="b"><span class="who">Aiola</span>Une seule méthode, tout faire sur les deux cartes. Le leveling est un tutoriel, on ne le rate pas, mais on ne s'y attarde pas non plus.</div>
+          </div>
+          <div class="row">
+            <div class="q">Quel chiffre regarder</div>
+            <div class="a"><span class="who">St4rline</span>Met en garde contre le gear score, sans donner d'échelle chiffrée.</div>
+            <div class="b"><span class="who">Aiola</span>Catégorique, le gear score ne sert à rien, seule compte la puissance de combat. Il est à 686 000 et fait tout l'endgame, sans avoir dépensé un euro.</div>
+          </div>
+          <div class="row">
+            <div class="q">Amélioration</div>
+            <div class="a"><span class="who">St4rline</span>Décrit une échelle +0 à +20 : les stats de base jusqu'à +15, puis des pourcentages au-delà.</div>
+            <div class="b"><span class="who">Aiola</span>Précise le mécanisme, une pièce <strong>unique</strong> plafonne à <strong>+15</strong>, une <strong>héroïque</strong> à <strong>+20</strong>, et c'est ensuite le système d'<strong>étoiles</strong> qui débloque les statistiques orange.</div>
+          </div>
+          <div class="row">
+            <div class="q">Familiers</div>
+            <div class="a"><span class="who">St4rline</span>Cinq familles, montée jusqu'au niveau 3 en version globale, ne pas verrouiller de ligne avant le niveau 9-10.</div>
+            <div class="b"><span class="who">Aiola</span>Montée jusqu'au niveau 5 (niveau 3 = monture, niveau 5 = transformation). Les familiers <strong>Spéciaux</strong> ne donnent aucune statistique. Même conseil sur le verrouillage.</div>
+          </div>
+          <div class="row">
+            <div class="q">Divinités</div>
+            <div class="a"><span class="who">St4rline</span>Zikel = attaque + résistance aux attaques parfaites. Vaizel = vitesse d'attaque + résistance au smite.</div>
+            <div class="b"><span class="who">Aiola</span>Zikel = attaque + perfect resist (concordant). Mais Vaizel = précision + esquive, et Nezekan = défense + chance de coup parfait.</div>
+          </div>
+          <div class="row">
+            <div class="q">Couleur des quêtes</div>
+            <div class="a"><span class="who">St4rline</span>Principale en jaune, secondaires en bleu clair.</div>
+            <div class="b"><span class="who">Aiola</span>Principale en jaune, secondaires en vert, plus des quêtes tutoriel en rose. À vérifier sur le client français.</div>
+          </div>
+        </div>
+
+        <p>Sur tout le reste, ils disent exactement la même chose : jauge d'ascension, plumes et monolithe, kibélisques, pyramide des statistiques, Panthéon, cartes d'arcane, ailes de boutique sans stats. C'est plutôt rassurant quand on écrit un dossier là-dessus.</p>
+        <p>Chacun couvre en revanche ce que l'autre laisse de côté. Aiola détaille le système d'étoiles, le soul blending, le Genus Insight, le smite, les runes, le morphing de l'amulette, les tickets et l'économie du marché. St4rline est plus lisible sur la roadmap de lancement et sur la logique des cartes d'arcane.</p>
+
+        <div class="note ndlr">
+          <span class="lab n">NDLR — Ryuu</span>
+          <p>Sur les deux divergences qui ont un impact concret, voilà où je me range. Pour l'<strong>amélioration</strong>, la description d'Aiola colle à ce que j'ai eu sous les yeux : unique bloquée à +15, héroïque à +20, étoiles ensuite. C'est celle que j'ai retenue dans le chapitre&nbsp;6. Pour le <strong>niveau max des familiers</strong>, je penche pour le 5, mais on parle peut-être d'un plafond réduit sur la version globale, donc c'est resté dans la liste des choses à vérifier le 5 octobre.</p>
+        </div>
+      </section>
+
+      <!-- ============ 14 ============ -->
+      <section id="s14">
+        <span class="sec-num"><svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" aria-hidden="true"><path d="M7 0 L9 4.5 L7 9 L5 4.5 Z"/><path d="M0 4.5 L4 3.6 L4 5.4 Z"/><path d="M14 4.5 L10 3.6 L10 5.4 Z"/></svg>Chapitre 14 — Mémo</span>
+        <h2 class="sec">Les erreurs à ne pas faire, et les checklists</h2>
+        <p class="sec-intro">Les cases se cochent et restent cochées sur votre appareil.</p>
+
+        <h3>Les douze pièges</h3>
+        <ol>
+          <li><strong>Suivre uniquement la quête principale</strong> et se retrouver bloqué au niveau 21. La jauge d'ascension est un prérequis.</li>
+          <li><strong>Ignorer les plumes.</strong> Ce sont des niveaux de compétences gratuits, et le seul moyen de monter votre amulette.</li>
+          <li><strong>Laisser l'Odyle plafonner à 840.</strong> Chaque heure passée au plafond est de la recharge perdue.</li>
+          <li><strong>Rester à 14/14 tickets</strong> de Cauchemar : même logique, le compteur ne se cumule pas.</li>
+          <li><strong>Traiter les quêtes secondaires comme du remplissage.</strong> Ce sont vos cristaux de Daevanion.</li>
+          <li><strong>Optimiser un stuff de transition</strong> : pierres de mana, resets et améliorations sur une pièce que vous jetterez le lendemain.</li>
+          <li><strong>Pousser l'armure à 5 étoiles.</strong> Armes et bijoux d'abord, l'armure s'arrête à 2 ou 3.</li>
+          <li><strong>Mettre sa meilleure stat sur la ligne de pierre philosophale</strong>, la seule qui ne se transfère pas.</li>
+          <li><strong>Cliquer une rune sans backup.</strong> Les runes, elles, cassent pour de bon.</li>
+          <li><strong>Sacrifier ses cartes d'arcane sans les lire :</strong> les compétences des matériaux orientent l'amélioration.</li>
+          <li><strong>Verrouiller une ligne de Genus Insight avant le niveau 10</strong> et faire exploser le coût des relances. Les stats proposées ne sont plus celles de la Corée, prenez le temps de les lire.</li>
+          <li><strong>Acheter skins, ailes ou familiers en boutique en croyant gagner des stats.</strong> Ils ne comptent pas dans les collections.</li>
+        </ol>
+
+        <div class="check" data-ck="prep">
+          <div class="ck-hd"><span>Avant le 30 septembre</span><span><span class="cnt">0/5</span> <button class="reset-btn" type="button" data-reset="prep">Réinitialiser</button></span></div>
+          <label><input type="checkbox" id="ck-prep-1"><span>Test de charge fait (17–18 sept.), classe essayée en jeu</span></label>
+          <label><input type="checkbox" id="ck-prep-2"><span>Sliders de création de personnage photographiés</span></label>
+          <label><input type="checkbox" id="ck-prep-3"><span>Serveur choisi, en sachant qu'il fixe la faction</span></label>
+          <label><input type="checkbox" id="ck-prep-4"><span>Pack fondateur pris ou écarté en connaissance de cause</span></label>
+          <label><input type="checkbox" id="ck-prep-5"><span>Jeu pré-téléchargé sur Steam ou PURPLE</span></label>
+        </div>
+
+        <div class="check" data-ck="run">
+          <div class="ck-hd"><span>Course au niveau 45</span><span><span class="cnt">0/9</span> <button class="reset-btn" type="button" data-reset="run">Réinitialiser</button></span></div>
+          <label><input type="checkbox" id="ck-run-1"><span>Détour systématique sur chaque <b>kibélisque</b> croisé</span></label>
+          <label><input type="checkbox" id="ck-run-2"><span>Carte zoomée en permanence pour repérer les <b>plumes</b></span></label>
+          <label><input type="checkbox" id="ck-run-3"><span>Cubes ouverts systématiquement, clés jamais stockées, ce sont mes cristaux d'âme</span></label>
+          <label><input type="checkbox" id="ck-run-4"><span>Jauge d'ascension surveillée avant le niveau 21</span></label>
+          <label><input type="checkbox" id="ck-run-5"><span>Quêtes d'ascension 5, 22 et 32 faites</span></label>
+          <label><input type="checkbox" id="ck-run-6"><span>Tous les donjons scellés et bastions cochés sur ma carte</span></label>
+          <label><input type="checkbox" id="ck-run-7"><span>Niveau 45 atteint + bracelet gold récupéré</span></label>
+          <label><input type="checkbox" id="ck-run-8"><span>Monolithe monté à fond avec les plumes → amulette débloquée, il ne donne plus de points de compétence</span></label>
+          <label><input type="checkbox" id="ck-run-9"><span>Carte adverse nettoyée via les portails violets</span></label>
+        </div>
+
+        <div class="check" data-ck="cap">
+          <div class="ck-hd"><span>Première semaine au 45</span><span><span class="cnt">0/14</span> <button class="reset-btn" type="button" data-reset="cap">Réinitialiser</button></span></div>
+          <label><input type="checkbox" id="ck-cap-1"><span>Transcendance quotidienne posée dans la routine</span></label>
+          <label><input type="checkbox" id="ck-cap-2"><span>Divinité cible identifiée pour ma classe</span></label>
+          <label><input type="checkbox" id="ck-cap-3"><span>Trois titres équipés</span></label>
+          <label><input type="checkbox" id="ck-cap-4"><span>Panthéon ouvert, premiers tableaux et statuettes posés</span></label>
+          <label><input type="checkbox" id="ck-cap-5"><span>14 000 points de Cauchemar mis de côté pour le Colossus</span></label>
+          <label><input type="checkbox" id="ck-cap-6"><span>Les cinq arbres de Genus Insight montés au niveau 10, en visant du défensif sur les lignes défensives</span></label>
+          <label><input type="checkbox" id="ck-cap-7"><span>Une arme et une série de bijoux choisies pour aller à 5★</span></label>
+          <label><input type="checkbox" id="ck-cap-8"><span>Quatre sorts identifiés à pousser au niveau 20</span></label>
+          <label><input type="checkbox" id="ck-cap-9"><span>Smite cherché sur le casque et sur le genus spécial, les nodes 3 et 9 en donnent beaucoup moins</span></label>
+          <label><input type="checkbox" id="ck-cap-10"><span>Premières heures d'Abîme faites pour lancer le stock d'AP</span></label>
+          <label><input type="checkbox" id="ck-cap-11"><span>Guard fabriqué avec deux tickets de pity plutôt qu'attendu au drop</span></label>
+          <label><input type="checkbox" id="ck-cap-12"><span>Bracelet gold du Sanctuaire pris tôt, trois tickets de pity et 5 M de kinah</span></label>
+          <label><input type="checkbox" id="ck-cap-13"><span>Amélioration stoppée à +5 en vert et +10 en bleu, c'est le plafond</span></label>
+          <label><input type="checkbox" id="ck-cap-14"><span>Familiers montés au niveau 3 et pas au-delà, c'est le plafond aussi</span></label>
+        </div>
+      </section>
+
+      <!-- ============ annexe ============ -->
+      <section id="s15">
+        <span class="sec-num"><svg width="14" height="9" viewBox="0 0 14 9" fill="currentColor" aria-hidden="true"><path d="M7 0 L9 4.5 L7 9 L5 4.5 Z"/><path d="M0 4.5 L4 3.6 L4 5.4 Z"/><path d="M14 4.5 L10 3.6 L10 5.4 Z"/></svg>Annexe — Fiabilité</span>
+        <h2 class="sec">D'où viennent ces informations</h2>
+        <p class="sec-intro">Aion&nbsp;2 tourne depuis novembre 2025 en Corée et à Taïwan. La plupart de ce qui circule décrit donc un jeu plus avancé que celui qu'on aura le 5 octobre, d'où le tri ci-dessous.</p>
+        <ul class="srclist">
+          <li><span class="lvl tw">Expérience perso</span><span>Mes heures sur la version taïwanaise, et surtout mon personnage monté au <strong>niveau 37 pendant le Launch Scale Test</strong>, donc sur le client global lui-même. C'est le filtre que j'applique à tout le reste. Ce qui ne collait pas avec ce que j'ai vu en jeu a été écarté ou signalé comme à vérifier, et quand une source décrit autre chose que ce que j'ai eu à l'écran sur la globale, c'est moi qui tranche.</span></li>
+          <li><span class="lvl off">Officiel</span><span>Dates du test de charge et du lancement, régions de serveurs, packs fondateur et prix, modèle économique, tailles de groupe : annonces NCSOFT, page Steam, plus la couverture d'Inven Global, MMO Culture et MMORPG.com.</span></li>
+          <li><span class="lvl com">Test de lancement</span><span>Les retours publiés sur le Launch Scale Test, en vidéo et à l'écrit. En dehors de ce que j'y ai vu moi-même, c'est la seule matière qu'on ait sur le client global, et c'est aussi la plus fragile, puisque rien ne dit que le playtest soit ce qui ouvrira le 5 octobre. Tout est regroupé dans l'encadré doré en haut de page, avec ce que les retours recoupent d'un côté et ce qui ne vient que d'une seule source de l'autre.</span></li>
+           <li><span class="lvl tw">Terrain Taïwan</span><span><strong>St4rline_TV</strong> pour la roadmap de lancement et <strong>Aiola</strong> pour l'optimisation PvE en trois parties, avec son fan site aion2.fr. Les deux jouent sur les serveurs taïwanais et ce sont les plus fiables sur le fonctionnement réel des systèmes, en gardant en tête qu'ils décrivent une version qui a du contenu d'avance.</span></li>
+          <li><span class="lvl com">Communauté</span><span>Compléments sur la routine et les monnaies, SlashingCreeps notamment. Les compilations se recoupent entre elles, mais plusieurs valeurs bougeront en version globale.</span></li>
+          <li><span class="lvl com">À confirmer</span><span>Les détails « Saison 1 globale » (pas d'équipement héroïque, 4 slots de stigma, seuils d'iLevel relevés) viennent de sites de revente qui relaient les communications de NC. L'orientation générale est confirmée par plusieurs sources indépendantes, les chiffres exacts non.</span></li>
+        </ul>
+        <h3>Ce qui reste à vérifier en jeu</h3>
+        <ul>
+          <li>La correspondance entre les « seuils CP » des tableaux communautaires et la puissance de combat réelle.</li>
+          <li>Les niveaux exacts d'apparition des quêtes d'ascension, et la couleur des quêtes secondaires dans le client français.</li>
+          <li>Le nombre d'arbres de Daevanion à l'ouverture globale. Le plafond des familiers, lui, est tranché, c'est le niveau 3.</li>
+          <li>Lesquelles des mécaniques arrivées après le lancement coréen (transfert, potentiel, amélioration des ailes) seront là dès le 5 octobre.</li>
+          <li>Le reste des noms français. Le client est bien traduit, la bêta l'a montré, mais douze heures n'ont pas suffi à relever les libellés du smite, du damage boost et de l'Odyle radieuse.</li>
+          <li>À quel niveau s'ouvre le troisième emplacement de spécialisation. Le deuxième s'ouvre au niveau 12, vu en jeu, donc le troisième devrait arriver au 16.</li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>Dernière mise à jour le 19 septembre 2026, après le Launch Scale Test et avant l'ouverture des serveurs européens. Écrit à partir de mon temps de jeu sur la version taïwanaise, de deux guides de joueurs TW, des annonces officielles, et de douze heures sur le client global. Une partie des chiffres bougera encore au lancement. Je mettrai la page à jour au fil des premières semaines.</p>
+        <p>Habillage graphique original. Ni le logo ni les visuels d'Aion&nbsp;2 ne sont reproduits ici. Aion&nbsp;2 est une marque de NCSOFT Corporation.</p>
+      </footer>
+
+    </main>
+  </div>
+</div>
+
+<script>
+(function(){
+  var items = [
+    ["s1","Le calendrier"],
+    ["s2","Faction, serveur, classe"],
+    ["s3","Niveau 1 → 45"],
+    ["s4","Puissance de combat"],
+    ["s5","Pyramide des stats"],
+    ["s6","Équipement"],
+    ["s7","Compétences"],
+    ["s8","Systèmes parallèles"],
+    ["s9","Collections"],
+    ["s10","Routine"],
+    ["s11","PvP &amp; Abîme"],
+    ["s12","Économie"],
+    ["s13","Recoupements"],
+    ["s14","Erreurs &amp; checklists"],
+    ["s15","Fiabilité des sources"]
+  ];
+  function fill(el){
+    if(!el) return;
+    el.innerHTML = items.map(function(it,i){
+      var n = String(i+1).padStart(2,"0");
+      return '<li><a href="#'+it[0]+'"><span class="n">'+n+'</span><span>'+it[1]+'</span></a></li>';
+    }).join("");
+  }
+  fill(document.getElementById("toc-desk"));
+  fill(document.getElementById("toc-mobile"));
+
+  /* countdowns */
+  function setCd(id, target, past){
+    var el = document.getElementById(id); if(!el) return;
+    var n = el.querySelector(".num");
+    var d = Math.ceil((target - new Date()) / 86400000);
+    if(d > 1) n.textContent = "J−" + d;
+    else if(d === 1) n.textContent = "Demain";
+    else if(d === 0) n.textContent = "Aujourd'hui";
+    else n.textContent = past;
+  }
+  var LST_DEBUT = new Date("2026-09-17T15:00:00+02:00");
+  var LST_FIN   = new Date("2026-09-19T03:00:00+02:00");
+  var EA        = new Date("2026-09-30T00:00:00+02:00");
+  var LANCEMENT = new Date("2026-10-05T00:00:00+02:00");
+
+  setCd("cd-lst", LST_DEBUT, "Terminé");
+  setCd("cd-ea",  EA,        "En cours");
+  setCd("cd-gl",  LANCEMENT, "En ligne");
+
+  /* les deux formulations qui vieillissent mal, recalculées à chaque ouverture */
+  var maintenant = new Date();
+  function txt(id, s){ var el = document.getElementById(id); if(el) el.innerHTML = s; }
+
+  if(maintenant >= LANCEMENT){
+    txt("ey-1", "Le lancement");
+  } else if(maintenant >= EA){
+    txt("ey-1", "Accès anticipé en cours");
+  }
+
+  if(maintenant >= LST_FIN){
+    txt("lst-lab", "Ce que le test de charge a montré");
+    txt("lst-lead", "Il s'est tenu les 17 et 18 septembre. Cap niveau&nbsp;37, les 8 classes jouables, trois donjons ouverts");
+    txt("lst-tail", "Douze heures de jeu en tout, six par journée, assez pour vérifier une bonne partie de ce chapitre et pour corriger une erreur du chapitre&nbsp;7. Les personnages créés à cette occasion n'existent plus.");
+  } else if(maintenant >= LST_DEBUT){
+    txt("lst-lab", "Le test de charge est en cours");
+  }
+
+  /* checklists — per-viewer, best effort */
+  var KEY = "codex-atrea-v1", state = {};
+  try { state = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch(e){ state = {}; }
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e){} }
+  function counts(){
+    Array.prototype.forEach.call(document.querySelectorAll(".check"), function(box){
+      var all = box.querySelectorAll('input[type=checkbox]');
+      var done = box.querySelectorAll('input[type=checkbox]:checked');
+      var c = box.querySelector(".cnt");
+      if(c) c.textContent = done.length + "/" + all.length;
+    });
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('.check input[type=checkbox]'), function(b){
+    if(state[b.id]) b.checked = true;
+    b.addEventListener("change", function(){
+      if(b.checked) state[b.id] = 1; else delete state[b.id];
+      save(); counts();
+    });
+  });
+  counts();
+  Array.prototype.forEach.call(document.querySelectorAll("[data-reset]"), function(btn){
+    btn.addEventListener("click", function(){
+      var box = btn.closest(".check");
+      Array.prototype.forEach.call(box.querySelectorAll('input[type=checkbox]'), function(b){
+        b.checked = false; delete state[b.id];
+      });
+      save(); counts();
+    });
+  });
+
+  /* hero aether field */
+  var cv = document.getElementById("aether");
+  if(cv && !window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+    var ctx = cv.getContext("2d"), motes = [], raf = null, W = 0, H = 0, dpr = Math.min(window.devicePixelRatio||1, 2);
+    var hues = ["221,178,92", "87,206,220", "164,146,238"];
+    function size(){
+      var r = cv.getBoundingClientRect();
+      W = Math.max(1, r.width); H = Math.max(1, r.height);
+      cv.width = W*dpr; cv.height = H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+      motes = [];
+      var n = Math.round(Math.min(90, W/12));
+      for(var i=0;i<n;i++){
+        motes.push({
+          x: Math.random()*W, y: Math.random()*H,
+          r: 0.5 + Math.random()*1.7,
+          vy: -(0.05 + Math.random()*0.22),
+          vx: (Math.random()-0.5)*0.09,
+          a: 0.12 + Math.random()*0.42,
+          c: hues[(Math.random()*hues.length)|0],
+          p: Math.random()*Math.PI*2
+        });
+      }
+    }
+    function frame(){
+      ctx.clearRect(0,0,W,H);
+      for(var i=0;i<motes.length;i++){
+        var m = motes[i];
+        m.y += m.vy; m.x += m.vx + Math.sin(m.p)*0.12; m.p += 0.01;
+        if(m.y < -6){ m.y = H + 6; m.x = Math.random()*W; }
+        if(m.x < -6) m.x = W + 6; else if(m.x > W + 6) m.x = -6;
+        ctx.beginPath();
+        ctx.arc(m.x, m.y, m.r, 0, Math.PI*2);
+        ctx.fillStyle = "rgba(" + m.c + "," + m.a + ")";
+        ctx.fill();
+      }
+      raf = requestAnimationFrame(frame);
+    }
+    size(); frame();
+    var t = null;
+    window.addEventListener("resize", function(){ clearTimeout(t); t = setTimeout(size, 180); });
+    document.addEventListener("visibilitychange", function(){
+      if(document.hidden){ if(raf){ cancelAnimationFrame(raf); raf = null; } }
+      else if(!raf){ frame(); }
+    });
+  }
+})();
+</script>
+
+</body>
+</html>

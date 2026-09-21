@@ -592,10 +592,13 @@ html:not(.js) .rv{opacity:1; transform:none;}
      ================================================================== -->
 <script>
 var GUIDES = {
-  "codex":     "https://ryuusandbox.github.io/codex-atreia-de-ryuu-for-us/",
-  "assassin":  "https://ryuusandbox.github.io/Assassin-guide-de-Ryuu-for-us/",
-  "gladiator": "https://ryuusandbox.github.io/Gladiator-guide-de-Ryuu-for-us/"
+  "codex":     "codex/",
+  "assassin":  "assassin/",
+  "gladiator": "gladiator/"
 };
+/* Chemins RELATIFS, volontairement. La page marche donc telle quelle que le
+   site soit servi sur /Ryuu-House-for-us/ ou a la racine d'un domaine, sans
+   rien avoir a rechanger le jour ou tu bouges le depot.                     */
 
 /* Chaque image accepte PLUSIEURS chemins. La page essaie le premier,
    puis le suivant s'il manque. Ca permet d'avoir les memes fichiers
@@ -604,9 +607,9 @@ var GUIDES = {
    espace : plus de %20, plus de piege de majuscule.                    */
 
 var FONDS = [
-  ["art/fond1.png", "art/fond.png", "Art/fond.png.png"],            /* le bandeau          */
-  ["art/fond2.png", "wallpaper/aion2-wallpaper-7.png"],             /* la section du codex */
-  ["art/fond3.png", "wallpaper/aion2-wallpaper-10.png"]             /* les guides de classe */
+  ["art/fond.png",  "art/fond1.png"],     /* le bandeau           */
+  ["art/fond2.png"],                      /* la section du codex  */
+  ["art/fond3.png"]                       /* les guides de classe */
 ];
 
 var VOILE = 0.55;   /* 0 = image brute, 1 = tres voilee */
@@ -620,8 +623,8 @@ var EMBLEM = {
     ["art/elyos.avif",     "Faction%20icons/Elyos-faction-aion-2-wiki-guide.avif"],
     ["art/asmodien.avif",  "Faction%20icons/Asmodian-faction-aion-2-wiki-guide.avif"]
   ]},
-  "assassin":  ["art/assassin.avif",  "Symbole%20class/Assassin-icon-aion2-wiki-guide.avif"],
-  "gladiator": ["art/gladiator.avif", "Symbole%20class/Gladiator-icon-aion2-wiki-guide.avif"]
+  "assassin":  ["Symbole%20class/Assassin-icon-aion2-wiki-guide.avif"],
+  "gladiator": ["Symbole%20class/Gladiator-icon-aion2-wiki-guide.avif"]
 };
 
 /* Le fond de la case illustree, derriere les symboles.
@@ -629,7 +632,7 @@ var EMBLEM = {
    different a une carte precise, il passe devant CARTE_FOND.
    CARTE_CADRAGE : "cover" remplit la case quitte a rogner les bords,
    "contain" montre l'image entiere avec des bandes autour.             */
-var CARTE_FOND    = ["art/carte.png", "art/carte.jpg", "art/carte.webp"];
+var CARTE_FOND    = ["art/carte.png"];
 var CARTE_CADRAGE = "cover";
 var CARTE_OPACITE = 0.9;
 

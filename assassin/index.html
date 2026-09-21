@@ -1,0 +1,1946 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" sizes="96x96" href="data:image/png;base64,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">
+<meta name="description" content="Guide Assassin AION 2 par Ryuu — build, stigmas, Daevanion, macro et rotation pour la Saison 1 globale du 5 octobre 2026.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Guide Assassin — AION 2">
+<meta property="og:description" content="Le guide Assassin de Ryuu pour la Saison 1 globale : où mettre chaque point quand tu n'en as pas assez.">
+<meta property="og:type" content="article">
+<title>Guide Assassin — AION 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&amp;family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap">
+
+<style>
+/* ============================================================
+   tokens
+   ============================================================ */
+:root{
+  --ground:#F1F2F7; --surface:#FFFFFF; --surface-2:#E7E9F1; --surface-3:#DADDE9;
+  --ink:#14172A; --ink-2:#434862; --ink-3:#6F7695; --line:#D2D6E4;
+  --aether:#0B7A85; --aether-ink:#0A6771; --aether-soft:#D6ECEF;
+  --gold:#96700F; --gold-ink:#775909; --gold-soft:#F3E8CB;
+  --violet:#5B4BA0; --violet-ink:#4A3B8D; --violet-soft:#E4E0F5;
+  --blood:#9E3A29; --blood-soft:#F7E0DB;
+  --edge:#7C6BC4;
+  --shadow:0 1px 2px rgba(20,23,42,.06), 0 12px 34px -22px rgba(20,23,42,.4);
+  --glow:0 0 0 rgba(0,0,0,0);
+  --maxw:70ch;
+  --abyss:#080A14; --abyss-2:#0F1226; --abyss-ink:#EAEDF8; --abyss-ink-2:#98A1C2;
+  --abyss-gold:#DDB25C; --abyss-aether:#57CEDC; --abyss-violet:#B4A4FF;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#080A14; --surface:#101324; --surface-2:#171B31; --surface-3:#20253F;
+    --ink:#E9EBF5; --ink-2:#AEB5CD; --ink-3:#79819F; --line:#252B45;
+    --aether:#4FC7D5; --aether-ink:#7BDCE7; --aether-soft:#0C2B33;
+    --gold:#DCB05E; --gold-ink:#E8C68A; --gold-soft:#2B2310;
+    --violet:#9C8AEA; --violet-ink:#B9ACF4; --violet-soft:#1D1839;
+    --blood:#E58573; --blood-soft:#331914;
+    --edge:#B4A4FF;
+    --shadow:0 1px 2px rgba(0,0,0,.5), 0 12px 34px -22px rgba(0,0,0,.95);
+    --glow:0 0 22px -6px rgba(156,138,234,.5);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#080A14; --surface:#101324; --surface-2:#171B31; --surface-3:#20253F;
+  --ink:#E9EBF5; --ink-2:#AEB5CD; --ink-3:#79819F; --line:#252B45;
+  --aether:#4FC7D5; --aether-ink:#7BDCE7; --aether-soft:#0C2B33;
+  --gold:#DCB05E; --gold-ink:#E8C68A; --gold-soft:#2B2310;
+  --violet:#9C8AEA; --violet-ink:#B9ACF4; --violet-soft:#1D1839;
+  --blood:#E58573; --blood-soft:#331914;
+  --edge:#B4A4FF;
+  --shadow:0 1px 2px rgba(0,0,0,.5), 0 12px 34px -22px rgba(0,0,0,.95);
+  --glow:0 0 22px -6px rgba(156,138,234,.5);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:"Archivo","Segoe UI",system-ui,-apple-system,sans-serif;
+  font-size:16.5px; line-height:1.62; -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%}
+
+/* barre de progression de lecture */
+#prog{
+  position:fixed; top:0; left:0; height:2px; width:0; z-index:60;
+  background:linear-gradient(90deg, var(--aether), var(--edge) 55%, var(--gold));
+  box-shadow:0 0 10px -1px var(--edge);
+  transition:width .08s linear;
+}
+
+/* ============================================================
+   icônes
+   ============================================================ */
+.ic{width:1.15em; height:1.15em; flex:none; vertical-align:-.18em; fill:none;
+    stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round;}
+.skl{white-space:nowrap;}
+.skl > .ic{width:1em; height:1em; color:var(--edge); margin-right:.3em; vertical-align:-.13em; opacity:.92;}
+.skl > .n{font-weight:700;}
+.ic-img{width:1.15em; height:1.15em; flex:none; vertical-align:-.2em; border-radius:3px; object-fit:cover;}
+.skl > .ic-img{width:1.05em; height:1.05em; margin-right:.3em; vertical-align:-.16em;}
+.icbox .ic-img{width:22px; height:22px; border-radius:5px;}
+td.k .ic-img, h3 .ic-img, .sp .nm .ic-img{width:16px; height:16px; margin-right:5px;}
+.icbox{
+  width:34px; height:34px; flex:none; border-radius:7px; display:grid; place-items:center;
+  background:var(--violet-soft); color:var(--violet-ink);
+  border:1px solid color-mix(in srgb, var(--violet) 35%, transparent);
+}
+.icbox.gold{background:var(--gold-soft); color:var(--gold-ink); border-color:color-mix(in srgb, var(--gold) 35%, transparent);}
+.icbox.aether{background:var(--aether-soft); color:var(--aether-ink); border-color:color-mix(in srgb, var(--aether) 35%, transparent);}
+.icbox .ic{width:19px; height:19px;}
+
+/* ============================================================
+   hero
+   ============================================================ */
+.hero{
+  position:relative; background:var(--abyss); color:var(--abyss-ink);
+  overflow:hidden; isolation:isolate;
+  border-bottom:1px solid rgba(180,164,255,.26);
+}
+.hero canvas{position:absolute; inset:0; width:100%; height:100%; z-index:0;}
+.hero::after{
+  content:""; position:absolute; inset:0; z-index:1; pointer-events:none;
+  background:
+    radial-gradient(130% 85% at 50% -15%, rgba(180,164,255,.20), transparent 60%),
+    radial-gradient(85% 70% at 8% 112%, rgba(87,206,220,.13), transparent 62%),
+    radial-gradient(85% 70% at 92% 112%, rgba(221,178,92,.10), transparent 62%),
+    linear-gradient(180deg, transparent 60%, rgba(8,10,20,.75));
+}
+.hero-in{
+  position:relative; z-index:2; max-width:1180px; margin:0 auto;
+  padding-inline:20px; padding-block:44px 34px;
+}
+.wingmark{display:block; width:min(268px,60vw); height:auto; margin:0 0 18px;}
+.eyebrow{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:11px; letter-spacing:.22em;
+  text-transform:uppercase; color:var(--abyss-violet); margin:0 0 12px;
+  display:flex; align-items:center; gap:9px;
+}
+.eyebrow .ic{width:13px; height:13px; opacity:.9;}
+h1{
+  font-family:"Cinzel",Georgia,serif; font-weight:900; letter-spacing:.035em;
+  font-size:clamp(2.4rem,7.8vw,4.1rem); line-height:1; margin:0 0 6px; text-wrap:balance;
+  color:var(--abyss-ink);
+  text-shadow:0 0 38px rgba(180,164,255,.28);
+}
+.h1rule{
+  width:min(300px,70%); height:1px; margin:0 0 18px;
+  background:linear-gradient(90deg, var(--abyss-violet), rgba(180,164,255,.05));
+}
+.sig{display:flex; align-items:center; gap:clamp(14px,2.2vw,22px); margin:2px 0 24px; flex-wrap:wrap;}
+.sig .mark{
+  width:clamp(86px,10vw,116px); height:clamp(86px,10vw,116px); border-radius:50%; flex:none;
+  object-fit:cover; object-position:52% center;
+  background:linear-gradient(150deg, rgba(180,164,255,.35), rgba(87,206,220,.18));
+  border:1px solid rgba(180,164,255,.6);
+  box-shadow:0 0 0 4px rgba(180,164,255,.10), 0 0 38px -8px rgba(180,164,255,.65);
+}
+.sig .who{display:flex; flex-direction:column; line-height:1.22;}
+.sig .nom{font-family:"Cinzel",Georgia,serif; font-size:1.26rem; font-weight:700; letter-spacing:.05em; color:var(--abyss-ink);}
+.sig .nom .par{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10px; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--abyss-violet); display:block; margin-bottom:3px; font-weight:400;
+}
+.sig .quoi{font-size:.83rem; color:var(--abyss-ink-2);}
+.dek{font-size:1.06rem; color:var(--abyss-ink-2); max-width:62ch; margin:0;}
+.byline{margin-top:18px; font-size:.79rem; color:var(--abyss-ink-2); opacity:.85; font-family:"JetBrains Mono",ui-monospace,monospace;}
+.strip{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(158px,1fr)); gap:1px;
+  background:rgba(152,161,194,.2); border:1px solid rgba(152,161,194,.22);
+  border-radius:4px; overflow:hidden; margin-top:28px;
+}
+.strip > div{background:rgba(8,10,20,.74); padding:14px 16px; backdrop-filter:blur(2px);}
+.strip dt{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10px; letter-spacing:.15em;
+  text-transform:uppercase; color:var(--abyss-ink-2); margin:0 0 6px;
+}
+.strip dd{margin:0; font-weight:600; font-size:.95rem; line-height:1.35; color:var(--abyss-ink);}
+.strip .num{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:1.55rem; font-weight:700;
+  color:var(--abyss-violet); display:block; font-variant-numeric:tabular-nums; line-height:1.1;
+}
+.strip .sub{display:block; font-weight:400; font-size:.78rem; color:var(--abyss-ink-2);}
+
+/* ============================================================
+   coque
+   ============================================================ */
+.shell{max-width:1180px; margin:0 auto; padding-inline:20px; padding-block:0 80px;}
+.body-grid{display:block;}
+@media (min-width:1000px){
+  .body-grid{display:grid; grid-template-columns:220px minmax(0,1fr); gap:54px; align-items:start;}
+}
+nav.toc{margin-top:34px;}
+@media (min-width:1000px){
+  nav.toc{position:sticky; top:22px; max-height:calc(100vh - 44px); overflow-y:auto; padding-bottom:10px;}
+}
+nav.toc h2{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10px; letter-spacing:.17em;
+  text-transform:uppercase; color:var(--ink-3); margin:0 0 12px; font-weight:400;
+}
+nav.toc ol{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:1px;}
+nav.toc a{
+  display:flex; gap:9px; text-decoration:none; color:var(--ink-2); font-size:.855rem;
+  padding:4px 9px; border-radius:4px; line-height:1.34;
+  border-left:2px solid transparent;
+}
+nav.toc a:hover{color:var(--ink); background:var(--surface-2);}
+nav.toc a.on{color:var(--ink); border-left-color:var(--edge); background:var(--surface-2);}
+nav.toc a .n{font-family:"JetBrains Mono",ui-monospace,monospace; color:var(--ink-3); font-size:.74rem; padding-top:2px;}
+nav.toc a.on .n{color:var(--edge);}
+main{min-width:0;}
+
+/* ============================================================
+   sections
+   ============================================================ */
+section{padding-block:52px; position:relative;}
+section + section::before{
+  content:""; position:absolute; top:0; left:0; right:0; height:1px;
+  background:linear-gradient(90deg, var(--edge), var(--line) 22%, var(--line) 78%, transparent);
+  opacity:.55;
+}
+h2.sec{
+  font-family:"Cinzel",Georgia,serif; font-weight:700; font-size:clamp(1.5rem,3.6vw,2.05rem);
+  line-height:1.14; margin:0 0 8px; text-wrap:balance; letter-spacing:.015em;
+}
+.sec-num{
+  display:flex; align-items:center; gap:9px; margin-bottom:11px;
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10.5px; letter-spacing:.17em;
+  color:var(--violet-ink); text-transform:uppercase;
+}
+.sec-num .ic{width:14px; height:14px; opacity:.95;}
+.sec-intro{color:var(--ink-2); max-width:var(--maxw); margin:0 0 26px; font-size:1.02rem;}
+h3{font-size:1.12rem; font-weight:700; margin:34px 0 8px; letter-spacing:-.005em; text-wrap:balance;
+   display:flex; align-items:center; gap:9px;}
+h3 .ic{width:17px; height:17px; color:var(--edge); flex:none;}
+h4{font-size:.95rem; font-weight:700; margin:22px 0 6px;}
+p{margin:0 0 14px; max-width:var(--maxw);}
+main ul, main ol{max-width:var(--maxw); padding-left:1.15em; margin:0 0 16px;}
+main li{margin-bottom:7px;}
+a{color:var(--aether-ink);}
+code, .mono{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.88em; font-variant-numeric:tabular-nums;}
+code{background:var(--surface-2); padding:1px 5px; border-radius:3px;}
+.capt{font-size:.85rem; color:var(--ink-3); margin:14px 0 6px; max-width:var(--maxw);}
+
+/* ============================================================
+   encarts
+   ============================================================ */
+.note{
+  border-left:3px solid var(--aether); background:var(--surface); padding:14px 18px;
+  margin:0 0 18px; max-width:var(--maxw); border-radius:0 5px 5px 0; box-shadow:var(--shadow);
+}
+.note.trap{border-left-color:var(--blood);}
+.note.gold{border-left-color:var(--gold);}
+.note.ndlr{border-left-color:var(--violet); background:var(--violet-soft);}
+.note p:last-child{margin-bottom:0;}
+.note .lab{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10.5px; letter-spacing:.14em;
+  text-transform:uppercase; margin-bottom:6px; font-weight:700; color:var(--blood);
+  display:flex; align-items:center; gap:7px;
+}
+.note .lab .ic{width:14px; height:14px;}
+.note .lab.a{color:var(--aether-ink);}
+.note .lab.g{color:var(--gold-ink);}
+.note .lab.n{color:var(--violet-ink);}
+
+/* ============================================================
+   tableaux
+   ============================================================ */
+.tw{overflow-x:auto; margin:0 0 20px; border:1px solid var(--line); border-radius:5px; background:var(--surface);}
+table{border-collapse:collapse; width:100%; font-size:.885rem; min-width:540px;}
+th,td{text-align:left; padding:10px 13px; border-bottom:1px solid var(--line); vertical-align:top;}
+thead th{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.8px; letter-spacing:.11em;
+  text-transform:uppercase; color:var(--ink-3); font-weight:400; background:var(--surface-2); white-space:nowrap;
+}
+tbody tr:last-child td{border-bottom:none;}
+tbody tr:hover{background:var(--surface-2);}
+td.num, th.num{font-family:"JetBrains Mono",ui-monospace,monospace; font-variant-numeric:tabular-nums; white-space:nowrap;}
+td.k{font-weight:600;}
+td.k .ic{width:15px; height:15px; color:var(--edge); margin-right:5px; vertical-align:-.16em;}
+
+/* ============================================================
+   paliers / tiers
+   ============================================================ */
+.pyr{display:flex; flex-direction:column; gap:8px; margin:6px 0 22px; max-width:var(--maxw);}
+.pyr .tier{border:1px solid var(--line); background:var(--surface); border-radius:5px; padding:13px 16px 14px; position:relative; overflow:hidden;}
+.pyr .tier::before{content:""; position:absolute; left:0; top:0; bottom:0; width:4px;}
+.pyr .t1::before{background:var(--gold);}
+.pyr .t2::before{background:var(--aether);}
+.pyr .t3::before{background:var(--ink-3);}
+.pyr .hd{display:flex; flex-wrap:wrap; align-items:center; gap:9px; margin-bottom:5px;}
+.pyr .nm{font-weight:700; font-size:.98rem;}
+.pyr .hd .ic{width:16px; height:16px; color:var(--edge);}
+.pyr .mult{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.78rem; font-weight:700; padding:2px 7px; border-radius:3px; margin-left:auto;}
+.pyr .t1 .mult{background:var(--gold-soft); color:var(--gold-ink);}
+.pyr .t2 .mult{background:var(--aether-soft); color:var(--aether-ink);}
+.pyr .t3 .mult{background:var(--surface-2); color:var(--ink-3);}
+.pyr .lst{font-size:.87rem; color:var(--ink-2); margin:0;}
+.pyr .arrow{text-align:center; color:var(--ink-3); font-size:.7rem; letter-spacing:.14em; font-family:"JetBrains Mono",ui-monospace,monospace; text-transform:uppercase;}
+
+/* ============================================================
+   cartes
+   ============================================================ */
+.grid{display:grid; gap:14px; margin:6px 0 22px; grid-template-columns:repeat(auto-fit,minmax(234px,1fr));}
+.card{
+  border:1px solid var(--line); background:var(--surface); border-radius:6px; padding:15px 17px;
+  transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+}
+.card:hover{transform:translateY(-2px); border-color:color-mix(in srgb, var(--edge) 50%, var(--line)); box-shadow:var(--shadow), var(--glow);}
+.card h4{margin:0 0 6px; font-size:.95rem; display:flex; align-items:center; gap:8px;}
+.card h4 .ic{width:17px; height:17px; color:var(--edge); flex:none;}
+.card p{margin:0; font-size:.875rem; color:var(--ink-2); max-width:none;}
+.card .tag{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.6px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); display:block; margin-bottom:7px;}
+
+/* ============================================================
+   listes clé/valeur
+   ============================================================ */
+.slots{display:grid; gap:1px; background:var(--line); border:1px solid var(--line); border-radius:5px; overflow:hidden; margin:6px 0 22px; max-width:var(--maxw); grid-template-columns:repeat(auto-fit,minmax(170px,1fr));}
+.slots div{background:var(--surface); padding:11px 14px;}
+.slots dt{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.6px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); margin:0 0 3px;}
+.slots dd{margin:0; font-size:.9rem; font-weight:600;}
+
+/* ============================================================
+   comparatif de sources
+   ============================================================ */
+.cmp{margin:6px 0 22px; border:1px solid var(--line); border-radius:5px; overflow:hidden; background:var(--surface);}
+.cmp .row{display:grid; grid-template-columns:1fr; border-bottom:1px solid var(--line);}
+.cmp .row:last-child{border-bottom:none;}
+@media (min-width:640px){ .cmp .row{grid-template-columns:152px 1fr 1fr;} }
+.cmp .q{padding:12px 14px; font-weight:700; font-size:.88rem; background:var(--surface-2);}
+.cmp .a, .cmp .b, .cmp .c{padding:12px 14px; font-size:.86rem; color:var(--ink-2);}
+@media (min-width:640px){ .cmp .a{border-left:1px solid var(--line); border-right:1px solid var(--line);} }
+.cmp .who{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.6px; letter-spacing:.11em; text-transform:uppercase; display:block; margin-bottom:4px;}
+.cmp .a .who{color:var(--aether-ink);}
+.cmp .b .who{color:var(--gold-ink);}
+.cmp3 .row{grid-template-columns:1fr;}
+@media (min-width:830px){ .cmp3 .row{grid-template-columns:126px 1fr 1fr 1fr;} }
+@media (min-width:830px){ .cmp3 .c{border-left:1px solid var(--line);} }
+.cmp3 .c .who{color:var(--violet-ink);}
+
+/* ============================================================
+   checklists
+   ============================================================ */
+.check{max-width:var(--maxw); margin:0 0 22px; border:1px solid var(--line); border-radius:5px; background:var(--surface); overflow:hidden;}
+.check .ck-hd{background:var(--surface-2); padding:9px 15px; font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10.2px; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); display:flex; justify-content:space-between; gap:12px; align-items:center;}
+.check .ck-hd .cnt{color:var(--edge); font-weight:700;}
+.check label{display:flex; gap:11px; padding:9px 15px; border-bottom:1px solid var(--line); cursor:pointer; align-items:flex-start; font-size:.91rem;}
+.check label:last-of-type{border-bottom:none;}
+.check label:hover{background:var(--surface-2);}
+.check input[type=checkbox]{margin:4px 0 0; accent-color:var(--violet); width:15px; height:15px; flex:none;}
+.check input:checked + span{color:var(--ink-3); text-decoration:line-through;}
+.reset-btn{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.6px; letter-spacing:.11em; text-transform:uppercase; background:none; border:1px solid var(--line); color:var(--ink-3); padding:3px 8px; border-radius:3px; cursor:pointer;}
+.reset-btn:hover{color:var(--ink); border-color:var(--ink-3);}
+
+/* ============================================================
+   sources
+   ============================================================ */
+.srclist{list-style:none; padding:0; max-width:none;}
+.srclist li{display:grid; grid-template-columns:112px 1fr; gap:14px; padding:11px 0; border-bottom:1px solid var(--line); font-size:.88rem; align-items:baseline;}
+.srclist li:last-child{border-bottom:none;}
+.srclist .lvl{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.2px; letter-spacing:.11em; text-transform:uppercase; font-weight:700; padding:3px 6px; border-radius:3px; text-align:center;}
+.lvl.off{background:var(--aether-soft); color:var(--aether-ink);}
+.lvl.com{background:var(--gold-soft); color:var(--gold-ink);}
+.lvl.terr{background:var(--violet-soft); color:var(--violet-ink);}
+.lvl.no{background:var(--blood-soft); color:var(--blood);}
+
+/* ============================================================
+   fiches de skill
+   ============================================================ */
+.kit{display:grid; gap:10px; margin:6px 0 22px; grid-template-columns:repeat(auto-fit,minmax(268px,1fr));}
+.sk-card{
+  border:1px solid var(--line); background:var(--surface); border-radius:6px; padding:13px 15px;
+  display:grid; grid-template-columns:34px 1fr; gap:12px; align-items:start;
+  transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+  position:relative; overflow:hidden;
+}
+.sk-card:hover{transform:translateY(-2px); border-color:color-mix(in srgb, var(--edge) 55%, var(--line)); box-shadow:var(--shadow), var(--glow);}
+.sk-card.core{border-left:3px solid var(--gold);}
+.sk-card .h{display:grid; grid-template-columns:1fr auto; align-items:baseline; gap:8px; margin-bottom:3px;}
+.sk-card .nm{font-weight:700; font-size:.93rem; line-height:1.25;}
+.sk-card .goal{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.7rem; font-weight:700;
+  background:var(--surface-2); color:var(--ink-3); padding:1px 6px; border-radius:3px; white-space:nowrap;
+}
+.sk-card.core .goal{background:var(--gold-soft); color:var(--gold-ink);}
+.sk-card p{margin:0; font-size:.85rem; color:var(--ink-2); max-width:none;}
+
+/* ============================================================
+   spécialisations
+   ============================================================ */
+.speclist{margin:6px 0 22px; border:1px solid var(--line); border-radius:5px; overflow:hidden; background:var(--surface);}
+.speclist .sp{display:grid; grid-template-columns:1fr; gap:3px 14px; padding:11px 14px; border-bottom:1px solid var(--line); align-items:center;}
+.speclist .sp:last-child{border-bottom:none;}
+@media (min-width:640px){ .speclist .sp{grid-template-columns:minmax(160px,1.05fr) 132px minmax(0,1.5fr);} }
+.speclist .sp:nth-child(even){background:var(--surface-2);}
+.sp .nm{font-weight:700; font-size:.9rem; display:flex; align-items:center; gap:8px;}
+.sp .nm .ic{width:16px; height:16px; color:var(--edge); flex:none;}
+.sp .lv{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.72rem; font-weight:400; color:var(--ink-3); display:block; padding-left:24px;}
+.pips{display:flex; gap:4px;}
+.pips span{
+  width:23px; height:23px; border-radius:4px; display:grid; place-items:center; flex:none;
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.72rem; font-weight:700;
+  background:var(--surface-3); color:var(--ink-3); border:1px solid var(--line);
+}
+.pips span.on{background:var(--violet); color:#fff; border-color:var(--violet); box-shadow:var(--glow);}
+.pips span.alt{background:var(--violet-soft); color:var(--violet-ink); border-color:var(--violet);}
+.sp .why{font-size:.845rem; color:var(--ink-2);}
+
+/* ============================================================
+   stigmas
+   ============================================================ */
+.stigbar{display:grid; grid-template-columns:repeat(auto-fit,minmax(126px,1fr)); gap:9px; margin:6px 0 10px; max-width:var(--maxw);}
+.stigbar .sl{
+  border:1px solid var(--violet); background:var(--violet-soft); border-radius:6px; padding:11px 12px;
+  position:relative; transition:transform .18s ease, box-shadow .18s ease;
+}
+.stigbar .sl:hover{transform:translateY(-2px); box-shadow:var(--glow);}
+.stigbar .sl.off{border:1px dashed var(--line); background:transparent; opacity:.7;}
+.stigbar .sl.off:hover{transform:none; box-shadow:none;}
+.stigbar .n{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.2px; letter-spacing:.12em; text-transform:uppercase; color:var(--violet-ink); display:flex; align-items:center; gap:5px; margin-bottom:5px;}
+.stigbar .n .ic{width:12px; height:12px;}
+.stigbar .sl.off .n{color:var(--ink-3);}
+.stigbar .t{font-weight:700; font-size:.87rem; line-height:1.25; display:block;}
+.stigbar .s{font-size:.77rem; color:var(--ink-2); display:block; margin-top:3px;}
+
+/* ============================================================
+   étapes / rotation
+   ============================================================ */
+.rota{counter-reset:rt; margin:6px 0 22px; max-width:var(--maxw); display:flex; flex-direction:column; gap:7px;}
+.rota .st{display:grid; grid-template-columns:27px 1fr; gap:12px; align-items:start; border:1px solid var(--line); background:var(--surface); border-radius:5px; padding:11px 13px;}
+.rota .st::before{
+  counter-increment:rt; content:counter(rt);
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.76rem; font-weight:700;
+  background:var(--violet); color:#fff; width:27px; height:27px; border-radius:5px; display:grid; place-items:center;
+}
+.rota .st.loop::before{content:"∞"; background:var(--aether);}
+.rota .st b{font-size:.92rem;}
+.rota .st p{margin:2px 0 0; font-size:.855rem; color:var(--ink-2); max-width:none;}
+
+/* ============================================================
+   budget
+   ============================================================ */
+.budget{max-width:var(--maxw); margin:4px 0 22px;}
+.budget .bar{display:flex; height:40px; border:1px solid var(--line); border-radius:5px; overflow:hidden;}
+.budget .seg{display:flex; align-items:center; justify-content:center; font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.72rem; font-weight:700; text-align:center; padding:0 5px; line-height:1.15;}
+.budget .b1{flex:10; background:var(--aether-soft); color:var(--aether-ink);}
+.budget .b2{flex:6; background:var(--violet-soft); color:var(--violet-ink); border-left:2px solid var(--violet);}
+.budget .b3{flex:4; background:var(--gold-soft); color:var(--gold-ink); border-left:2px solid var(--gold);}
+.budget .legend{display:flex; margin-top:8px; font-size:.83rem; color:var(--ink-2); gap:12px; flex-wrap:wrap;}
+.budget .legend div{flex:1 1 150px;}
+
+/* ============================================================
+   gates
+   ============================================================ */
+.gates{display:grid; gap:10px; grid-template-columns:repeat(auto-fit,minmax(152px,1fr)); margin:6px 0 22px; max-width:var(--maxw);}
+.gate{border:1px solid var(--line); border-radius:6px; background:var(--surface); padding:13px 15px; border-top:3px solid var(--violet); transition:transform .18s ease, box-shadow .18s ease;}
+.gate:hover{transform:translateY(-2px); box-shadow:var(--glow);}
+.gate .lv{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:1.4rem; font-weight:700; color:var(--violet-ink); display:block; line-height:1;}
+.gate .lb{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.4px; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-3); display:block; margin:5px 0 4px;}
+.gate p{margin:0; font-size:.845rem; color:var(--ink-2); max-width:none;}
+
+/* ============================================================
+   curseur d'arbitrage
+   ============================================================ */
+.dial{max-width:var(--maxw); margin:6px 0 22px; border:1px solid var(--line); border-radius:6px; background:var(--surface); overflow:hidden;}
+.dial .bar{display:flex; height:36px;}
+.dial .l{flex:1; background:var(--gold-soft); color:var(--gold-ink);}
+.dial .r{flex:1; background:var(--violet-soft); color:var(--violet-ink);}
+.dial .l,.dial .r{display:flex; align-items:center; justify-content:center; gap:7px; font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.73rem; font-weight:700; letter-spacing:.06em;}
+.dial .l .ic,.dial .r .ic{width:14px; height:14px;}
+.dial .ends{display:grid; grid-template-columns:1fr; gap:1px; background:var(--line);}
+@media (min-width:600px){ .dial .ends{grid-template-columns:1fr 1fr;} }
+.dial .ends div{background:var(--surface); padding:12px 14px; font-size:.85rem; color:var(--ink-2);}
+.dial .ends b{display:block; color:var(--ink); margin-bottom:3px; font-size:.9rem;}
+
+/* ============================================================
+   macro
+   ============================================================ */
+.macro{max-width:var(--maxw); margin:6px 0 22px; border:1px solid var(--line); border-radius:5px; overflow:hidden; background:var(--surface);}
+.macro .ln{display:grid; grid-template-columns:34px 34px 1fr; gap:11px; padding:11px 14px; border-bottom:1px solid var(--line); align-items:start;}
+.macro .ln:last-child{border-bottom:none;}
+.macro .ln:nth-child(even){background:var(--surface-2);}
+.macro .k{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.72rem; font-weight:700; background:var(--abyss); color:var(--abyss-violet); border-radius:5px; height:27px; display:grid; place-items:center;}
+.macro b{font-size:.9rem;}
+.macro p{margin:2px 0 0; font-size:.845rem; color:var(--ink-2); max-width:none;}
+
+footer{border-top:1px solid var(--line); padding-top:26px; margin-top:16px; color:var(--ink-3); font-size:.85rem;}
+footer p{max-width:var(--maxw);}
+
+a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible{outline:2px solid var(--edge); outline-offset:2px;}
+details.mobile-toc{margin-top:30px;}
+@media (min-width:1000px){details.mobile-toc{display:none;}}
+details.mobile-toc summary{cursor:pointer; font-family:"JetBrains Mono",ui-monospace,monospace; font-size:10.5px; letter-spacing:.15em; text-transform:uppercase; color:var(--ink-3); padding:11px 14px; border:1px solid var(--line); border-radius:5px; background:var(--surface);}
+nav.toc.desk{display:none;}
+@media (min-width:1000px){nav.toc.desk{display:block;}}
+
+/* apparition au scroll */
+.rv{opacity:0; transform:translateY(14px); transition:opacity .5s ease, transform .5s ease;}
+.rv.in{opacity:1; transform:none;}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none !important; transition:none !important;}
+  html{scroll-behavior:auto;}
+  .rv{opacity:1; transform:none;}
+}
+
+/* --- relevés du Launch Scale Test, 17-18 septembre --- */
+.bta{
+  display:inline-flex; align-items:center; gap:4px; vertical-align:2px;
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.2px; letter-spacing:.1em;
+  text-transform:uppercase; font-weight:700; white-space:nowrap; line-height:1.6;
+  color:var(--aether-ink); background:var(--aether-soft); border:1px solid var(--aether);
+  border-radius:999px; padding:1px 8px; margin-left:7px;
+}
+.bta::before{content:""; width:5px; height:5px; border-radius:50%; background:var(--aether); flex:none;}
+.betabox{
+  border:1px solid var(--aether); border-left:5px solid var(--aether); background:var(--surface);
+  border-radius:0 7px 7px 0; padding:22px 24px; margin:0 0 30px; box-shadow:var(--shadow);
+}
+.betabox .lab{color:var(--aether-ink); margin-bottom:9px;}
+.betabox h2{font-family:"Cinzel",serif; font-size:1.45rem; line-height:1.18; margin:0 0 8px; color:var(--ink);}
+.betabox > p{margin:0 0 18px; color:var(--ink-2); max-width:var(--maxw);}
+.betabox > p:last-child{margin:18px 0 0; font-size:.9rem; color:var(--ink-3);}
+.betabox ul{list-style:none; margin:0; padding:0; display:grid; gap:11px;}
+.betabox li{
+  background:var(--surface-2); border:1px solid var(--line); border-top:2px solid var(--aether);
+  border-radius:5px; padding:12px 14px; font-size:.92rem; color:var(--ink-2); min-width:0;
+}
+.betabox li b{display:block; color:var(--ink); margin-bottom:3px; font-size:.95rem;}
+.betabox li.wip{border-top-color:var(--gold);}
+.betabox li.wip b{color:var(--gold-ink);}
+@media (min-width:900px){ .betabox ul{grid-template-columns:1fr 1fr;} }
+@media (max-width:620px){ .betabox{padding:18px 16px;} .bta{margin-left:5px;} }
+
+/* --- relevés du jour 1 du test, source unique --- */
+.j1{
+  display:inline-flex; align-items:center; gap:4px; vertical-align:2px; text-decoration:none;
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:9.2px; letter-spacing:.1em;
+  text-transform:uppercase; font-weight:700; white-space:nowrap; line-height:1.6;
+  color:var(--gold-ink); background:var(--gold-soft); border:1px solid var(--gold);
+  border-radius:999px; padding:1px 8px; margin-left:7px;
+}
+.j1::before{content:""; width:5px; height:5px; border-radius:50%; background:var(--gold); flex:none;}
+.j1:hover{filter:brightness(1.12);}
+.j1box{
+  border:1px solid var(--gold); border-left:5px solid var(--gold); background:var(--surface);
+  border-radius:0 7px 7px 0; padding:22px 24px; margin:0 0 30px; box-shadow:var(--shadow);
+}
+.j1box .lab{color:var(--gold-ink); margin-bottom:9px;}
+.j1box h2{font-family:"Cinzel",Georgia,serif; font-size:1.45rem; line-height:1.18; margin:0 0 8px; color:var(--ink);}
+.j1box > p{margin:0 0 18px; color:var(--ink-2); max-width:var(--maxw);}
+.j1box > p:last-child{margin:18px 0 0; font-size:.9rem; color:var(--ink-3);}
+.j1box ul{list-style:none; margin:0; padding:0; display:grid; gap:11px;}
+.j1box li{
+  background:var(--surface-2); border:1px solid var(--line); border-top:2px solid var(--gold);
+  border-radius:5px; padding:12px 14px; font-size:.92rem; color:var(--ink-2); min-width:0;
+}
+.j1box li b{display:block; color:var(--ink); margin-bottom:3px; font-size:.95rem;}
+.j1box li.att{border-top-color:var(--blood, #A02138);}
+@media (min-width:900px){ .j1box ul{grid-template-columns:1fr 1fr;} }
+@media (max-width:620px){ .j1box{padding:18px 16px;} .j1{margin-left:5px;} }
+
+/* --- bilan du test de lancement, deux niveaux de fiabilite --- */
+.j1box h3{
+  font-family:"Cinzel",Georgia,serif; font-size:1.04rem; line-height:1.25;
+  margin:26px 0 11px; color:var(--ink);
+}
+.j1box h3:first-of-type{margin-top:2px;}
+.j1box h3 .cnt{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.62em; font-weight:700;
+  letter-spacing:.09em; text-transform:uppercase; margin-left:9px; vertical-align:2px;
+}
+.j1box h3.deux .cnt{color:var(--aether);}
+.j1box h3.une .cnt{color:var(--gold-ink);}
+.j1box li.ok{border-top-color:var(--aether);}
+/* --- releve d'infobulles du client --- */
+.tipbox{
+  border:1px solid var(--aether); border-left:5px solid var(--aether); background:var(--surface);
+  border-radius:0 7px 7px 0; padding:22px 24px; margin:0 0 30px; box-shadow:var(--shadow);
+}
+.tipbox .lab{color:var(--aether); margin-bottom:9px;}
+.tipbox h2{font-family:"Cinzel",Georgia,serif; font-size:1.45rem; line-height:1.18; margin:0 0 8px; color:var(--ink);}
+.tipbox > p{margin:0 0 18px; color:var(--ink-2); max-width:var(--maxw);}
+.tipbox > p:last-child{margin:18px 0 0; font-size:.9rem; color:var(--ink-3);}
+.tipbox ul{list-style:none; margin:0; padding:0; display:grid; gap:11px;}
+.tipbox li{
+  background:var(--surface-2); border:1px solid var(--line); border-top:2px solid var(--aether);
+  border-radius:5px; padding:12px 14px; font-size:.92rem; color:var(--ink-2); min-width:0;
+}
+.tipbox li b{display:block; color:var(--ink); margin-bottom:3px; font-size:.95rem;}
+.tipbox li.corr{border-top-color:var(--blood, #A02138);}
+.tipbox code{
+  font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.86em;
+  background:var(--gold-soft); border:1px solid var(--line); border-radius:3px; padding:0 4px;
+}
+@media (min-width:900px){ .tipbox ul{grid-template-columns:1fr 1fr;} }
+@media (max-width:620px){ .tipbox{padding:18px 16px;} }
+</style>
+</head>
+<body>
+<div id="prog" aria-hidden="true"></div>
+
+<!-- ======== jeu d'icônes original, tracé à la main ======== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <symbol id="i-dagger" viewBox="0 0 24 24"><path d="M12 2 14 9 12 20 10 9 Z"/><path d="M8 9h8"/><path d="M12 20v2"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-6-4.2-6-9a3.6 3.6 0 0 1 6-2.6A3.6 3.6 0 0 1 18 11c0 4.8-6 9-6 9Z"/><path d="M17 3 11 13"/></symbol>
+  <symbol id="i-rune" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></symbol>
+  <symbol id="i-slash" viewBox="0 0 24 24"><path d="M4 20 20 4"/><path d="M8 20 20 8"/><path d="M4 16 16 4"/></symbol>
+  <symbol id="i-fang" viewBox="0 0 24 24"><path d="M4 5h16"/><path d="M7 5c0 5 1 8 2 10 1-2 1.6-4 1.6-7"/><path d="M17 5c0 5-1 8-2 10-1-2-1.6-4-1.6-7"/></symbol>
+  <symbol id="i-storm" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 8.5 6"/><path d="M13 8l-3 5h4l-3 5"/></symbol>
+  <symbol id="i-shadowstrike" viewBox="0 0 24 24"><path d="M5 19 19 5"/><path d="M14 5h5v5"/><path d="M4 12a4 4 0 0 0 6 3.5"/></symbol>
+  <symbol id="i-ambush" viewBox="0 0 24 24"><path d="M3 12h11"/><path d="M10 8l4 4-4 4"/><circle cx="19" cy="12" r="2.6"/></symbol>
+  <symbol id="i-shadowfall" viewBox="0 0 24 24"><path d="M12 3v11"/><path d="M8 10l4 4 4-4"/><path d="M5 20h14"/></symbol>
+  <symbol id="i-whirl" viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 1-3.2-3.9"/><path d="M12 12a7.5 7.5 0 1 0-6 7.3"/><path d="M12 4.5V12h7.5"/></symbol>
+  <symbol id="i-flash" viewBox="0 0 24 24"><path d="M13 2 5 13h5l-1 9 8-11h-5Z"/></symbol>
+  <symbol id="i-infiltrate" viewBox="0 0 24 24"><path d="M3 12h13"/><path d="M12 7l5 5-5 5"/><path d="M20 4v16"/></symbol>
+  <symbol id="i-guard" viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 4.2 3 7.6 7 9 4-1.4 7-4.8 7-9V6Z"/></symbol>
+  <symbol id="i-clone" viewBox="0 0 24 24"><path d="M8 20a4 4 0 0 1 8 0"/><circle cx="12" cy="9" r="3"/><path d="M17 20a4 4 0 0 0-2-3.4" opacity=".55"/><circle cx="18" cy="9" r="2.2" opacity=".55"/></symbol>
+  <symbol id="i-swift" viewBox="0 0 24 24"><path d="M3 8h9M3 12h6M3 16h9"/><path d="M14 5l6 7-6 7"/></symbol>
+  <symbol id="i-cooldown" viewBox="0 0 24 24"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2"/><path d="M9 2h6"/></symbol>
+  <symbol id="i-evade" viewBox="0 0 24 24"><path d="M6 20c2-6 5-9 12-11"/><path d="M18 5v4h-4"/><path d="M4 6l3 3"/></symbol>
+  <symbol id="i-throw" viewBox="0 0 24 24"><path d="M3 21 12 12"/><path d="M11 6l7 7-3 3-7-7Z"/><path d="M17 4l3 3"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M21 12H8"/><path d="M12 7l-5 5 5 5"/><path d="M4 5v14"/></symbol>
+  <symbol id="i-assault" viewBox="0 0 24 24"><path d="M12 21V5"/><path d="M6 11l6-6 6 6"/><path d="M5 21h14"/></symbol>
+  <symbol id="i-impact" viewBox="0 0 24 24"><path d="M12 3l2.2 5.3L20 9l-4 3.6 1.2 5.7L12 15.6 6.8 18.3 8 12.6 4 9l5.8-.7Z"/></symbol>
+  <symbol id="i-crit" viewBox="0 0 24 24"><path d="M12 2v5M12 17v5M2 12h5M17 12h5"/><path d="M12 8.5 15.5 12 12 15.5 8.5 12Z"/></symbol>
+  <symbol id="i-smite" viewBox="0 0 24 24"><path d="M12 2 9 10h4l-2 12 8-13h-5l3-7Z"/></symbol>
+  <symbol id="i-speed" viewBox="0 0 24 24"><path d="M4 7h11M2 12h8M4 17h11"/><path d="M17 6l4 6-4 6"/></symbol>
+  <symbol id="i-hp" viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.6A3.9 3.9 0 0 1 12 8a3.9 3.9 0 0 1 7 2.4C19 15.4 12 20 12 20Z"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></symbol>
+  <symbol id="i-warn" viewBox="0 0 24 24"><path d="M12 3 2 20h20Z"/><path d="M12 10v4"/><path d="M12 17h.01"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6 .8-4.4 4.2 1.1 6L12 16.8 6.7 19.6l1.1-6L3.4 9.4l6-.8Z"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2Z"/><path d="M8 7h7M8 11h7"/></symbol>
+  <symbol id="i-macro" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M7 10h2M11 10h2M15 10h2M8 14h8"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4-3 7.4-7 9-4-1.6-7-5-7-9V6Z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-pvp" viewBox="0 0 24 24"><path d="M4 20 14 10"/><path d="M20 20 10 10"/><path d="M15 4h5v5"/><path d="M9 4H4v5"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 4v16"/><path d="M5 8h14"/><path d="M5 8 2 14h6Z"/><path d="M19 8l-3 6h6Z"/></symbol>
+  <symbol id="i-pet" viewBox="0 0 24 24"><circle cx="8.5" cy="8" r="2"/><circle cx="15.5" cy="8" r="2"/><circle cx="5.5" cy="13.5" r="1.8"/><circle cx="18.5" cy="13.5" r="1.8"/><path d="M12 12c3 0 5 2.5 5 5a2.6 2.6 0 0 1-3.6 2.4 3.6 3.6 0 0 0-2.8 0A2.6 2.6 0 0 1 7 17c0-2.5 2-5 5-5Z"/></symbol>
+  <symbol id="i-node" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="17" r="2"/><circle cx="19" cy="17" r="2"/><path d="M12 7v4M12 11 6.5 15.5M12 11l5.5 4.5"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6-10-6-10-6Z"/><circle cx="12" cy="12" r="2.6"/></symbol>
+</defs></svg>
+
+<header class="hero">
+  <canvas id="aether" aria-hidden="true"></canvas>
+  <div class="hero-in">
+    <svg class="wingmark" viewBox="0 0 400 96" role="img" aria-label="Emblème : deux dagues croisées devant une aile d'ombre">
+      <defs>
+        <linearGradient id="bldL" x1="0" y1="1" x2="1" y2="0">
+          <stop offset="0" stop-color="#B4A4FF" stop-opacity=".22"/>
+          <stop offset="1" stop-color="#E4DDFF" stop-opacity=".97"/>
+        </linearGradient>
+        <linearGradient id="bldR" x1="1" y1="1" x2="0" y2="0">
+          <stop offset="0" stop-color="#57CEDC" stop-opacity=".22"/>
+          <stop offset="1" stop-color="#CDF6FB" stop-opacity=".97"/>
+        </linearGradient>
+        <linearGradient id="shdw" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#B4A4FF" stop-opacity="0"/>
+          <stop offset=".5" stop-color="#B4A4FF" stop-opacity=".4"/>
+          <stop offset="1" stop-color="#B4A4FF" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <g fill="url(#shdw)">
+        <path d="M200 50 C160 40 116 30 70 18 C104 40 152 54 198 60 Z"/>
+        <path d="M200 50 C240 40 284 30 330 18 C296 40 248 54 202 60 Z"/>
+        <path d="M200 55 C168 54 132 58 96 66 C132 64 170 62 200 60 Z" opacity=".7"/>
+        <path d="M200 55 C232 54 268 58 304 66 C268 64 230 62 200 60 Z" opacity=".7"/>
+      </g>
+      <g fill="url(#bldL)">
+        <path d="M138 20 L196 62 L188 70 L132 30 Z"/>
+        <path d="M196 62 L206 72 L192 78 L186 68 Z" opacity=".85"/>
+        <path d="M204 70 L222 88 L214 94 L198 76 Z" opacity=".6"/>
+      </g>
+      <g fill="url(#bldR)">
+        <path d="M262 20 L204 62 L212 70 L268 30 Z"/>
+        <path d="M204 62 L194 72 L208 78 L214 68 Z" opacity=".85"/>
+        <path d="M196 70 L178 88 L186 94 L202 76 Z" opacity=".6"/>
+      </g>
+      <circle cx="200" cy="66" r="16" fill="#B4A4FF" opacity=".2"/>
+      <path d="M200 55 L207 66 L200 77 L193 66 Z" fill="#E4DDFF"/>
+    </svg>
+    <p class="eyebrow"><svg class="ic"><use href="#i-dagger"/></svg>Aion 2 &middot; Saison 1 globale &middot; 5 octobre 2026</p>
+    <h1>Guide Assassin</h1>
+    <div class="h1rule"></div>
+
+    <div class="sig">
+      <img class="mark" src="data:image/webp;base64,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" alt="" aria-hidden="true" width="116" height="116">
+      <span class="who">
+        <span class="nom"><span class="par">Écrit par</span>Ryuu</span>
+        <span class="quoi">Assassin sur la version taïwanaise &middot; guide écrit pour la Saison 1 globale</span>
+      </span>
+    </div>
+
+    <p class="dek">Mon build, ma rota et mes arbitrages pour la Saison&nbsp;1 globale. Écrit pour la version qu'on va vraiment recevoir : <strong>4 slots de stigma</strong> annoncés au lieu de 6, skills et stigmas cap 20, et un budget de points qui ne permet pas de tout monter. Donc pas de « build parfait » ici, juste où je mets chaque point quand il n'y en a pas assez.</p>
+    <p class="byline">Mon temps de jeu TW + 4 guides vidéo dépouillés (DocDany, aLuckyRO) + les dossiers KR &middot; MAJ 13 septembre 2026</p>
+
+    <dl class="strip">
+      <div><dt>Rôle</dt><dd>Melee DPS<span class="sub">burst, backstab</span></dd></div>
+      <div><dt>Difficulté</dt><dd><span class="num">5/5</span><span class="sub">la plus dure des 8</span></dd></div>
+      <div><dt>Slots de stigma</dt><dd><span class="num">4</span><span class="sub">contre 5 ou 6 en KR / TW</span></dd></div>
+      <div><dt>Points au 45</dt><dd><span class="num">≈240</span><span class="sub">très loin du compte</span></dd></div>
+    </dl>
+  </div>
+</header>
+
+<div class="shell">
+
+  <section class="betabox" id="sbeta">
+    <span class="lab a"><svg class="ic"><use href="#i-swift"/></svg>Mise &agrave; jour du 18 septembre</span>
+    <h2>Ce que la b&ecirc;ta a tranch&eacute;</h2>
+    <p>J'ai mont&eacute; mon Assassin jusqu'au <strong>niveau 37</strong> pendant le Launch Scale Test. Le pari central du guide tient, et j'ai pu relever en jeu des choses qu'aucune source ne donnait. Tout est repris au bon endroit dans les chapitres, rep&eacute;r&eacute; par la pastille <span class="bta">vu en b&ecirc;ta</span></p>
+    <ul>
+      <li><b>Quatre slots de stigma</b>Le chiffre sur lequel tout ce guide est construit est le bon. C'est pr&eacute;sent&eacute; comme une limite de Saison&nbsp;1, la Saison&nbsp;2 devrait en rajouter, en m&ecirc;me temps qu'elle ajoutera le Pugiliste.</li>
+      <li><b>Les stigmas s'ouvrent au niveau 22</b>Par la qu&ecirc;te &laquo;&nbsp;&Agrave; l'&eacute;coute des voix&nbsp;&raquo;. Avant &ccedil;a le panneau entier est cadenass&eacute;, donc tout le chapitre&nbsp;7 commence au niveau 22.</li>
+      <li><b>Les nodes de stigma tombent aux niveaux 5, 10, 15 et 20</b>Quatre nodes automatiques, rien &agrave; choisir. C'est exactement pour &ccedil;a que les ordres de mont&eacute;e du chapitre&nbsp;7 parlent de 5, de 10, de 15 et de 20, et pas d'autres chiffres.</li>
+      <li><b>Le node 15 de Swift Contract multiplie Assault Stance</b>Le d&eacute;tail que je ne m'attendais pas &agrave; trouver. Il est pris en entier au chapitre&nbsp;7, et il change l'int&eacute;r&ecirc;t de monter ce stigma au-del&agrave; de 10.</li>
+      <li><b>Cinq options de sp&eacute;, verrouill&eacute;es &agrave; 8, 8, 8, 12 et 16</b>Chaque actif affiche son palier sur chaque ligne. Trois options sont d&eacute;j&agrave; l&agrave; au niveau 8, les grosses sont au 12 et au 16.</li>
+      <li><b>Trois emplacements de sp&eacute;cialisation</b>La barre &laquo;&nbsp;Sp&eacute;cialis&eacute;&nbsp;&raquo; en montre trois, donc trois options sur cinq. Le chapitre&nbsp;6 reste valable, il y a juste un plafond ferme.</li>
+      <li class="wip"><b>Ce qui reste ouvert</b>Le reste des noms fran&ccedil;ais. Je n'en ai relev&eacute; que deux avec certitude en douze heures, et le cap du test au niveau 37 laissait la moiti&eacute; du kit hors de port&eacute;e.</li>
+    </ul>
+    <p>Douze heures de jeu sur les deux journ&eacute;es, personnages effac&eacute;s &agrave; la fin. Ce qui suit est relev&eacute; &agrave; l'&eacute;cran, pas d&eacute;duit, et c'est la seule partie de ce guide que j'ai vue de mes yeux sur le client global.</p>
+  </section>
+
+  <section class="j1box" id="j1">
+    <span class="lab">19 septembre &middot; bilan du Launch Scale Test</span>
+    <h2>Ce que le test de lancement a montr&eacute;</h2>
+    <p>Le Launch Scale Test est termin&eacute;. Depuis, des retours sont sortis dessus, en vid&eacute;o et &agrave; l'&eacute;crit, et j'y ai moi-m&ecirc;me mont&eacute; mon perso jusqu'au <strong>niveau 37</strong>. Ce qui revient dans plusieurs retours, ou que j'ai eu &agrave; l'&eacute;cran, je le tiens pour acquis. Ce qui ne sort que d'une seule source reste ici en attendant. Dans tous les cas c'est le playtest, pas la version qui ouvrira le 5 octobre, et quand un retour d&eacute;crit autre chose que ce que j'ai vu en jeu, c'est mon exp&eacute;rience qui passe devant.</p>
+    <h3 class="deux">Ce que les retours recoupent<span class="cnt">solide</span></h3>
+    <ul>
+      <li class="ok"><b>L'&eacute;quipement fabriqu&eacute; perd son bonus PvE</b>Le modificateur en pourcentage saute sur les armes, les armures et les bijoux. En &eacute;change les stats brutes montent fort, une &eacute;p&eacute;e Ebony passe de 485 &agrave; 606 d'attaque l&agrave; o&ugrave; Ta&iuml;wan affiche 372 &agrave; 465.</li>
+      <li class="ok"><b>Les bijoux changent de r&ocirc;le</b>Tous gagnent might et precision, le collier prend du combat speed, les boucles du movement speed. Ce sont les emplacements qui bougent le plus.</li>
+      <li class="ok"><b>Le Genus Insight est refait de fond en comble</b>Le smite tombe de 4,8&nbsp;% par genus &agrave; 3&nbsp;%, et seulement sur le genus sp&eacute;cial. Les lignes d&eacute;fensives ne portent plus que du d&eacute;fensif. Accuracy, crit, boss attack, block et evasion deviennent rares, donc les caps d'accuracy seront plus durs &agrave; atteindre. Arrivent en &eacute;change status effect resist, status effect chance et des PV en pourcentage.</li>
+      <li class="ok"><b>Les familiers plafonnent au niveau 3</b>Contre 5 ailleurs, et ce n'est pas une mont&eacute;e raccourcie qui garde le m&ecirc;me total. C'est un plafond pos&eacute; sur les stats, avec des lignes chang&eacute;es au passage. Le Superior Wind Spirit donne stamina, crit res et precision l&agrave; o&ugrave; la Cor&eacute;e donne MP, precision, willpower, crit res et nature damage.</li>
+      <li class="ok"><b>Le Monolithe ne donne plus de points de comp&eacute;tence</b>Les retours se rejoignent sur la disparition, pas sur la destination. D'un c&ocirc;t&eacute; ils seraient redistribu&eacute;s en gain par niveau, de l'autre ils passeraient dans les donjons scell&eacute;s. Dans les deux cas la route change.</li>
+      <li class="ok"><b>Les &eacute;clats de stigma s'ach&egrave;tent chez le Shugo</b>35 &eacute;clats, sans palier d&eacute;gressif, &agrave; l'emplacement o&ugrave; la Cor&eacute;e met des points de comp&eacute;tence. On les retrouve dans la boutique de l'Ab&icirc;me et celle du mode cauchemar. L'&eacute;clat instable, lui, a disparu de partout.</li>
+      <li class="ok"><b>Nerf des ailes et des tableaux</b>Plus de fragments &agrave; assembler ni de duvets &agrave; empiler, mais les ailes ont perdu leur meilleure sortie au passage. Chapitres 11 et 14.</li>
+    </ul>
+    <h3 class="une">Ce qui ne sort que d'une seule source<span class="cnt">&agrave; confirmer</span></h3>
+    <ul>
+      <li class="att"><b>Le tableau Divin dispara&icirc;t, le Daevanion est coup&eacute; de moiti&eacute;</b>Le board Divin n'est plus l&agrave;, et sur le Daevanion les nodes majeurs sont divis&eacute;s par deux. Combat speed 1,5&nbsp;% au lieu de 2,5, r&eacute;duction de cooldown pareil, crit 5 au lieu de 10. Pour une classe qui court apr&egrave;s le crit et la vitesse, c'est le point le plus lourd de cette liste. Chapitre 11.</li>
+      <li><b>Les cubes cach&eacute;s donnent 1000 cristaux d'&acirc;me &agrave; tous les coups</b>Contre 100 ailleurs, et les quotidiens ont &eacute;t&eacute; r&eacute;duits &agrave; celui des pierres d'am&eacute;lioration. Les cubes deviennent votre source de Genus. Chapitre 11.</li>
+      <li><b>Les titres perdent leur smite</b>Plus aucun titre n'en donne, et l'ensemble des stats de titres a &eacute;t&eacute; nerf&eacute;. Chapitre 11.</li>
+      <li><b>Les plafonds d'am&eacute;lioration baissent</b>Le vert s'arr&ecirc;te &agrave; +5 au lieu de 10, le bleu &agrave; +10 au lieu de 15. Chapitre 14.</li>
+      <li><b>M&eacute;dailles d'argent seulement</b>Donc de l'&eacute;quipement Centurion en saison 1, et rien au-dessus. Plafond d'AP &agrave; 500&nbsp;000. Chapitre 17.</li>
+      <li><b>Tickets de pity partout, arme &agrave; un ticket</b>Tous les donjons qui n'en avaient pas en ont maintenant, et la conversion d'arme co&ucirc;te un ticket au lieu de deux. Vos dagues seront plus faciles &agrave; cibler. Chapitre 14.</li>
+    </ul>
+    <p>Le serveur n'a ouvert que douze heures en tout, r&eacute;parties sur deux jours, douze jours avant l'acc&egrave;s anticip&eacute;, et rien ne dit que le playtest soit exactement ce qui ouvrira le 5 octobre. Je remonterai ce qui bouge.</p>
+  </section>
+
+  <details class="mobile-toc">
+    <summary>Sommaire — 17 chapitres + une annexe</summary>
+    <nav class="toc" aria-label="Sommaire"><ol id="toc-mobile"></ol></nav>
+  </details>
+
+  <div class="body-grid">
+    <nav class="toc desk" aria-label="Sommaire">
+      <h2>Sommaire</h2>
+      <ol id="toc-desk"></ol>
+    </nav>
+
+    <main>
+      <!-- ============ 1 ============ -->
+      <section id="s1" class="rv">
+        <span class="sec-num"><svg class="ic"><use href="#i-dagger"/></svg>Chapitre 01 — La classe</span>
+        <h2 class="sec">L'Assassin en une page</h2>
+        <p class="sec-intro">Avant les tableaux, le contrat. L'Assassin est le melee DPS à dagues du jeu, classé 5/5 en difficulté, et cette difficulté ne vient pas de la rota, elle vient du fait que la quasi-totalité de vos multiplicateurs sont conditionnés au backstab.</p>
+
+        <div class="grid">
+          <div class="card"><span class="tag">Rôle</span><h4><svg class="ic"><use href="#i-target"/></svg>Melee DPS mono-cible</h4><p>Deux dagues, armure de cuir. On rentre, on vide une cible dans une fenêtre de burst, on ressort. Zéro utilité pour le groupe en dehors des dégâts.</p></div>
+          <div class="card"><span class="tag">Le point fort</span><h4><svg class="ic"><use href="#i-clone"/></svg>L'uptime de burst</h4><p>Deux buffs alignés, un dos exposé, et la cible fond. Bien monté, l'Assassin passe la majorité du combat sous buff au lieu d'attendre ses CD.</p></div>
+          <div class="card"><span class="tag">Le point faible</span><h4><svg class="ic"><use href="#i-warn"/></svg>Tout ce qui vous sort du dos</h4><p>Un boss qui pivote, un tank qui déplace le pack, une méca qui vous éjecte, le DPS ne baisse pas de 10&nbsp;%, il s'écroule.</p></div>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-back"/></svg>Pourquoi le backstab pèse autant</h3>
+        <p>Ce n'est pas « un bonus de plus ». Le back attack boost est dans son <strong>propre multiplicateur</strong>, séparé du reste du calcul :</p>
+        <div class="pyr">
+          <div class="tier t1">
+            <div class="hd"><svg class="ic"><use href="#i-scale"/></svg><span class="nm">Le paquet additif</span><span class="mult">tout s'additionne</span></div>
+            <p class="lst">Damage boost, PvE damage boost, boss damage, race damage. Ces quatre-là s'empilent dans la même parenthèse, donc chaque point supplémentaire s'y dilue.</p>
+          </div>
+          <div class="arrow">multiplié par ↓</div>
+          <div class="tier t2">
+            <div class="hd"><svg class="ic"><use href="#i-back"/></svg><span class="nm">Back attack boost</span><span class="mult">multiplicateur à part</span></div>
+            <p class="lst">Il ne rejoint pas la somme du dessus, il multiplie le total. C'est pour ça qu'un Assassin bien placé écrase un Assassin mieux gear mais mal placé.</p>
+          </div>
+        </div>
+        <div class="note gold">
+          <span class="lab g"><svg class="ic"><use href="#i-star"/></svg>Ma hiérarchie de DPS</span>
+          <p>Dans l'ordre : <strong>1)</strong> le temps passé dans le dos, <strong>2)</strong> l'uptime de vos deux buffs, <strong>3)</strong> les paliers de skills atteints, <strong>4)</strong> les stats brutes. Les gens optimisent dans l'ordre inverse, et c'est pour ça qu'on croise des Assassins à gros gear score qui tapent comme des sangliers.</p>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-macro"/></svg>Action combat ou tab-target</h3>
+        <p>Le jeu propose les deux, et pour nous ce n'est pas un choix cosmétique. En <strong>tab-target</strong>, l'auto-attack repart tout seul dès qu'il y a un trou entre deux skills. En <strong>action combat</strong>, dès que vous lancez un skill le perso <em>s'arrête</em> : plus rien ne part sans vous.</p>
+        <p>Conséquence directe, en tab-target la régen de mana par auto-attacks se fait sans y penser, en action combat il faut l'organiser, macro comprise (chapitre&nbsp;12). aLuckyRO tranche net en faveur du tab-target et je suis d'accord avec lui. Testez les deux au test de charge, mais sachez que ce n'est pas qu'une question de feeling.</p>
+
+        <div class="note trap">
+          <span class="lab"><svg class="ic"><use href="#i-warn"/></svg>Le ping, pour nous</span>
+          <p>Une bonne partie du kit repose sur l'animation cancel, donc sur des fenêtres de quelques dizaines de millisecondes. À <strong>200&nbsp;ms</strong>, des optims qui marchent en Corée ne sont plus rentables du tout, DocDany le dit explicitement dans son update, et il joue avec notre latence. Je le signale à chaque fois que ça change une reco, et ça arrive plusieurs fois dans cette page.</p>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-eye"/></svg>Qui devrait la jouer</h3>
+        <p>Je vais être franc, c'est plus utile qu'un paragraphe d'ambiance. Prenez Assassin si vous aimez le placement, si un combat de boss vous intéresse plus par sa choré que par sa barre de vie, et si une connexion instable n'est pas votre quotidien.</p>
+        <p>Passez votre chemin si vous voulez une classe qui pardonne pendant l'apprentissage d'un donjon, si vous jouez surtout en pick-up où personne ne tient le boss en place, ou si vous comptez jouer une main sur le clavier et l'autre sur le téléphone. Ce n'est pas une classe qu'on joue distraitement, elle rend très mal.</p>
+      </section>
+
+      <!-- ============ 2 ============ -->
+      <section id="s2" class="rv">
+        <span class="sec-num"><svg class="ic"><use href="#i-warn"/></svg>Chapitre 02 — Les limitations</span>
+        <h2 class="sec">Ce que la globale nous enlève</h2>
+        <p class="sec-intro">Le chapitre le plus important, et celui qu'aucune source ne fait à votre place. Tout ce que vous trouverez sur l'Assassin décrit la KR ou la TW, qui ont un an d'avance et des systèmes plus larges. Copier un build TW le 5 octobre, ce n'est pas jouer optimal, c'est jouer un build tronqué au hasard.</p>
+
+        <div class="tw">
+          <table>
+            <thead><tr><th>Système</th><th>KR / TW</th><th>Saison 1 globale</th><th>Ce que ça change</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Slots de stigma</td><td class="num">5 puis 6</td><td class="num">4</td><td>Un à deux stigmas à sacrifier. C'est l'arbitrage du chapitre&nbsp;7.<span class="bta">vu en bêta</span></td></tr>
+              <tr><td class="k">Cap des stigmas</td><td class="num">25</td><td class="num">20</td><td>Le CDR qu'on gagne au stigma 25 ne sera pas là au lancement. Les rotas « permanent uptime » filmées en KR sont hors de portée pour l'instant.</td></tr>
+              <tr><td class="k">Cap des skills</td><td class="num">25</td><td class="num">20</td><td>Tous les paliers au-delà de 20 décrits dans les guides KR sont à ignorer.</td></tr>
+              <tr><td class="k">Gear héroïque</td><td>Dispo</td><td>Absent</td><td>Pas de pièces à +20. On reste sur l'unique à +15, puis les étoiles.<span class="bta">vu en bêta</span></td></tr>
+              <tr><td class="k">Difficultés de donjon</td><td>Jusqu'au tier héroïque</td><td class="num">1★ / 2★ / 3★</td><td>Plafond de progression plus bas, donc seuils de stats plus bas aussi.<span class="bta">vu en bêta</span></td></tr>
+              <tr><td class="k">Gates d'iLevel</td><td>Plus bas</td><td class="num">≈800 → 2200+</td><td>≈800 pour l'expédition 1★, 2200+ visés pour la 3★.</td></tr>
+              <tr><td class="k">Taille des groupes</td><td class="num">4 / 8</td><td class="num">5 / 10</td><td>Expéditions à 5, raids à 10, cross-faction autorisé en PvE.<span class="bta">vu en bêta</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="note trap">
+          <span class="lab"><svg class="ic"><use href="#i-eye"/></svg>Le réflexe devant n'importe quel guide Assassin</span>
+          <p>Comptez les slots de stigma à l'écran. S'il y en a <strong>cinq ou six</strong>, vous regardez un build que vous ne pouvez pas reproduire, et souvent les slots coupés portaient la survie ou l'utilitaire. Deuxième réflexe, regardez le niveau des stigmas. Au-delà de 20, c'est du contenu KR qui n'ouvre pas en Saison&nbsp;1.</p>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-star"/></svg>La bonne nouvelle quand même</h3>
+        <p>Moins de slots, ce n'est pas que de la perte. Vos stigma shards tombent au même rythme, donc au lieu de les diluer sur six skills, vous les concentrez sur quatre. Vous atteignez donc les paliers de vos stigmas clés <strong>nettement plus vite</strong> qu'un joueur TW au même stade. Le build global est moins riche mais il mûrit plus vite.</p>
+        <p>Deuxième effet, l'absence de gear héroïque aplatit la courbe. L'écart entre un joueur de trois heures par semaine et un joueur de trente sera plus faible qu'en Corée. La différence se fera sur les paliers de skills et sur le placement, des choses qui se travaillent, pas qui s'achètent.</p>
+
+        <div class="note ndlr">
+          <span class="lab n"><svg class="ic"><use href="#i-book"/></svg>Mon avis</span>
+          <p>Le chiffre de 4 slots vient des communications NC sur la globale, et il colle au système de base KR où on choisissait 4 stigmas parmi 12. Mes deux sources vidéo, elles, tournent avec 5 slots côté KR au moment du tournage, et les dossiers écrits les plus récents en décrivent 6 après le Chapitre&nbsp;1. Le sens de l'histoire est clair, ça s'élargit avec le temps, donc 4 au lancement me paraît cohérent. C'était l'hypothèse de travail de tout le guide, et la bêta l'a confirmée.<span class="bta">vu en bêta</span> Quatre emplacements, présentés comme une limite de Saison 1. La Saison 2 devrait en rendre, en même temps qu'elle ajoutera le Pugiliste. Vous pouvez lire la suite sans arrière-pensée.</p>
+        </div>
+      </section>
+
+      <!-- ============ 3 ============ -->
+      <section id="s3" class="rv">
+        <span class="sec-num"><svg class="ic"><use href="#i-scale"/></svg>Chapitre 03 — Le budget</span>
+        <h2 class="sec">Vos points, et pourquoi ils ne suffiront jamais</h2>
+        <p class="sec-intro">Le jeu ne donne pas assez de points pour monter tous les skills, et ce n'est pas un accident, les devs présentent eux-mêmes la montée des skills comme du contenu endgame. Comprendre d'où viennent les points et où ils s'arrêtent, c'est là que se joue la différence entre progresser et saupoudrer.</p>
+
+        <div class="note gold">
+          <span class="lab g"><svg class="ic"><use href="#i-scale"/></svg>L'ordre de grandeur</span>
+          <p>À la fin du leveling vous aurez <strong>environ 240 skill points</strong>, le chiffre vient d'aLuckyRO, qui a monté un Assassin exprès pour mesurer la contrainte du début de vie. De quoi poser correctement quatre ou cinq skills, pas douze. Tout ce qui suit découle de là.</p>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-node"/></svg>Les trois sources de niveaux</h3>
+        <div class="budget">
+          <div class="bar">
+            <div class="seg b1">Mastery points<br>niveaux 1 → 10</div>
+            <div class="seg b2">Arcanes &amp; Daevanion<br>11 → 20</div>
+            <div class="seg b3">Gear<br>bonus +1</div>
+          </div>
+          <div class="legend">
+            <div><strong>Mastery points.</strong> Gagnés en level up, puis via les plumes et les boutiques d'event. Ils cappent un skill au <strong>niveau 10</strong>, jamais plus haut.</div>
+            <div><strong>Arcanes et Daevanion.</strong> C'est par là et seulement par là qu'on passe de 11 à 20. Une carte d'arcane donne +1, +2 ou +3 niveaux sur un skill nommé.</div>
+            <div><strong>Soul imprints du gear.</strong> Des pièces sortent avec un « +1 » sur un skill. Gratuit, random, mais ça fait basculer un palier.</div>
+          </div>
+        </div>
+
+        <div class="tw">
+          <table>
+            <thead><tr><th>Source</th><th>Type</th><th>Détail</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Level ups</td><td>Mastery</td><td>≈240 points au total en arrivant au 45.</td></tr>
+              <tr><td class="k">Plumes / monolithe</td><td>Mastery</td><td>Environ <span class="mono">560</span> plumes sur les cartes, à déposer au monolithe. La plus grosse source gratuite du jeu, et celle que tout le monde néglige. Elle conditionne aussi deux titres (chapitre&nbsp;10).</td></tr>
+              <tr><td class="k">Boutiques d'event</td><td>Mastery</td><td>Les mini-jeux type Shugo Festa donnent des jetons échangeables contre des skill points.</td></tr>
+              <tr><td class="k">Quêtes vertes</td><td>Daevanion</td><td>Elles lâchent des objets qui donnent des points Daevanion.</td></tr>
+              <tr><td class="k">Donjons scellés &amp; bastions</td><td>Daevanion</td><td>Premier clear = objets à points. À faire sur votre carte <em>et</em> sur celle d'en face.</td></tr>
+              <tr><td class="k">Cartes d'arcane</td><td>Niveaux directs</td><td>Récupérées dans les transcendances. Chaque carte porte des skills nommés.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-node"/></svg>Les paliers, c'est ça qu'on vise</h3>
+        <p>Un skill ne monte pas en puissance de façon linéaire. Il débloque des <strong>spécialisations</strong> à des paliers précis, et une spé change souvent la nature du skill plutôt que son chiffre. On en choisit <strong>3 sur 5</strong>.</p>
+        <div class="gates">
+          <div class="gate"><span class="lv">8</span><span class="lb">Premier palier</span><p>La première spé. Le minimum pour qu'un skill compte dans la rota.</p></div>
+          <div class="gate"><span class="lv">16</span><span class="lb">Deuxième palier</span><p>Le plus gros saut. C'est là qu'arrivent les effets qui transforment le skill : reset de CD, lifesteal, multi-hit.</p></div>
+          <div class="gate"><span class="lv">20</span><span class="lb">Troisième palier</span><p>La dernière spé, et le cap de la Saison&nbsp;1. Réservé à vos trois ou quatre skills cœur.</p></div>
+        </div>
+
+        <div class="note">
+          <span class="lab a"><svg class="ic"><use href="#i-target"/></svg>L'objectif de fin de course</span>
+          <p><strong>Trois skills au 20, un au 16, tout le reste au 12.</strong> C'est ce que vise DocDany, et c'est bien plus atteignable que les plans « tout à 20 » des dossiers KR. Le quatrième skill cœur monte à 20 quand les points suivent, pas avant. Au-delà de 12 sur un skill secondaire, vous payez cher un gain qui ne se voit pas.</p>
+        </div>
+
+        <div class="note trap">
+          <span class="lab"><svg class="ic"><use href="#i-warn"/></svg>L'erreur de répartition classique</span>
+          <p>Monter huit skills au 12 « pour être équilibré ». Vous aurez claqué tout le budget entre deux paliers, c'est-à-dire dans la zone où les points ne rapportent presque rien. <strong>Quatre skills à 16 valent largement mieux que huit à 12</strong> , et 12 c'est le plancher des secondaires, pas leur objectif.</p>
+        </div>
+
+        <div class="note ndlr">
+          <span class="lab n"><svg class="ic"><use href="#i-book"/></svg>Mon avis</span>
+          <p>Sur les niveaux exacts d'ouverture des spés, mes sources ne s'accordent pas complètement, la plupart des builds détaillés raisonnent en <strong>8 / 16 / 20</strong>, une source place le deuxième palier au 12. Comme aucun guide de build ne recommande plus de deux spés avant le 16, j'ai retenu 8 / 16 / 20 partout. À vérifier en jeu, c'est deux minutes de check et ça change l'ordre de dépense.</p>
+        </div>
+
+        <div class="note gold">
+          <span class="lab g"><svg class="ic"><use href="#i-cooldown"/></svg>Les resets</span>
+          <p>Sur le live KR, les resets de mastery et de stigma sont <strong>gratuits</strong>, et un node de Daevanion se réinitialise pour quelques centaines de kinah. Si c'est repris tel quel, ce guide est un point de départ, pas une prison, testez. À confirmer au lancement, les coûts ont bougé plusieurs fois côté KR.</p>
+        </div>
+      </section>
+
+      <!-- ============ 4 ============ -->
+      <section id="s4" class="rv">
+        <span class="sec-num"><svg class="ic"><use href="#i-book"/></svg>Chapitre 04 — Le kit</span>
+        <h2 class="sec">Les skills, et pourquoi je garde les noms anglais</h2>
+        <p class="sec-intro">Les noms français existent, la bêta les affiche.<span class="bta">vu en bêta</span> Je n'en ai relevé que deux avec certitude en douze heures de test, et côté anglophone chaque source traduit encore le coréen à sa façon, j'ai croisé le même skill sous quatre noms différents. Je garde donc les noms anglais partout. C'est ce qui circule dans les guides, dans les vidéos et sur Discord, et c'est ce qui vous permettra d'ouvrir un build TW ou KR sans traduire dans votre tête.</p>
+
+        <h3><svg class="ic"><use href="#i-star"/></svg>Les skills cœur</h3>
+        <div class="kit">
+          <div class="sk-card core">
+            <span class="icbox gold"><svg class="ic" data-skill="heart-gore"><use href="#i-heart"/></svg></span>
+            <div>
+              <div class="h"><span class="nm">Heart Gore</span><span class="goal">→ 20</span></div>
+              <p>Le moteur. Au palier 16, un crit <strong>reset son propre cooldown</strong> : sous <span class="skl" data-skill="illusion-clone"><svg class="ic" aria-hidden="true"><use href="#i-clone"/></svg><span class="n">Illusion Clone</span></span> on le spam en boucle tant que les crits tombent. C'est le skill à monter en priorité absolue.</p>
+            </div>
+          </div>
+          <div class="sk-card core">
+            <span class="icbox gold"><svg class="ic" data-skill="insignia-explosion"><use href="#i-rune"/></svg></span>
+            <div>
+              <div class="h"><span class="nm">Insignia Explosion</span><span class="goal">→ 20</span></div>
+              <p>Fait exploser les runes accumulées. <strong>Le plus gros coup unitaire de la classe et de loin</strong> : DocDany mesure 41-42k par explosion contre 15-16k pour un <span class="skl" data-skill="heart-gore"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><span class="n">Heart Gore</span></span>.</p>
+            </div>
+          </div>
+          <div class="sk-card core">
+            <span class="icbox gold"><svg class="ic" data-skill="quick-slash"><use href="#i-slash"/></svg></span>
+            <div>
+              <div class="h"><span class="nm">Quick Slash</span><span class="goal">→ 20</span></div>
+              <p>Le filler, celui qui récupère la ressource. En début de jeu on le spé <strong>mana</strong>, plus tard on bascule sur le lifesteal.</p>
+            </div>
+          </div>
+          <div class="sk-card core">
+            <span class="icbox gold"><svg class="ic" data-skill="savage-roar"><use href="#i-fang"/></svg></span>
+            <div>
+              <div class="h"><span class="nm">Savage Roar</span><span class="goal">→ 20</span></div>
+              <p>Pose les runes et le debuff. C'est le skill le plus spammé du kit, donc son gain de <strong>skill speed</strong> au palier haut se ressent sur toute la rota.</p>
+            </div>
+          </div>
+          <div class="sk-card core">
+            <span class="icbox gold"><svg class="ic" data-skill="storm-rampage"><use href="#i-storm"/></svg></span>
+            <div>
+              <div class="h"><span class="nm">Storm Rampage</span><span class="goal">→ 16</span></div>
+              <p>Retire du cooldown à chaque hit. <strong>Inutilisable sous le palier 16</strong> , c'est le skill le plus mal joué de la classe, voir le chapitre&nbsp;13.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="note gold">
+          <span class="lab g"><svg class="ic"><use href="#i-scale"/></svg>La conséquence de ces chiffres</span>
+          <p><span class="skl" data-skill="heart-gore"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><span class="n">Heart Gore</span></span> est votre skill de DPS parce que vous le lancez sans arrêt, mais <strong><span class="skl" data-skill="insignia-explosion"><svg class="ic" aria-hidden="true"><use href="#i-rune"/></svg><span class="n">Insignia Explosion</span></span> tape presque trois fois plus fort par coup</strong>. C'est pour ça qu'elle passe devant dans l'ordre de la macro (chapitre&nbsp;12), en plein burst, <span class="skl" data-skill="heart-gore"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><span class="n">Heart Gore</span></span> se reset en boucle et finirait par ne jamais laisser passer l'explosion.</p>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-swift"/></svg>Les skills de soutien</h3>
+        <div class="kit">
+          <div class="sk-card">
+            <span class="icbox"><svg class="ic" data-skill="shadow-strike"><use href="#i-shadowstrike"/></svg></span>
+            <div><div class="h"><span class="nm">Shadow Strike</span><span class="goal">→ 8</span></div>
+            <p>Buff de <strong>crit damage boost pendant 5&nbsp;s</strong>. C'est la première ligne de l'opener et de la macro.</p></div>
+          </div>
+          <div class="sk-card">
+            <span class="icbox"><svg class="ic" data-skill="ambush"><use href="#i-ambush"/></svg></span>
+            <div><div class="h"><span class="nm">Ambush</span><span class="goal">→ 8 / 12</span></div>
+            <p>Téléport derrière la cible + stun. En début de jeu on le spé <strong>lifesteal</strong>, pas dégâts.</p></div>
+          </div>
+          <div class="sk-card">
+            <span class="icbox"><svg class="ic" data-skill="shadow-fall"><use href="#i-shadowfall"/></svg></span>
+            <div><div class="h"><span class="nm">Shadow Fall</span><span class="goal">→ 12</span></div>
+            <p>Gros dégâts et <strong>10&nbsp;% de lifesteal</strong>. Un des meilleurs outils de survie du kit, à lâcher dès qu'il est up.</p></div>
+          </div>
+          <div class="sk-card">
+            <span class="icbox"><svg class="ic" data-skill="whirlwind-slash"><use href="#i-whirl"/></svg></span>
+            <div><div class="h"><span class="nm">Whirlwind Slash</span><span class="goal">→ 12</span></div>
+            <p>AoE en farm, multi-hit en mono-cible. Le skill qu'on re-spé le plus souvent selon le contenu.</p></div>
+          </div>
+          <div class="sk-card">
+            <span class="icbox"><svg class="ic" data-skill="flash-slash"><use href="#i-flash"/></svg></span>
+            <div><div class="h"><span class="nm">Flash Slash</span><span class="goal">→ 8</span></div>
+            <p>Traverse l'ennemi, applique un blind. Le blind est un effet PvP, en PvE on le spé <strong>dégâts multi-cibles</strong>.</p></div>
+          </div>
+          <div class="sk-card">
+            <span class="icbox"><svg class="ic" data-skill="infiltrate"><use href="#i-infiltrate"/></svg></span>
+            <div><div class="h"><span class="nm">Infiltrate</span><span class="goal">→ 8</span></div>
+            <p>Gap closer. On prend la <strong>range</strong> : en melee, réduire l'écart vaut plus que n'importe quel bonus de dégâts dessus.</p></div>
+          </div>
+          <div class="sk-card">
+            <span class="icbox"><svg class="ic" data-skill="defiance"><use href="#i-guard"/></svg></span>
+            <div><div class="h"><span class="nm">Defiance</span><span class="goal">→ 8</span></div>
+            <p>Palier 8 uniquement, juste pour débloquer le gain de HP à l'usage.</p></div>
+          </div>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-assault"/></svg>Les passifs : trois comptent, le reste suit</h3>
+        <p>Les passifs se financent avec les mêmes points que le reste. DocDany en isole trois qui pèsent bien plus lourd que les autres, et j'ai recoupé avec les dossiers KR et son classement tient.</p>
+        <div class="pyr">
+          <div class="tier t1">
+            <div class="hd"><svg class="ic"><use href="#i-assault"/></svg><span class="nm">Les trois prioritaires</span><span class="mult">à monter direct</span></div>
+            <p class="lst"><strong><span class="skl" data-skill="assault-stance"><svg class="ic" aria-hidden="true"><use href="#i-assault"/></svg><span class="n">Assault Stance</span></span></strong> — 25&nbsp;% de chance à chaque crit de booster l'attaque de <strong>18&nbsp;% pendant 10&nbsp;s</strong>, donc en pratique le buff est up quasiment en permanence. <strong>Le passif de damage boost</strong>, qui monte les dégâts en général puis spécifiquement en PvE : DocDany en tire ≈36&nbsp;% de PvE damage à lui seul. <strong>Le passif de crit damage</strong>, jusqu'à ≈35&nbsp;%.</p>
+          </div>
+          <div class="arrow">montent tout seuls ↓</div>
+          <div class="tier t2">
+            <div class="hd"><svg class="ic"><use href="#i-impact"/></svg><span class="nm">À laisser venir</span><span class="mult">sans forcer</span></div>
+            <p class="lst"><strong><span class="skl" data-skill="rear-smite"><svg class="ic" aria-hidden="true"><use href="#i-back"/></svg><span class="n">Rear Smite</span></span></strong>, excellent mais que le Daevanion alimente tout seul. <strong><span class="skl" data-skill="impact-hit"><svg class="ic" aria-hidden="true"><use href="#i-impact"/></svg><span class="n">Impact Hit</span></span></strong>, qui donne le double stun, à laisser monter naturellement, ne le poussez pas artificiellement. <strong><span class="skl" data-skill="defense-break"><svg class="ic" aria-hidden="true"><use href="#i-guard"/></svg><span class="n">Defense Break</span></span></strong>, bon mais pas prioritaire. Et le passif de <strong>dégâts sur boss à basse vie</strong>, qui monte seul et qui est très fort quand le groupe push après 50&nbsp;%.</p>
+          </div>
+          <div class="arrow">et pour survivre ↓</div>
+          <div class="tier t3">
+            <div class="hd"><svg class="ic" data-skill="sixth-sense"><use href="#i-hp"/></svg><span class="nm">Survie</span><span class="mult">le temps d'apprendre</span></div>
+            <p class="lst"><strong><span class="skl" data-skill="sixth-sense"><svg class="ic" aria-hidden="true"><use href="#i-hp"/></svg><span class="n">Sixth Sense</span></span></strong> (HP) avant <strong><span class="skl" data-skill="contract-of-revival"><svg class="ic" aria-hidden="true"><use href="#i-hp"/></svg><span class="n">Contract of Revival</span></span></strong> (rend ≈53&nbsp;% des HP max sous 10&nbsp;%). Il y a aussi un passif qui proc sur les skills de saut, <span class="skl" data-skill="ambush"><svg class="ic" aria-hidden="true"><use href="#i-ambush"/></svg><span class="n">Ambush</span></span> compris, et qui propose au choix des dégâts ou des HP, prenez <strong>HP</strong>, c'est de l'ordre de +20&nbsp;% de vie. À ne pas confondre avec la spé d'Ambush elle-même, qui va au lifesteal (chapitre&nbsp;6).</p>
+          </div>
+        </div>
+
+        <div class="note ndlr">
+          <span class="lab n"><svg class="ic"><use href="#i-pvp"/></svg>Mon avis</span>
+          <p>La moitié du kit est du PvP pur : buff removal, shadow wall, airborne, retrait de CC, shadow step, et le poison qui réduit les heals reçus. Cooldowns d'une à deux minutes, aucun intérêt dans une barre PvE. Si vous hésitez devant un skill que je n'ai pas listé, regardez son CD, au-delà d'une minute, c'est presque toujours du PvP.</p>
+        </div>
+      </section>
+
+      <!-- ============ 5 ============ -->
+      <section id="s5" class="rv">
+        <span class="sec-num"><svg class="ic"><use href="#i-flash"/></svg>Chapitre 05 — Le leveling</span>
+        <h2 class="sec">Du 1 au 45 : survivre avant d'optimiser</h2>
+        <p class="sec-intro">Le leveling est un tutoriel, mais les points que vous y claquez sont réels. L'objectif de toute cette phase n'est pas d'être optimal en donjon, c'est de <strong>ne jamais avoir à s'arrêter</strong>. Un Assassin qui doit s'asseoir entre deux packs monte deux fois moins vite.</p>
+
+        <div class="note">
+          <span class="lab a"><svg class="ic"><use href="#i-hp"/></svg>Le principe de départ</span>
+          <p>Sans gear et sans défense, vous prenez cher, même sur une quête en open world. Toutes vos spés de départ vont donc vers le <strong>lifesteal</strong> et les <strong>HP</strong>, jamais vers le crit. On rebascule offensif plus tard, quand le gear encaisse à votre place. Les resets étant gratuits côté KR, ce n'est pas un choix définitif.</p>
+        </div>
+
+        <div class="tw">
+          <table>
+            <thead><tr><th>Palier</th><th>Où vont les points</th><th>Pourquoi</th></tr></thead>
+            <tbody>
+              <tr><td class="k"><svg class="ic" data-skill="quick-slash"><use href="#i-slash"/></svg>1 → 8</td><td><strong>Quick Slash</strong> en spé <strong>mana</strong>, puis <strong>Heart Gore</strong></td><td>Le problème n°1 des premiers niveaux n'est pas les dégâts, c'est la mana. La spé mana du filler règle ça d'un coup.</td></tr>
+              <tr><td class="k"><svg class="ic" data-skill="ambush"><use href="#i-ambush"/></svg>8 → 22</td><td>Palier 8 sur <strong>Ambush</strong> (lifesteal), <strong>Shadow Strike</strong> (crit damage), <strong>Heart Gore</strong> (HP), <strong>Shadow Fall</strong></td><td>Quatre skills au palier 8 et la boucle de farm est complète, on ouvre, on stack, on se heal en tapant.</td></tr>
+              <tr><td class="k"><svg class="ic" data-skill="savage-roar"><use href="#i-fang"/></svg>22 → 32</td><td><strong>Savage Roar</strong> au niveau 10, puis <strong>Insignia Explosion</strong></td><td>Savage Roar est le skill le plus spammé, le monter à 10 est le meilleur rapport points/confort du leveling. Les expéditions ouvrent au 22.</td></tr>
+              <tr><td class="k"><svg class="ic" data-skill="heart-gore"><use href="#i-heart"/></svg>32 → 45</td><td>Pousser <strong>Heart Gore</strong> vers 16</td><td>Le palier 16 et son reset au crit changent complètement le rythme de la classe. C'est l'objectif à atteindre le plus vite possible, avant tout le reste.</td></tr>
+              <tr><td class="k"><svg class="ic"><use href="#i-node"/></svg>Au 45</td><td>Arcanes et Daevanion pour passer 16 → 20, puis les trois passifs</td><td>Les mastery points sont épuisés depuis longtemps. Tout ce qui monte encore vient des cartes et des nodes.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-whirl"/></svg>La boucle de farm des premiers niveaux</h3>
+        <div class="rota">
+          <div class="st"><div><b><span class="skl" data-skill="flash-slash"><svg class="ic" aria-hidden="true"><use href="#i-flash"/></svg><span class="n">Flash Slash</span></span> dans le pack</b><p>On traverse, on blind, on ressort derrière. Du gain de dégâts avant même d'avoir tapé.</p></div></div>
+          <div class="st"><div><b><span class="skl" data-skill="savage-roar"><svg class="ic" aria-hidden="true"><use href="#i-fang"/></svg><span class="n">Savage Roar</span></span> pour stack les runes</b><p>Le générateur. On stack pendant que les CD tournent.</p></div></div>
+          <div class="st"><div><b><span class="skl" data-skill="insignia-explosion"><svg class="ic" aria-hidden="true"><use href="#i-rune"/></svg><span class="n">Insignia Explosion</span></span> sur le tas</b><p>Sur un pack correctement pull, c'est la différence entre trois secondes et douze.</p></div></div>
+          <div class="st loop"><div><b><span class="skl" data-skill="heart-gore"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><span class="n">Heart Gore</span></span> et auto-attacks en continu</b><p>C'est ce qui vous garde en vie. Au palier 16 les crits enchaînent les resets et vous ne vous arrêtez plus.</p></div></div>
+        </div>
+
+        <div class="note gold">
+          <span class="lab g"><svg class="ic"><use href="#i-star"/></svg>Le détour qui rapporte le plus</span>
+          <p>Les <strong>plumes</strong>. Environ <span class="mono">560</span> sur les cartes, elles se transforment en skill points permanents au monolithe et elles ne se périment pas. Une plume ramassée au 14 vaut autant qu'au 45, sauf qu'elle sert trente niveaux plus tôt. Le monolithe débloque en plus vos deux premiers titres (chapitre&nbsp;10). Carte dézoomée en permanence, faites les détours.</p>
+        </div>
+
+        <div class="note trap">
+          <span class="lab"><svg class="ic"><use href="#i-warn"/></svg>Le piège du leveling</span>
+          <p>Optimiser du gear de transition. Vous recevrez une arme gold en fin de leveling, autour de l'iLevel&nbsp;57, et elle est nulle, et chaque kinah dessus est perdu. Pareil pour les manastones et les enchants sur des pièces que vous jetterez la semaine d'après. Le chapitre&nbsp;14 dit sur quoi se poser vraiment.</p>
+        </div>
+      </section>
+      <!-- ============ 6 ============ -->
+      <section id="s6" class="rv">
+        <span class="sec-num"><svg class="ic"><use href="#i-node"/></svg>Chapitre 06 — Les spécialisations</span>
+        <h2 class="sec">Quelles spés prendre, et quand les changer</h2>
+        <p class="sec-intro">Trois choix sur cinq par skill. Le truc que presque tous les guides ratent : <strong>les bons choix au 45 fraîchement atteint ne sont pas ceux de fin de saison</strong>. Au début on prend de la survie, après on bascule sur les dégâts. Voilà les deux colonnes.</p>
+
+        <div class="tw">
+          <table>
+            <thead><tr><th>Skill</th><th>Au début (peu de gear)</th><th>Plus tard (gear en place)</th></tr></thead>
+            <tbody>
+              <tr><td class="k"><svg class="ic" data-skill="quick-slash"><use href="#i-slash"/></svg>Quick Slash</td><td><strong>Mana</strong> — le vrai problème du début</td><td>Lifesteal, ou +50 multi-hit si vous n'avez plus besoin de vous heal</td></tr>
+              <tr><td class="k"><svg class="ic" data-skill="heart-gore"><use href="#i-heart"/></svg>Heart Gore</td><td><strong>HP</strong> — vous prenez cher partout</td><td>Crit, multi-hit et skill cooldown</td></tr>
+              <tr><td class="k"><svg class="ic" data-skill="ambush"><use href="#i-ambush"/></svg>Ambush</td><td><strong>Lifesteal</strong> — la classe vit dessus</td><td>Crit damage boost</td></tr>
+              <tr><td class="k"><svg class="ic" data-skill="storm-rampage"><use href="#i-storm"/></svg>Storm Rampage</td><td><strong>Lifesteal</strong></td><td>Skill cooldown (palier 16 obligatoire, voir ch.&nbsp;13)</td></tr>
+              <tr><td class="k"><svg class="ic" data-skill="shadow-strike"><use href="#i-shadowstrike"/></svg>Shadow Strike</td><td colspan="2"><strong>Crit damage boost</strong> dans tous les cas, c'est le buff qui ouvre la rota, le reste de ses spés est anecdotique.</td></tr>
+              <tr><td class="k"><svg class="ic" data-skill="insignia-explosion"><use href="#i-rune"/></svg>Insignia Explosion</td><td colspan="2"><strong>Multi-hit</strong>, toujours. Les spés « garder les stacks » et « stun » sont du PvP, en PvE on ne veut pas stun, on veut taper plus fort.</td></tr>
+              <tr><td class="k"><svg class="ic" data-skill="savage-roar"><use href="#i-fang"/></svg>Savage Roar</td><td colspan="2"><strong>Skill speed</strong> en build général (≈30&nbsp;%). Mana consumption si vous négligez vos auto-attacks. Dégâts purs sur les boss mono-cible type Nightmare.</td></tr>
+              <tr><td class="k"><svg class="ic" data-skill="whirlwind-slash"><use href="#i-whirl"/></svg>Whirlwind Slash</td><td colspan="2"><strong>AoE</strong> en farm, <strong>multi-hit</strong> en mono-cible.</td></tr>
+              <tr><td class="k"><svg class="ic" data-skill="flash-slash"><use href="#i-flash"/></svg>Flash Slash</td><td colspan="2"><strong>Dégâts multi-cibles</strong>. La durée du blind ne sert qu'en PvP.</td></tr>
+              <tr><td class="k"><svg class="ic" data-skill="infiltrate"><use href="#i-infiltrate"/></svg>Infiltrate</td><td colspan="2"><strong>Range</strong> (jusqu'à +10&nbsp;m) et récup de ressource. Fixe.</td></tr>
+              <tr><td class="k"><svg class="ic" data-skill="shadow-fall"><use href="#i-shadowfall"/></svg>Shadow Fall</td><td colspan="2"><strong>Lifesteal 10&nbsp;%</strong>. On le lâche dès qu'il est up, on ne l'optimise pas.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="note gold">
+          <span class="lab g"><svg class="ic"><use href="#i-cooldown"/></svg>Le seul arbitrage à refaire régulièrement</span>
+          <p>Sur <span class="skl" data-skill="heart-gore"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><span class="n">Heart Gore</span></span> monté haut, vous devrez choisir entre garder les <strong>HP</strong> ou le <strong>multi-hit</strong>. La règle de DocDany est simple et je la reprends telle quelle : <strong>Nightmare et donjons solo → HP</strong> (personne ne vous heal), <strong>contenu de groupe → multi-hit</strong> (le heal fait son taf, prenez les dégâts). Deux clics, plusieurs pour cent.</p>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-book"/></svg>Les numéros, pour ceux qui suivent les dossiers KR</h3>
+        <p>Les guides coréens désignent les spés par leur position dans la liste du client. Voilà les combos qu'ils recoupent, à titre indicatif, rien ne garantit que la loc FR garde cet ordre. <span class="mono">Violet plein</span> = mon choix par défaut, <span class="mono">violet clair</span> = l'alternative.</p>
+        <div class="speclist">
+          <div class="sp">
+            <div><div class="nm"><svg class="ic" data-skill="insignia-explosion"><use href="#i-rune"/></svg>Insignia Explosion</div><span class="lv">objectif 20</span></div>
+            <div class="pips"><span>1</span><span class="on">2</span><span class="on">3</span><span>4</span><span class="on">5</span></div>
+            <div class="why">Là-dessus tous les dossiers KR que j'ai lus disent la même chose.</div>
+          </div>
+          <div class="sp">
+            <div><div class="nm"><svg class="ic" data-skill="heart-gore"><use href="#i-heart"/></svg>Heart Gore</div><span class="lv">objectif 20</span></div>
+            <div class="pips"><span class="alt">1</span><span class="on">2</span><span class="alt">3</span><span class="on">4</span><span class="on">5</span></div>
+            <div class="why"><strong>2/4/5</strong> par défaut, <strong>3/4/5</strong> tant que le crit est bas, le reset au crit ne vaut rien si le crit ne tombe pas.</div>
+          </div>
+          <div class="sp">
+            <div><div class="nm"><svg class="ic" data-skill="quick-slash"><use href="#i-slash"/></svg>Quick Slash</div><span class="lv">objectif 20</span></div>
+            <div class="pips"><span>1</span><span class="on">2</span><span class="on">3</span><span class="on">4</span><span class="alt">5</span></div>
+            <div class="why">La <strong>4</strong> réduit le CD d'Insignia Explosion. C'est elle qui justifie le skill.</div>
+          </div>
+          <div class="sp">
+            <div><div class="nm"><svg class="ic" data-skill="savage-roar"><use href="#i-fang"/></svg>Savage Roar</div><span class="lv">objectif 20</span></div>
+            <div class="pips"><span>1</span><span class="on">2</span><span class="on">3</span><span class="on">4</span><span>5</span></div>
+            <div class="why">La <strong>4</strong> réduit le CD d'Ambush, ce qui resserre toute la boucle.</div>
+          </div>
+          <div class="sp">
+            <div><div class="nm"><svg class="ic" data-skill="ambush"><use href="#i-ambush"/></svg>Ambush</div><span class="lv">palier 8, puis 12</span></div>
+            <div class="pips"><span>1</span><span class="on">2</span><span>3</span><span class="alt">4</span><span class="on">5</span></div>
+            <div class="why"><strong>2 et 5</strong>, puis <strong>2/4/5</strong> si vous le montez haut. Rappel, au début la ligne lifesteal prime sur la ligne dégâts.</div>
+          </div>
+          <div class="sp">
+            <div><div class="nm"><svg class="ic" data-skill="whirlwind-slash"><use href="#i-whirl"/></svg>Whirlwind Slash</div><span class="lv">niveau 12</span></div>
+            <div class="pips"><span class="on">1</span><span class="alt">2</span><span class="alt">3</span><span>4</span><span class="on">5</span></div>
+            <div class="why">La <strong>1</strong> est obligatoire (+50&nbsp;% de multi-hit). Ensuite <strong>2</strong> pour les packs, <strong>3</strong> pour la range de 16&nbsp;m.</div>
+          </div>
+          <div class="sp">
+            <div><div class="nm"><svg class="ic" data-skill="storm-rampage"><use href="#i-storm"/></svg>Storm Rampage</div><span class="lv">palier 16 impératif</span></div>
+            <div class="pips"><span class="alt">1</span><span>2</span><span>3</span><span class="on">4</span><span class="on">5</span></div>
+            <div class="why"><strong>4/5</strong> quand le boss n'a pas de debuff à gérer, <strong>1/5</strong> sinon.</div>
+          </div>
+        </div>
+
+        <div class="note">
+          <span class="lab a"><svg class="ic"><use href="#i-eye"/></svg>Si les numéros ne collent pas au client FR</span>
+          <p>Cherchez l'<strong>effet</strong>, pas le numéro : reset de CD au crit, lifesteal, multi-hit, réduction du CD d'un autre skill, back attack damage. Ce sont ces cinq familles qu'on veut, dans cet ordre, quel que soit le rang affiché.</p>
+        </div>
+      </section>
+
+      <!-- ============ 7 ============ -->
+      <section id="s7" class="rv">
+        <span class="sec-num"><svg class="ic"><use href="#i-clone"/></svg>Chapitre 07 — Les stigmas</span>
+        <h2 class="sec">Quatre slots, douze candidats</h2>
+        <p class="sec-intro">Le vrai arbitrage du guide. Les douze stigmas existent tous. Ce qui change en globale, c'est le nombre qu'on peut <strong>équiper</strong> — quatre au lieu de cinq ou six en Asie. Tous les builds que vous trouverez sont donc à recouper, et il faut sacrifier. Voilà ma coupe, et pourquoi.</p>
+        <p class="sec-intro">Deux choses à savoir avant d'entrer dedans, relevées en jeu pendant la bêta.<span class="bta">vu en bêta</span> Le panneau de stigma ne s'ouvre qu'au <strong>niveau 22</strong>, par la quête &laquo;&nbsp;À l'écoute des voix&nbsp;&raquo;, donc rien de ce chapitre ne vous concerne avant. Et chaque stigma porte <strong>quatre nodes automatiques</strong>, aux niveaux <strong>5, 10, 15 et 20</strong>, ce qui explique pourquoi tous les ordres de montée ci-dessous s'arrêtent sur ces chiffres-là.</p>
+
+        
+        <div class="note">
+          <span class="lab a"><svg class="ic"><use href="#i-swift"/></svg>Swift Contract, relev&eacute; en jeu</span>
+          <p>Le seul stigma que j'ai pu ouvrir pendant le test, et il vaut le d&eacute;tour. Le sort de base donne <strong>+20&nbsp;% de vitesse de combat pendant 10&nbsp;s</strong>, lan&ccedil;able en d&eacute;placement, sur un cooldown d'<strong>une minute</strong>. Ce sont ses quatre nodes qui changent la lecture du chapitre.</p>
+          <div class="tw">
+            <table>
+              <thead><tr><th scope="col">Niveau</th><th scope="col">Ce que le node ajoute</th><th scope="col">Ce que &ccedil;a vaut</th></tr></thead>
+              <tbody>
+                <tr><td class="k">5</td><td>Co&ucirc;t en MP r&eacute;duit de 20&nbsp;% pendant la dur&eacute;e</td><td>Du confort, rien de plus. C'est le palier o&ugrave; tout le monde s'arr&ecirc;te au d&eacute;but.</td></tr>
+                <tr><td class="k">10</td><td>L'effet du coup par l'arri&egrave;re pass&eacute; &agrave; <strong>&times;1,5</strong></td><td>Votre passif de backstab, multipli&eacute; pendant la fen&ecirc;tre. C'est d&eacute;j&agrave; une raison de monter &agrave; 10 avant le reste.</td></tr>
+                <tr><td class="k">15</td><td><span class="skl" data-skill="assault-stance"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-assault"/></svg><span class="n">Assault Stance</span></span> pass&eacute; &agrave; <strong>&times;1,5</strong> pendant la dur&eacute;e</td><td>Le node le plus important du stigma, et la surprise du test. Assault Stance est le premier passif du chapitre&nbsp;4, celui qui est up presque en permanence.</td></tr>
+                <tr><td class="k">20</td><td>+10&nbsp;% de vitesse de combat suppl&eacute;mentaire</td><td>Le palier de finition, cumulable avec les 20&nbsp;% de base.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Deux cons&eacute;quences pratiques. Le <strong>15</strong> devient un vrai objectif et pas un palier de passage, ce qui rapproche l'ordre de DocDany de celui des dossiers KR. Et la synchro avec <span class="skl" data-skill="illusion-clone"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-clone"/></svg><span class="n">Illusion Clone</span></span> prend un sens de plus, puisque la fen&ecirc;tre de 10&nbsp;s porte d&eacute;sormais un multiplicateur sur deux passifs au lieu d'un buff sec.</p>
+          <p>Une r&eacute;serve d'honn&ecirc;tet&eacute;. Le libell&eacute; fran&ccedil;ais du node&nbsp;10 parle d'un &laquo;&nbsp;coup puissant arri&egrave;re&nbsp;&raquo;, que je rattache &agrave; <span class="skl" data-skill="rear-smite"><svg class="ic" aria-hidden="true" focusable="false"><use href="#i-back"/></svg><span class="n">Rear Smite</span></span> dans ma nomenclature. C'est le seul rapprochement de ce tableau dont je ne suis pas certain &agrave; 100&nbsp;%.</p>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-star"/></svg>Mon build PvE par défaut</h3>
+        <div class="stigbar">
+          <div class="sl"><span class="n"><svg class="ic" data-skill="illusion-clone"><use href="#i-clone"/></svg>Slot 1</span><span class="t">Illusion Clone</span><span class="s">Le cœur du DPS</span></div>
+          <div class="sl"><span class="n"><svg class="ic" data-skill="swift-contract"><use href="#i-swift"/></svg>Slot 2</span><span class="t">Swift Contract</span><span class="s">Buff, synchro avec le clone</span></div>
+          <div class="sl"><span class="n"><svg class="ic" data-skill="triniels-dagger"><use href="#i-cooldown"/></svg>Slot 3</span><span class="t">Triniel's Dagger</span><span class="s">−10&nbsp;% de CD par hit</span></div>
+          <div class="sl"><span class="n"><svg class="ic" data-skill="savage-fang"><use href="#i-fang"/></svg>Slot 4</span><span class="t">Savage Fang</span><span class="s">+10&nbsp;% damage boost, stagger</span></div>
+        </div>
+        <p class="capt">Et les deux que je laisse de côté faute de slot, ils existent mais il faudrait sacrifier un des quatre :</p>
+        <div class="stigbar">
+          <div class="sl off"><span class="n"><svg class="ic" data-skill="evasion-stance"><use href="#i-evade"/></svg>Hors des quatre</span><span class="t">Evasion Stance</span><span class="s">Bloque et garde le corps à corps</span></div>
+          <div class="sl off"><span class="n"><svg class="ic" data-skill="throw-shadowblade"><use href="#i-throw"/></svg>Hors des quatre</span><span class="t">Throw Shadowblade</span><span class="s">20&nbsp;m, reset sur les kills</span></div>
+        </div>
+
+        <h3><svg class="ic" data-skill="illusion-clone"><use href="#i-clone"/></svg>Pourquoi ces quatre-là</h3>
+        <p><strong><span class="skl" data-skill="illusion-clone"><svg class="ic" aria-hidden="true"><use href="#i-clone"/></svg><span class="n">Illusion Clone</span></span></strong> est le pivot de la classe. Quand son buff est up, <span class="skl" data-skill="heart-gore"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><span class="n">Heart Gore</span></span> — qui se reset normalement sur crit avec 5&nbsp;s de CD — voit ce cooldown <strong>disparaître</strong> : on le spam en boucle tant que les crits tombent. Le clone reproduit vos attaques, donc il peut déclencher ce reset même quand votre propre coup n'a pas crit. À 5 il rallonge le buff de 2&nbsp;s, à 10 il ajoute <strong>+20&nbsp;% de dégâts</strong>.</p>
+        <p><strong><span class="skl" data-skill="swift-contract"><svg class="ic" aria-hidden="true"><use href="#i-swift"/></svg><span class="n">Swift Contract</span></span></strong> est le buff d'attack speed, à lâcher dans la même seconde. <strong><span class="skl" data-skill="triniels-dagger"><svg class="ic" aria-hidden="true"><use href="#i-cooldown"/></svg><span class="n">Triniel's Dagger</span></span></strong> rabote <strong>10&nbsp;% de CD à chaque hit</strong>, ce qui fait revenir la fenêtre plus souvent, c'est elle qui rend les trois autres jouables ensemble. <strong><span class="skl" data-skill="savage-fang"><svg class="ic" aria-hidden="true"><use href="#i-fang"/></svg><span class="n">Savage Fang</span></span></strong> enfin, je le prends surtout pour son <strong>+10&nbsp;% de damage boost</strong> et pour le stagger. Cerise sur le gâteau, il pose tout seul les cinq stacks d'Insignia Explosion, ce qui en fait l'outil d'opener parfait.</p>
+
+        <div class="note gold">
+          <span class="lab g"><svg class="ic"><use href="#i-cooldown"/></svg>L'objectif de fond</span>
+          <p>Tout ce chapitre vise une seule chose : <strong>maximiser l'uptime</strong>. Un Assassin bien réglé reste sous <span class="skl" data-skill="illusion-clone"><svg class="ic" aria-hidden="true"><use href="#i-clone"/></svg><span class="n">Illusion Clone</span></span> la majeure partie du combat sur une cible qui ne bouge pas. Chaque point de CDR rapproche de cet état, et c'est pour ça que le chapitre&nbsp;9 consacre une section entière à l'arbitrage CDR contre smite.</p>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-evade"/></svg>Les variantes</h3>
+        <div class="tw">
+          <table>
+            <thead><tr><th>Situation</th><th>On sort</th><th>On met</th><th>Pourquoi</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Vous mourez en donjon</td><td>Savage Fang</td><td>Evasion Stance</td><td>Elle permet de rester au corps à corps au lieu de reculer, donc de continuer à taper. Un Assassin qui recule ne tape plus, et ça revient au même que s'il était mort.</td></tr>
+              <tr><td class="k">Boss à grosse attaque melee</td><td>Savage Fang</td><td>Evasion Stance</td><td>Elle bloque le coup. aLuckyRO la recommande spécifiquement au Fire Temple et sur le premier boss du Deus Research Lab.</td></tr>
+              <tr><td class="k">PvP / Abîme</td><td>Savage Fang</td><td>Throw Shadowblade</td><td>20&nbsp;m avec slow, et elle reset quand vous achevez une cible.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Vous remarquerez que c'est toujours le même slot qui bouge. Les trois premiers ne se négocient pas, ils forment la fenêtre de burst, et en retirer un casse les deux autres.</p>
+
+        <h3><svg class="ic"><use href="#i-scale"/></svg>Dans quel ordre les monter : trois écoles</h3>
+        <p>C'est là que mes sources divergent le plus franchement, et les trois se défendent. Je les donne toutes parce que le bon choix dépend de l'étape où vous êtes.</p>
+        <div class="cmp cmp3">
+          <div class="row">
+            <div class="q">L'ordre</div>
+            <div class="c"><span class="who">aLuckyRO · tout début</span>Throw Shadowblade <strong>+10</strong>, Savage Fang <strong>+10</strong>, puis Swift Contract. Triniel's Dagger et Illusion Clone laissés à <strong>1</strong>, leurs seuils étant trop chers pour le budget du moment.</div>
+            <div class="c"><span class="who">DocDany · progression</span>Triniel's Dagger à <strong>10</strong> d'abord, tout le reste à <strong>5</strong>. Ensuite les deux buffs en alternance : 10 et 10, puis 15 et 15, puis Illusion Clone à 20 et Swift Contract à 20. Triniel's Dagger à 20 en dernier.</div>
+            <div class="c"><span class="who">Dossiers KR · endgame</span>Illusion Clone au cap avant tout, puis Swift Contract, puis Triniel's Dagger, puis Savage Fang. La logique des guides endgame, quand les shards ne sont plus la contrainte.</div>
+          </div>
+          <div class="row">
+            <div class="q">La logique</div>
+            <div class="c"><span class="who">aLuckyRO · tout début</span>Avec très peu de shards, on prend ce qui donne des dégâts <strong>tout de suite</strong>, sans seuil à franchir. Le clone ne vaut rien tant que Heart Gore n'est pas au palier 16.</div>
+            <div class="c"><span class="who">DocDany · progression</span>Le −10&nbsp;% de CD de Triniel's Dagger s'active à 10 et profite à <strong>tout</strong> le kit. On paie le seuil le moins cher qui améliore le plus de choses, puis on monte les deux buffs ensemble pour qu'ils ne se désynchronisent pas.</div>
+            <div class="c"><span class="who">Dossiers KR · endgame</span>Le clone est le plus gros multiplicateur de la classe. Une fois les autres seuils passés, tout va dedans.</div>
+          </div>
+        </div>
+
+        <div class="note ndlr">
+          <span class="lab n"><svg class="ic"><use href="#i-book"/></svg>Mon avis</span>
+          <p>Je pars sur l'école du milieu, celle de DocDany. <strong><span class="skl" data-skill="triniels-dagger"><svg class="ic" aria-hidden="true"><use href="#i-cooldown"/></svg><span class="n">Triniel's Dagger</span></span> à 10 en premier</strong>, c'est le seuil le moins cher qui améliore tout le reste, puis les deux buffs montés ensemble. aLuckyRO a raison sur un point — <span class="skl" data-skill="illusion-clone"><svg class="ic" aria-hidden="true"><use href="#i-clone"/></svg><span class="n">Illusion Clone</span></span> ne sert pas à grand-chose tant que <span class="skl" data-skill="heart-gore"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><span class="n">Heart Gore</span></span> n'est pas au palier&nbsp;16 — mais son plan s'appuie sur deux stigmas qui risquent de ne pas rentrer dans nos quatre slots. Quant à l'école endgame, elle décrit un perso qu'on n'aura pas avant des mois.</p>
+        </div>
+      </section>
+
+      <!-- ============ 8 ============ -->
+      <section id="s8" class="rv">
+        <span class="sec-num"><svg class="ic"><use href="#i-node"/></svg>Chapitre 08 — Le Daevanion</span>
+        <h2 class="sec">Les arbres, et surtout ce qu'on n'y prend pas</h2>
+        <p class="sec-intro">Quatre arbres attendus au lancement — <strong>Nezekan, Zikel, Vaizel, Triniel</strong> — contre six en TW. Bonne nouvelle, pour un Assassin les trois qui comptent sont dans les quatre.</p>
+
+        <div class="tw">
+          <table>
+            <thead><tr><th>Arbre</th><th>Ce qu'on y cherche</th><th>Priorité</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Zikel</td><td><strong>Damage boost</strong> et attaque</td><td>Haute — l'arbre des DPS purs.</td></tr>
+              <tr><td class="k">Vaizel</td><td><strong>Crit damage boost</strong> — quatre nodes donnent de l'ordre de 20&nbsp;%</td><td>Haute — et c'est l'arbre sur lequel mes sources se contredisaient le plus, voir le chapitre&nbsp;17.</td></tr>
+              <tr><td class="k">Triniel</td><td><strong>Multi-hit chance</strong>, puis accuracy</td><td>Haute — les lignes de multi-hit sont à finir en entier.</td></tr>
+              <tr><td class="k">Nezekan</td><td>Défense et perfect hit</td><td>Basse en début de vie.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="note trap">
+          <span class="lab"><svg class="ic"><use href="#i-warn"/></svg>Ce qu'on ne prend surtout pas au lancement</span>
+          <p>La <strong>défense</strong>, les <strong>résistances</strong>, la <strong>damage tolerance</strong>, l'<strong>evasion</strong>, et — contre-intuitivement — le <strong>CDR du Daevanion</strong>. Sur un perso de début de saison ces nodes ne changent rien de mesurable, ils coûtent des points que vous n'avez pas et ne déplacent aucun seuil. C'est la reco d'aLuckyRO et elle est catégorique.</p>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-node"/></svg>L'ordre de dépense</h3>
+        <div class="rota">
+          <div class="st"><div><b>Attaque, puis combat speed</b><p>Le pattern de base de tous les DPS. On pose ça avant de chercher quoi que ce soit d'autre.</p></div></div>
+          <div class="st"><div><b>Finir les lignes de multi-hit chance sur Triniel</b><p>À finir en entier, pas à entamer. Une ligne de multi-hit à moitié faite ne rapporte presque rien.</p></div></div>
+          <div class="st"><div><b>Les nodes de niveaux de skill, vers vos paliers</b><p>C'est ici qu'on va chercher <span class="skl" data-skill="heart-gore"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><span class="n">Heart Gore</span></span> 16 puis 20, et <span class="skl" data-skill="insignia-explosion"><svg class="ic" aria-hidden="true"><use href="#i-rune"/></svg><span class="n">Insignia Explosion</span></span> 20. Sur la map, les nodes <strong>bleus</strong> sont les skills actifs (3 points) et les <strong>verts</strong> les passifs (2 points). Comptez le chemin, atteindre un node demande souvent 4 points au total.</p></div></div>
+          <div class="st"><div><b><span class="skl" data-skill="rear-smite"><svg class="ic" aria-hidden="true"><use href="#i-back"/></svg><span class="n">Rear Smite</span></span> et <span class="skl" data-skill="assault-stance"><svg class="ic" aria-hidden="true"><use href="#i-assault"/></svg><span class="n">Assault Stance</span></span></b><p><span class="skl" data-skill="assault-stance"><svg class="ic" aria-hidden="true"><use href="#i-assault"/></svg><span class="n">Assault Stance</span></span> est prioritaire partout, et <span class="skl" data-skill="rear-smite"><svg class="ic" aria-hidden="true"><use href="#i-back"/></svg><span class="n">Rear Smite</span></span> est justement le passif qu'on laisse monter par les nodes plutôt qu'avec ses points. Beaucoup d'écrans Daevanion permettent de cliquer sur un passif et de laisser le jeu tracer le chemin tout seul.</p></div></div>
+          <div class="st"><div><b>Puis accuracy, HP, et le reste</b><p>L'accuracy une fois le multi-hit terminé. Les marques blanches et la mana en tout dernier.</p></div></div>
+        </div>
+
+        <div class="note">
+          <span class="lab a"><svg class="ic"><use href="#i-scale"/></svg>Les ordres de grandeur</span>
+          <p>En arrivant au cap vous aurez de l'ordre de <span class="mono">164</span> points de Daevanion à placer. Un plan complet « toutes les stats offensives » sur les quatre arbres en demande environ <span class="mono">503</span> d'après DocDany. Vous en aurez donc le tiers, d'où l'importance de l'ordre ci-dessus, et de ne pas gaspiller un seul point dans du défensif.</p>
+        </div>
+        <p>Les cristaux se farment dans les quêtes secondaires, les donjons scellés de votre faction, ceux de la faction adverse via les rifts, la boutique Nightmare et la transmutation. Et le rappel qui vaut de l'or : <strong>faites tous les donjons scellés des deux cartes</strong>, y compris celle d'en face.</p>
+      </section>
+
+      <!-- ============ 9 ============ -->
+      <section id="s9" class="rv">
+        <span class="sec-num"><svg class="ic"><use href="#i-smite"/></svg>Chapitre 09 — Les stats</span>
+        <h2 class="sec">Ce que je cherche, et le grand arbitrage</h2>
+        <p class="sec-intro">L'Assassin a deux particularités côté stats : un multiplicateur que les autres classes n'ont pas, et un choix de fond sur lequel mes deux sources vidéo ne sont pas d'accord.</p>
+
+        <h3><svg class="ic"><use href="#i-smite"/></svg>Le smite, d'abord<a class="j1" href="#j1">test de lancement</a></h3>
+        <div class="note gold">
+          <span class="lab g"><svg class="ic"><use href="#i-smite"/></svg>Ce que fait vraiment le smite</span>
+          <p>Ce n'est pas un bonus de dégâts, c'est une <strong>chance de proc qui double les dégâts du skill</strong>. Voilà pourquoi c'est la meilleure stat du jeu toutes classes confondues. Attention quand même, passé un certain niveau de contenu, <strong>les boss ont du smite resist</strong>, ce qui cappe naturellement son rendement.</p>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-back"/></svg>La stat signature de la classe</h3>
+        <div class="pyr">
+          <div class="tier t1">
+            <div class="hd"><svg class="ic"><use href="#i-back"/></svg><span class="nm">Back attack boost</span><span class="mult">multiplicateur à part</span></div>
+            <p class="lst">Il ne se dilue pas dans le paquet additif, il multiplie le total. Premier choix sur les manastones dès que votre uptime dans le dos est correct. Si vous jouez surtout du contenu où vous êtes souvent délogé, il perd sa valeur, soyez honnête là-dessus.</p>
+          </div>
+          <div class="arrow">puis, sous cap ↓</div>
+          <div class="tier t2">
+            <div class="hd"><svg class="ic"><use href="#i-target"/></svg><span class="nm">Accuracy et crit</span><span class="mult">cappés</span></div>
+            <p class="lst">L'accuracy est ce qui vous permet de <strong>toucher les boss</strong> tout le temps, et elle est cappée par le contenu, au-delà du cap du raid en cours, chaque point est perdu. Le crit est cappé selon votre gear. Ce sont les deux seules stats qu'il faut mesurer au lieu d'empiler.</p>
+          </div>
+          <div class="arrow">puis ↓</div>
+          <div class="tier t3">
+            <div class="hd"><svg class="ic"><use href="#i-speed"/></svg><span class="nm">Le reste</span><span class="mult">valeur nominale</span></div>
+            <p class="lst">Attaque (votre base de dégâts), combat speed, weapon damage boost, damage boost, et le PvE damage boost réservé aux pièces craft. À noter, le <strong>combat speed</strong> est un bonus par-dessus 100&nbsp;% , être à 70&nbsp;% veut dire taper à 170&nbsp;% de la vitesse de base.</p>
+          </div>
+        </div>
+        <p>Détail de confort qui compte en donjon : <strong>votre move speed est réduite de moitié en combat</strong>. C'est une des raisons pour lesquelles les skills de repositionnement pèsent autant chez l'Assassin.</p>
+
+        <h3><svg class="ic"><use href="#i-scale"/></svg>Le grand arbitrage : smite ou CDR</h3>
+        <p>Deux stats du Panthéon s'opposent, et c'est le vrai choix de build de la classe. <strong>Wisdom</strong> donne du smite en pourcentage, <strong>Illusion</strong> donne du CDR. On retrouve les deux mêmes stats sur les cartes d'arcane (chapitre&nbsp;10), ce qui double l'enjeu, les points sont les mêmes, les tableaux sont les mêmes, et il faut trancher.</p>
+        <div class="dial">
+          <div class="bar"><div class="l"><svg class="ic"><use href="#i-smite"/></svg>Wisdom / smite</div><div class="r">Illusion / CDR<svg class="ic"><use href="#i-cooldown"/></svg></div></div>
+          <div class="ends">
+            <div><b>L'école des dégâts purs</b>Tout en Wisdom. Chaque coup tape plus fort, le smite proc plus souvent, et on accepte des fenêtres de burst plus espacées. C'est le build le plus répandu.</div>
+            <div><b>L'école de l'uptime</b>On sacrifie une dizaine de points de smite pour monter le CDR. Résultat mesuré par DocDany : <strong>42&nbsp;% de CDR</strong>, 15 à 20&nbsp;% d'uptime en plus, et jusqu'à 95&nbsp;% du combat sous Illusion Clone sur un boss statique.</div>
+          </div>
+        </div>
+        <p>Concrètement DocDany tourne à environ <span class="mono">160</span> de Wisdom et <span class="mono">140</span> d'Illusion là où il pourrait monter à 180 de Wisdom. Ça lui coûte du smite — il est à ≈66&nbsp;% quand d'autres montent à 75&nbsp;% — mais il burst bien plus souvent. Son principe : <strong>aucun tableau de Panthéon sans Wisdom <em>et</em> Illusion dessus</strong>, au lieu de tout empiler sur une seule stat.</p>
+        <div class="note ndlr">
+          <span class="lab n"><svg class="ic"><use href="#i-book"/></svg>Mon avis</span>
+          <p>Il n'y a pas de bonne réponse ici, et c'est rare que je l'écrive. Ce que je peux dire, c'est que plus le contenu vous fait bouger, plus le smite pur est rentable, parce qu'une fenêtre de burst passée à courir est perdue de toute façon. Et plus vous jouez des boss statiques, plus l'école de l'uptime paie. En Saison&nbsp;1 globale, sans le stigma 25 qui apporte une grosse part du CDR côté KR, l'uptime sera <strong>mécaniquement plus dur à atteindre</strong> chez nous. Je commence donc sur le smite, quitte à basculer plus tard.</p>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-gear"/></svg>Ce que je cherche par slot</h3>
+        <dl class="slots">
+          <div><dt>Arme (deux dagues)</dt><dd>Combat speed, smite, weapon damage boost</dd></div>
+          <div><dt>Arme, 4<sup>e</sup> ligne</dt><dd>Damage boost ou accuracy selon le manque</dd></div>
+          <div><dt>Arme, 5<sup>e</sup> et 6<sup>e</sup></dt><dd>Accuracy + damage boost, puis multi-hit</dd></div>
+          <div><dt>Casque &amp; cape</dt><dd>Smite + attaque</dd></div>
+          <div><dt>Épaulières</dt><dd>Crit damage</dd></div>
+          <div><dt>Torse</dt><dd>Damage boost</dd></div>
+          <div><dt>Jambes</dt><dd>Damage tolerance + attaque</dd></div>
+          <div><dt>Gants</dt><dd>Combat speed</dd></div>
+          <div><dt>Bottes</dt><dd>Move speed</dd></div>
+          <div><dt>Anneaux</dt><dd>Attaque, puis les paliers de skills</dd></div>
+          <div><dt>Boucles &amp; collier</dt><dd>Les trois passifs : attaque et accuracy</dd></div>
+        </dl>
+        <p>Sur les anneaux, on ne cherche pas une stat mais un <strong>palier</strong> : un « +1 » qui fait passer <span class="skl" data-skill="heart-gore"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><span class="n">Heart Gore</span></span> de 15 à 16 vaut plus que n'importe quelle ligne d'attaque. Et sur les manastones, mon ordre est <strong>back attack boost</strong> (si le placement suit), puis weapon damage boost, puis crit damage, puis attaque, puis damage boost. Et sur le slot ouvert à la pierre philosophale — le seul qui ne se transfère pas quand vous changez de pièce — mettez votre <strong>plus mauvaise</strong> ligne, typiquement l'attaque brute.</p>
+      </section>
+      <!-- ============ 10 ============ -->
+      <section id="s10" class="rv">
+        <span class="sec-num"><svg class="ic"><use href="#i-book"/></svg>Chapitre 10 — Arcanes, Panthéon, titres</span>
+        <h2 class="sec">Les trois systèmes de fond</h2>
+        <p class="sec-intro">Trois chantiers qui ne se voient pas dans une barre de skills mais qui pèsent lourd sur la feuille de perso. Les arcanes portent vos niveaux au-delà de 10, le Panthéon porte l'arbitrage du chapitre précédent, et les titres sont probablement le gain gratuit le plus négligé du jeu.</p>
+
+        <h3><svg class="ic"><use href="#i-book"/></svg>Les cartes d'arcane</h3>
+        <p>Chaque famille de cartes porte un type d'effet. Pour un Assassin, la répartition que DocDany recommande et que je reprends :</p>
+        <div class="tw">
+          <table>
+            <thead><tr><th>Famille</th><th>Ce qu'on y met</th><th>Remarque</th></tr></thead>
+            <tbody>
+              <tr><td class="k"><svg class="ic"><use href="#i-book"/></svg>Parchemin</td><td>Savage Roar, Insignia Explosion, Quick Slash</td><td>Vos skills actifs cœur.</td></tr>
+              <tr><td class="k"><svg class="ic"><use href="#i-target"/></svg>Boussole</td><td>Savage Roar en priorité, sinon Storm Rampage</td><td>Les autres options sont nettement moins importantes.</td></tr>
+              <tr><td class="k"><svg class="ic" data-skill="assault-stance"><use href="#i-assault"/></svg>Cloche</td><td>Que des passifs — <strong>Assault Stance</strong> avant tout</td><td>Le reste des passifs de la cloche est secondaire.</td></tr>
+              <tr><td class="k"><svg class="ic" data-skill="rear-smite"><use href="#i-back"/></svg>Miroir</td><td>Passifs : <strong>Rear Smite</strong>, <strong>Impact Hit</strong></td><td>Le miroir en porte plusieurs et ils sont tous corrects.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="note gold">
+          <span class="lab g"><svg class="ic"><use href="#i-star"/></svg>Deux conseils qui font la différence</span>
+          <p><strong>Un :</strong> privilégiez les cartes qui <em>drop</em> plutôt que le craft. Crafter une carte unique coûte de l'ordre de 5 cristaux et 2 millions de kinah, et le drop revient bien moins cher pour un résultat équivalent. <strong>Deux :</strong> visez les cartes de rang supérieur, parce qu'elles donnent des stats en plus du niveau de skill, Wisdom donne du <strong>smite en pourcentage</strong>, la cloche donne de la <strong>destruction</strong> (attaque en pourcentage), et une autre monte le crit rate. Ces stats additionnelles sont une bonne partie de l'intérêt du système.</p>
+        </div>
+        <div class="note trap">
+          <span class="lab"><svg class="ic"><use href="#i-warn"/></svg>Le piège des arcanes</span>
+          <p>Sacrifier ses cartes sans les lire. Les skills portés par les cartes que vous consommez <strong>orientent</strong> ce qui monte sur la carte principale, une carte moche qui porte <span class="skl" data-skill="heart-gore"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><span class="n">Heart Gore</span></span> vaut plus qu'une belle gold prise au hasard dans le tas.</p>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-scale"/></svg>Le Panthéon</h3>
+        <p>C'est là que se joue l'arbitrage du chapitre&nbsp;9, tableau par tableau. Le principe que défend DocDany : <strong>ne pas empiler une seule stat</strong>. Plutôt que de chercher du Wisdom partout, viser du Wisdom <em>et</em> de l'Illusion sur chaque tableau. Ça coûte plus cher en tableaux bleus mais ça donne à la fois un bon taux de smite et assez de CDR pour tenir le buff.</p>
+        <p>C'est un chantier long et il n'a pas besoin d'être parfait pour être rentable, posez les tableaux au fil de l'eau, remplacez les plus faibles quand vous trouvez mieux, et ne cherchez pas l'optimum avant plusieurs mois.</p>
+        <p>Côté <strong>ailes</strong>, la référence chez les Assassins ce sont les <strong>Talisra</strong> : ≈4&nbsp;% de CDR plus un bonus d'attaque. Des ailes plus récentes existent côté KR avec du back attack, ce qui en fait une alternative cohérente si vous partez sur l'école du smite pur.</p>
+
+        <h3><svg class="ic"><use href="#i-star"/></svg>Les titres, le gain gratuit que personne ne va chercher</h3>
+        <p>Deux setups, l'un accessible en fin de leveling, l'autre à farm sur la durée. Trois slots à chaque fois : offensif, défensif, utilitaire. Les noms ci-dessous sont ceux qui circulent en anglais ou traduits du coréen, comme pour le reste du kit, repérez-les à leur condition de déblocage plutôt qu'à leur nom.</p>
+        <div class="tw">
+          <table>
+            <thead><tr><th>Slot</th><th>Setup fin de leveling</th><th>Condition</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Offensif</td><td>Guardian of Altar</td><td>Monolithe au niveau <strong>20</strong> — donc vos plumes déposées.</td></tr>
+              <tr><td class="k">Défensif</td><td>Saint of Altar</td><td>Monolithe au niveau <strong>30</strong>.</td></tr>
+              <tr><td class="k">Utilitaire</td><td>Little Brat</td><td>Une quête annexe au niveau <strong>45</strong>. C'est le titre qui donne le plus d'attack speed du jeu à ses débuts.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="tw">
+          <table>
+            <thead><tr><th>Slot</th><th>Setup long terme</th><th>Condition</th></tr></thead>
+            <tbody>
+              <tr><td class="k">Offensif</td><td>Unbound by Genus</td><td>Les cinq arbres de Genus Insight au niveau <strong>10</strong>.<a class="j1" href="#j1">test de lancement</a></td></tr>
+              <tr><td class="k">Défensif</td><td>Ruler of All Creation</td><td><strong>200 pets</strong> différents débloqués. Long mais facile.</td></tr>
+              <tr><td class="k">Utilitaire</td><td>Empty Closet</td><td><strong>700 skins</strong> débloqués. Les stats sont complètement broken.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="note">
+          <span class="lab a"><svg class="ic"><use href="#i-star"/></svg>Ce qu'il faut retenir</span>
+          <p>Les deux premiers titres viennent du <strong>monolithe</strong>, donc des plumes. C'est la troisième fois qu'elles reviennent dans ce guide, skill points d'abord, et maintenant deux titres. Si vous ne retenez qu'un réflexe du leveling, c'est celui-là. Et équipez vos titres <strong>dès que vous les avez</strong> : beaucoup les débloquent et oublient de les mettre.</p>
+        </div>
+      </section>
+
+      <!-- ============ 11 ============ -->
+      <section id="s11" class="rv">
+        <span class="sec-num"><svg class="ic"><use href="#i-pet"/></svg>Chapitre 11 — Genus Insight</span>
+        <h2 class="sec">Les pets et les neuf nodes</h2>
+        <p class="sec-intro">Le système lié aux pets, un des plus rentables du jeu pour un investissement modeste, et la porte d'entrée du meilleur titre offensif.</p>
+
+        <p>La boucle est simple, chaque fois que vous tuez un mob dont vous avez déjà le pet, vous gagnez des <strong>cristaux</strong>, et ces cristaux servent à reroll les stats des neuf nodes. L'objectif de fond est de monter les pets au <strong>niveau 5</strong> le plus vite possible, et d'en collectionner <strong>200</strong> pour le titre défensif. Niveau&nbsp;3 pour la monture, niveau&nbsp;5 pour l'apparence, et les pets de la famille <em>Spéciaux</em> ne donnent aucune stat.</p>
+
+        <div class="tw">
+          <table>
+            <thead><tr><th>Nodes</th><th>En progression</th><th>En optimisation</th></tr></thead>
+            <tbody>
+              <tr><td class="k">1 / 4 / 7</td><td>Crit jusqu'à votre cap, puis accuracy</td><td>Boss attack, une fois accuracy et crit validés</td></tr>
+              <tr><td class="k">2 / 5 / 8</td><td>Attaque supplémentaire</td><td>Attaque au max</td></tr>
+              <tr><td class="k">3 / 9</td><td>Smite, ou back attack boost</td><td>Smite ou back attack selon la régularité de votre placement</td></tr>
+              <tr><td class="k">6</td><td>Damage tolerance</td><td>PvE damage tolerance</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="note">
+          <span class="lab a"><svg class="ic"><use href="#i-warn"/></svg>Les chiffres viennent de Taïwan</span>
+          <p>Un cap de crit autour de 2 200, de l'attaque à 19-20 sur un node, du smite à 2&nbsp;%, ce sont des seuils de persos endgame sur une version en avance. Prenez l'<strong>ordre des priorités</strong>, qui reste valable, pas les valeurs.</p>
+        </div>
+        <div class="note trap">
+          <span class="lab"><svg class="ic"><use href="#i-warn"/></svg>Le piège des nodes</span>
+          <p>Lock une ligne avant le <strong>niveau 10</strong> de l'arbre. Le coût des rerolls explose ensuite et vous payez une fortune pour corriger un lock posé trop tôt sur une valeur moyenne. Montez les cinq arbres au 10 d'abord — ça débloque en prime le meilleur titre offensif du jeu — et lockez après.</p>
+        </div>
+      </section>
+
+      <!-- ============ 12 ============ -->
+      <section id="s12" class="rv">
+        <span class="sec-num"><svg class="ic"><use href="#i-macro"/></svg>Chapitre 12 — La macro</span>
+        <h2 class="sec">La macro Assassin, ligne par ligne</h2>
+        <p class="sec-intro">DocDany dit que l'Assassin a <strong>la macro la plus compliquée du jeu</strong>, et après avoir monté la mienne je confirme. Ce n'est pas de l'automatisation pour jouer moins. C'est l'outil qui annule les animations et enchaîne les skills plus vite qu'une main ne le peut. Sans macro correcte, la classe perd une grosse part de ses dégâts.</p>
+
+        <h3><svg class="ic"><use href="#i-gear"/></svg>Où ça se règle</h3>
+        <p>Paramètres → réglages des touches → descendre jusqu'à la section gameplay → assigner une touche à la macro. Ensuite on ajoute les lignes et on choisit la barre de skills qui sera jouée. Une pression maintenue lance la séquence.</p>
+
+        <h3><svg class="ic"><use href="#i-macro"/></svg>L'ordre des lignes, et pourquoi</h3>
+        <div class="macro">
+          <div class="ln"><span class="k">1</span><span class="icbox aether"><svg class="ic" data-skill="shadow-strike"><use href="#i-shadowstrike"/></svg></span><div><b><span class="skl" data-skill="shadow-strike"><svg class="ic" aria-hidden="true"><use href="#i-shadowstrike"/></svg><span class="n">Shadow Strike</span></span></b><p>Le buff de crit damage. Il ouvre tout, ce qui suit doit taper dedans.</p></div></div>
+          <div class="ln"><span class="k">2</span><span class="icbox"><svg class="ic" data-skill="triniels-dagger"><use href="#i-cooldown"/></svg></span><div><b><span class="skl" data-skill="triniels-dagger"><svg class="ic" aria-hidden="true"><use href="#i-cooldown"/></svg><span class="n">Triniel's Dagger</span></span></b><p>Placée tôt parce qu'elle réduit vos CD et qu'elle a de gros dégâts de base. On la veut dès qu'elle est up.</p></div></div>
+          <div class="ln"><span class="k">3</span><span class="icbox gold"><svg class="ic" data-skill="insignia-explosion"><use href="#i-rune"/></svg></span><div><b><span class="skl" data-skill="insignia-explosion"><svg class="ic" aria-hidden="true"><use href="#i-rune"/></svg><span class="n">Insignia Explosion</span></span> — avant <span class="skl" data-skill="heart-gore"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><span class="n">Heart Gore</span></span></b><p>Le point contre-intuitif. En plein burst, <span class="skl" data-skill="heart-gore"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><span class="n">Heart Gore</span></span> se reset en boucle et monopoliserait la macro, si bien que l'explosion ne partirait jamais. Or elle tape presque trois fois plus fort par coup. Elle passe donc devant.</p></div></div>
+          <div class="ln"><span class="k">4</span><span class="icbox gold"><svg class="ic" data-skill="heart-gore"><use href="#i-heart"/></svg></span><div><b><span class="skl" data-skill="heart-gore"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><span class="n">Heart Gore</span></span></b><p>Votre skill de DPS soutenu. Il remplit tout l'espace que les autres laissent.</p></div></div>
+          <div class="ln"><span class="k">5</span><span class="icbox"><svg class="ic" data-skill="savage-fang"><use href="#i-fang"/></svg></span><div><b><span class="skl" data-skill="savage-fang"><svg class="ic" aria-hidden="true"><use href="#i-fang"/></svg><span class="n">Savage Fang</span></span>, en dernier</b><p>En fin de séquence il ne proc que lorsque vous n'êtes <em>pas</em> en burst, exactement ce qu'on veut, un peu de dégâts en plus et une réduction du CD de <span class="skl" data-skill="shadow-strike"><svg class="ic" aria-hidden="true"><use href="#i-shadowstrike"/></svg><span class="n">Shadow Strike</span></span>.</p></div></div>
+        </div>
+        <p>Si vous jouez en <strong>action combat</strong>, ajoutez une ligne d'auto-attack au milieu de la séquence, sans elle le perso s'arrête après chaque skill et la mana ne remonte jamais. En <strong>tab-target</strong>, ne la mettez pas, le jeu relance l'auto-attack tout seul dans les trous, une ligne de plus ne ferait que diluer la macro.</p>
+
+        <h3><svg class="ic"><use href="#i-speed"/></svg>Le réglage qui compte vraiment : le delay</h3>
+        <div class="note gold">
+          <span class="lab g"><svg class="ic"><use href="#i-speed"/></svg>Calez le delay sur votre ping</span>
+          <p>Le delay entre deux lignes dépend de votre latence, et c'est lui qui décide si la macro <strong>annule les animations</strong> ou si elle les subit. Sous 50&nbsp;ms de ping : <strong>10&nbsp;ms</strong> de delay. À 80&nbsp;ms et plus : <strong>40 à 50&nbsp;ms</strong>. Le repère visuel donné par aLuckyRO, quand le delay est bon, vous voyez les ombres apparaître sur votre perso pendant l'enchaînement. Retestez après chaque changement notable de combat speed ou de CDR, les timings ne collent plus.</p>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-heart"/></svg>Ce qui reste manuel</h3>
+        <p>Une macro bien réglée ne joue pas à votre place. Deux choses restent dans vos mains. D'abord le <strong>spam manuel de <span class="skl" data-skill="heart-gore"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><span class="n">Heart Gore</span></span></strong> pendant la fenêtre d'Illusion Clone, en tapant sa touche à la main vous lui donnez la priorité sur la macro et vous exploitez les resets en chaîne. Quand le buff tombe, vous relâchez et la macro reprend seule.</p>
+        <p>Ensuite <strong><span class="skl" data-skill="storm-rampage"><svg class="ic" aria-hidden="true"><use href="#i-storm"/></svg><span class="n">Storm Rampage</span></span></strong>, qui ne se joue jamais en auto, voir l'encadré du chapitre suivant. Et bien sûr tous les déplacements et les défensifs.</p>
+        <div class="note trap">
+          <span class="lab"><svg class="ic"><use href="#i-warn"/></svg>La limite à connaître</span>
+          <p>Le nombre de lignes est limité, et une macro Assassin bien remplie laisse peu de place, DocDany n'a même pas de cinquième case pour sa smoke bomb. Ne cherchez pas à y mettre un skill utilitaire « au cas où », chaque ligne parasite retarde vos quatre skills de dégâts.</p>
+        </div>
+      </section>
+
+      <!-- ============ 13 ============ -->
+      <section id="s13" class="rv">
+        <span class="sec-num"><svg class="ic"><use href="#i-storm"/></svg>Chapitre 13 — La rotation</span>
+        <h2 class="sec">Opener, boucle et gestion des déplacements</h2>
+        <p class="sec-intro">L'Assassin n'a pas de rota fixe, il a un opener, une macro, et deux ou trois décisions à prendre au bon moment. Ce sont ces décisions qui séparent deux joueurs au même gear.</p>
+
+        <h3><svg class="ic"><use href="#i-flash"/></svg>L'opener</h3>
+        <div class="rota">
+          <div class="st"><div><b>Arriver avec ses CD prêts</b><p>Le prérequis que personne ne mentionne, c'est que votre burst doit être up <em>au début</em> du combat. Ne le cramez pas sur les adds juste avant le boss.</p></div></div>
+          <div class="st"><div><b>Les deux buffs</b><p><span class="skl" data-skill="illusion-clone"><svg class="ic" aria-hidden="true"><use href="#i-clone"/></svg><span class="n">Illusion Clone</span></span> et <span class="skl" data-skill="swift-contract"><svg class="ic" aria-hidden="true"><use href="#i-swift"/></svg><span class="n">Swift Contract</span></span>, dans la même seconde, avant d'engager.</p></div></div>
+          <div class="st"><div><b>Backstab</b><p>On se place derrière avant, pas pendant. Et on garde un outil de déplacement en réserve pour quand le boss pivotera.</p></div></div>
+          <div class="st"><div><b><span class="skl" data-skill="savage-fang"><svg class="ic" aria-hidden="true"><use href="#i-fang"/></svg><span class="n">Savage Fang</span></span></b><p>Trois effets d'un coup : le damage boost, le stagger, et surtout il pose <strong>automatiquement les cinq stacks</strong> d'Insignia Explosion. C'est ce qui permet d'entrer dans la macro avec l'explosion déjà chargée.</p></div></div>
+          <div class="st loop"><div><b>Puis la macro</b><p>Et pendant toute la durée du buff, spam <span class="skl" data-skill="heart-gore"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><span class="n">Heart Gore</span></span> à la main pour exploiter les resets.</p></div></div>
+        </div>
+
+        <h3><svg class="ic" data-skill="storm-rampage"><use href="#i-storm"/></svg>Storm Rampage : le skill le plus mal joué de la classe</h3>
+        <div class="note gold">
+          <span class="lab g"><svg class="ic"><use href="#i-storm"/></svg>Les trois règles</span>
+          <p><strong>Un :</strong> s'il n'est pas au <strong>niveau 16</strong>, ne l'utilisez pas du tout, vous perdez plus de DPS à le lancer qu'à l'ignorer. <strong>Deux :</strong> ne le lancez jamais sur un boss qui est en train de mourir, c'est du cooldown jeté. <strong>Trois :</strong> le bon moment, c'est vers la moitié de la barre du boss, juste après un burst ou pendant, il efface les CD de vos buffs, vous burstez deux fois plus longtemps, et sur certains boss vous ne sortez plus de la fenêtre. Utilisé là, DocDany le décrit comme « absolument broken », et après l'avoir testé je ne peux qu'être d'accord.</p>
+        </div>
+        <p>Le corollaire, si le boss entre en break et que votre burst est déjà up ou le sera dans les cinq secondes, ne faites rien de spécial, tapez normalement avec la macro, ça se passera très bien.</p>
+
+        <h3><svg class="ic"><use href="#i-infiltrate"/></svg>Les déplacements, ou comment ne pas gâcher un outil</h3>
+        <p>Vous avez quatre outils de repositionnement et ils n'ont pas le même rôle. Le <strong>court</strong> sert à se replacer quand le boss se retourne, ou à recoller après un dash. Les deux <strong>longs</strong>, de l'ordre de 18 et 20&nbsp;m, servent à revenir au contact après une méca, l'un d'eux vous sortant du combat. Enfin le <strong>backstab</strong> a deux usages qui s'excluent : booster vos crits via sa spé, ou <strong>follow le boss</strong> quand il se téléporte.</p>
+        <div class="note">
+          <span class="lab a"><svg class="ic"><use href="#i-target"/></svg>Ma règle de décision</span>
+          <p>Sur un boss statique, je dépense le backstab pour les dégâts. Sur un boss qui bouge beaucoup, <strong>je le garde uniquement pour le follow</strong>. Perdre trois secondes à courir derrière un boss coûte bien plus que le bonus de crit gagné.</p>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-eye"/></svg>Le réglage qui rapporte le plus de DPS</h3>
+        <div class="note gold">
+          <span class="lab g"><svg class="ic"><use href="#i-eye"/></svg>L'indicateur de dos</span>
+          <p>Le jeu propose un indicateur qui dit si vous êtes réellement dans le dos de la cible. Activez-le : <strong>il a toujours raison, même quand le boss a l'air de regarder ailleurs</strong>. Le modèle 3D peut tourner sans que la hitbox suive. C'est probablement le réglage le plus rentable de toute cette page et il ne coûte rien.</p>
+        </div>
+        <p>Activez aussi le <strong>suivi automatique</strong> à l'utilisation des skills, le perso se déplace pour se mettre à portée au lieu d'annuler le cast.</p>
+
+        <h3><svg class="ic"><use href="#i-warn"/></svg>DPS décevant : la checklist</h3>
+        <ol>
+          <li><strong>Vous ratez.</strong> Vérifiez l'accuracy contre le contenu que vous faites, première cause, et la plus invisible.</li>
+          <li><strong>Votre uptime dans le dos est plus bas que vous ne croyez.</strong> Mettez l'indicateur et mesurez sur un combat entier.</li>
+          <li><strong>Vos deux buffs ont dérivé.</strong> S'ils ne partent plus ensemble, la fenêtre se vide.</li>
+          <li><strong>Le delay de macro n'est pas calé sur votre ping.</strong> Pas d'ombres à l'écran = pas d'animation cancel.</li>
+          <li><strong>Vous lancez <span class="skl" data-skill="storm-rampage"><svg class="ic" aria-hidden="true"><use href="#i-storm"/></svg><span class="n">Storm Rampage</span></span> n'importe quand</strong>, ou sous le niveau 16.</li>
+          <li><strong>Vous ne spammez pas <span class="skl" data-skill="heart-gore"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><span class="n">Heart Gore</span></span> pendant le buff</strong> et vous laissez la macro décider à votre place.</li>
+          <li><strong>Vous êtes au-dessus du cap de crit ou d'accuracy.</strong> Chaque point au-delà est perdu.</li>
+          <li><strong>Votre combat power monte mais pas vos paliers.</strong> Vous gagnez du combat power sans franchir un seul palier.</li>
+          <li><strong>Vous portez encore des spés de survie</strong> dont votre gear vous a dispensé depuis longtemps.</li>
+          <li><strong>Vous vous êtes réglé sous le buff d'un Chanter.</strong> Refaites vos calculs à nu.</li>
+        </ol>
+      </section>
+      <!-- ============ 14 ============ -->
+      <section id="s14" class="rv">
+        <span class="sec-num"><svg class="ic"><use href="#i-gear"/></svg>Chapitre 14 — Le gear</span>
+        <h2 class="sec">Sur quoi se poser, et quand</h2>
+        <p class="sec-intro">Le gear est le système le plus complet et le plus long à obtenir du jeu. La règle qui traverse tout ce chapitre : <strong>ne dépensez jamais sur une pièce que vous ne garderez pas</strong>. Vrai pour tout le monde, encore plus pour une classe dont la progression passe surtout par les skills.</p>
+
+        <h3><svg class="ic"><use href="#i-warn"/></svg>Pendant le leveling</h3>
+        <p>Équipez ce qui drop, n'achetez rien. Vous droppez, vous équipez, vous continuez. C'est tout. En particulier, l'<strong>arme gold que la fin du leveling vous offre</strong>, autour de l'iLevel&nbsp;57, est nulle : pas d'enchant, pas de manastone, pas un kinah dessus.</p>
+
+        <h3><svg class="ic"><use href="#i-star"/></svg>La première vraie arme</h3>
+        <div class="note gold">
+          <span class="lab g"><svg class="ic"><use href="#i-target"/></svg>L'objectif de la première semaine au cap</span>
+          <p>Allez chercher l'arme du <strong>Fire Temple</strong> — la Chromede dans les traductions qui circulent. C'est la première arme qui mérite votre kinah. Gardez la main gauche que vous avez en attendant. Et dans les récompenses de contenu, prenez systématiquement les <strong>tickets</strong> : ce sont eux qui servent à aller chercher les armes.</p>
+        </div>
+        <p>Ordre de priorité une fois lancé : l'<strong>arme</strong> d'abord, la <strong>main gauche</strong> ensuite, puis les <strong>deux anneaux</strong>. Ces pièces-là vous les garderez très longtemps, c'est le moment de push à fond, et seulement là.</p>
+
+        <h3><svg class="ic"><use href="#i-slash"/></svg>Les lignes d'arme, dans l'ordre</h3>
+        <div class="tw">
+          <table>
+            <thead><tr><th>Ligne</th><th>Ce qu'on prend</th><th>Remarque</th></tr></thead>
+            <tbody>
+              <tr><td class="k">1 à 3</td><td>Combat speed, smite, weapon damage boost</td><td>Le socle. Une arme à trois lignes se règle comme ça sans réfléchir.</td></tr>
+              <tr><td class="k">4</td><td>Damage boost <em>ou</em> accuracy</td><td>Selon ce qui vous manque. Si vous ratez, accuracy. Sinon damage boost.</td></tr>
+              <tr><td class="k">5</td><td>L'autre des deux</td><td>On complète le couple.</td></tr>
+              <tr><td class="k">6</td><td>Multi-hit chance</td><td>Sauf si l'arme apporte déjà du multi-hit par elle-même, dans ce cas autre chose.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-crit"/></svg>Les accessoires<a class="j1" href="#j1">test de lancement</a></h3>
+        <p>Ce sont eux qu'il faut travailler en premier, avant les pièces d'armure. Sur les <strong>anneaux</strong>, on cherche de l'attaque puis on les push au max. Sur les <strong>boucles</strong> et le <strong>collier</strong>, les trois passifs d'attaque et d'accuracy. Sur la <strong>cape</strong>, attaque et smite.</p>
+        <p>Chaque slot a ses propres stats disponibles au soul imprint, donc le tableau du chapitre&nbsp;9 sert de carte, on ne cherche pas la même chose sur des gants que sur un casque, et vouloir mettre du smite partout revient à gaspiller des rerolls.</p>
+
+        <div class="note trap">
+          <span class="lab"><svg class="ic"><use href="#i-warn"/></svg>Le piège du gear score</span>
+          <p><strong>Le gear score n'est pas une mesure de puissance</strong>, et sur cette classe moins que sur aucune autre. Avec du gear moyen mais des skills aux paliers, vous taperez plus fort qu'un mec au double de gear score dont les skills plafonnent au 12. Si vous devez choisir entre push une pièce et franchir un palier, franchissez le palier.</p>
+        </div>
+      </section>
+
+      <!-- ============ 15 ============ -->
+      <section id="s15" class="rv">
+        <span class="sec-num"><svg class="ic"><use href="#i-pvp"/></svg>Chapitre 15 — PvP</span>
+        <h2 class="sec">Abîme, arène et embuscades</h2>
+        <p class="sec-intro">En PvP l'Assassin ne joue pas un rôle de DPS, il joue un rôle de <strong>menace</strong>. Votre boulot n'est pas de taper sur la ligne de front, c'est de contourner et de supprimer la cible qui tient le camp d'en face.</p>
+
+        <h3><svg class="ic"><use href="#i-pvp"/></svg>Ce qui change par rapport au PvE</h3>
+        <div class="tw">
+          <table>
+            <thead><tr><th>Élément</th><th>PvE</th><th>PvP</th></tr></thead>
+            <tbody>
+              <tr><td class="k">4<sup>e</sup> stigma</td><td>Savage Fang</td><td><strong>Throw Shadowblade</strong> — 20&nbsp;m avec slow, et reset quand vous achevez une cible</td></tr>
+              <tr><td class="k">Ambush</td><td>Lifesteal, puis crit damage</td><td>Crit damage <em>et</em> seal de 5&nbsp;s</td></tr>
+              <tr><td class="k">Insignia Explosion</td><td>Multi-hit</td><td>Conservation des stacks et stun — les spés qu'on ignore en PvE</td></tr>
+              <tr><td class="k">Flash Slash</td><td>Dégâts multi-cibles</td><td>Durée du blind</td></tr>
+              <tr><td class="k">Priorité de cible</td><td>Le boss</td><td>Heals et casters, jamais le tank</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Et toute la moitié « inutile » du kit reprend son sens : buff removal, shadow wall, airborne, retrait de CC, shadow step, et le poison qui réduit les heals reçus, celui-là est précisément fait pour tomber sur un heal.</p>
+
+        <h3><svg class="ic"><use href="#i-ambush"/></svg>Le combo d'ouverture</h3>
+        <div class="rota">
+          <div class="st"><div><b>Buffs posés en amont</b><p>Avant l'engage, jamais pendant. Une seconde à buff devant la cible, c'est une seconde où elle vous voit venir.</p></div></div>
+          <div class="st"><div><b><span class="skl" data-skill="ambush"><svg class="ic" aria-hidden="true"><use href="#i-ambush"/></svg><span class="n">Ambush</span></span></b><p>Téléport derrière + stun. Le seal de 5&nbsp;s est ce qui empêche la cible de répondre.</p></div></div>
+          <div class="st"><div><b><span class="skl" data-skill="shadow-fall"><svg class="ic" aria-hidden="true"><use href="#i-shadowfall"/></svg><span class="n">Shadow Fall</span></span>, puis la chaîne de dégâts</b><p>Le burst tombe pendant que le CC tient.</p></div></div>
+          <div class="st"><div><b><span class="skl" data-skill="triniels-dagger"><svg class="ic" aria-hidden="true"><use href="#i-cooldown"/></svg><span class="n">Triniel's Dagger</span></span>, puis <span class="skl" data-skill="ambush"><svg class="ic" aria-hidden="true"><use href="#i-ambush"/></svg><span class="n">Ambush</span></span> à nouveau</b><p>La dague rabote assez de CD pour rendre un second <span class="skl" data-skill="ambush"><svg class="ic" aria-hidden="true"><use href="#i-ambush"/></svg><span class="n">Ambush</span></span> dispo. C'est là que la cible meurt, ou qu'elle vous échappe.</p></div></div>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-gear"/></svg>Réglages</h3>
+        <p>Activez le <strong>suivi automatique</strong> et réglez la recherche de cible pour privilégier les <strong>joueurs hostiles déjà engagés</strong> et la détection face caméra. En mêlée confuse, c'est ce qui évite de sauter sur le tank pendant que le heal est à trois mètres. Gardez vos quatre stigmas sur les touches 1 à 4, en PvP l'ordre d'appui compte plus qu'en PvE.</p>
+
+        <div class="note trap">
+          <span class="lab"><svg class="ic"><use href="#i-warn"/></svg>L'erreur du débutant en Abîme</span>
+          <p>Engage sans plan de sortie. Vous avez un burst, pas une barre de vie. Si la cible ne tombe pas dans la fenêtre, la question n'est pas « comment je continue » mais « par où je pars ». Gardez toujours un déplacement en réserve, et considérez qu'un burst raté est un burst annulé, pas un combat à finir.</p>
+        </div>
+        <p>Dernier point, le matchmaking PvP tourne par paire de serveurs toutes les deux semaines. Vos premières heures d'Abîme servent surtout à lancer le stock d'AP, commencez tôt même mal gear, la monnaie se cumule et la boutique PvP alimente la branche PvP du Daevanion.</p>
+      </section>
+
+      <!-- ============ 16 ============ -->
+      <section id="s16" class="rv">
+        <span class="sec-num"><svg class="ic"><use href="#i-cal"/></svg>Chapitre 16 — Mémo</span>
+        <h2 class="sec">La semaine type, les pièges et les checklists</h2>
+        <p class="sec-intro">Où va l'effort quand on joue cette classe, et ce qu'il ne faut surtout pas faire. Les cases se cochent et restent cochées sur votre appareil.</p>
+
+        <h3><svg class="ic"><use href="#i-cal"/></svg>Ce que je farm en priorité</h3>
+        <div class="tw">
+          <table>
+            <thead><tr><th>Ressource</th><th>Pourquoi elle passe avant</th><th>Où</th></tr></thead>
+            <tbody>
+              <tr><td class="k"><svg class="ic"><use href="#i-node"/></svg>Cristaux de Daevanion</td><td>Ce sont eux qui font passer les niveaux 12, 16 et 20 de vos skills cœur, c'est-à-dire votre build.</td><td>Quêtes secondaires, donjons scellés des <strong>deux</strong> cartes, rifts, boutique Nightmare.</td></tr>
+              <tr><td class="k"><svg class="ic"><use href="#i-clone"/></svg>Stigma shards</td><td>Les seuils de vos quatre stigmas sont le plus gros gain de dégâts dispo.</td><td>Donjon quotidien dédié, récompenses hebdo, boutiques d'échange.</td></tr>
+              <tr><td class="k"><svg class="ic"><use href="#i-book"/></svg>Cartes d'arcane</td><td>La seule autre voie vers les niveaux 11 à 20.</td><td>Transcendances et cubes de donjon. Privilégiez le drop au craft.</td></tr>
+              <tr><td class="k"><svg class="ic"><use href="#i-star"/></svg>Plumes</td><td>Skill points permanents, plus deux titres via le monolithe.</td><td>Partout, en détour. Carte dézoomée en permanence.</td></tr>
+              <tr><td class="k"><svg class="ic"><use href="#i-gear"/></svg>Tickets</td><td>Ils achètent votre première vraie arme.</td><td>Récompenses de contenu — prenez-les systématiquement.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3><svg class="ic"><use href="#i-warn"/></svg>Les dix pièges de l'Assassin</h3>
+        <ol>
+          <li><strong>Copier un build à cinq ou six stigmas.</strong> Vous n'en aurez que quatre, et les slots coupés portaient souvent la survie.</li>
+          <li><strong>Répartir ses points « équitablement ».</strong> Trois skills à 20 et un à 16 valent mieux que huit à 12.</li>
+          <li><strong>Croire que les mastery points mèneront un skill au-delà de 10.</strong> Jamais. Au-delà, c'est arcanes, Daevanion et gear.</li>
+          <li><strong>Prendre les spés offensives dès le 45.</strong> Sans gear, c'est le lifesteal et les HP qui vous font avancer plus vite.</li>
+          <li><strong>Lancer <span class="skl" data-skill="storm-rampage"><svg class="ic" aria-hidden="true"><use href="#i-storm"/></svg><span class="n">Storm Rampage</span></span> sous le niveau 16</strong>, ou sur un boss qui va mourir.</li>
+          <li><strong>Laisser la macro gérer <span class="skl" data-skill="heart-gore"><svg class="ic" aria-hidden="true"><use href="#i-heart"/></svg><span class="n">Heart Gore</span></span> pendant le buff</strong> au lieu de le spam à la main.</li>
+          <li><strong>Régler le delay de macro au hasard.</strong> Sans calage sur le ping, pas d'animation cancel, et une bonne partie des dégâts de la classe disparaît.</li>
+          <li><strong>Enchant l'arme gold de fin de leveling.</strong> Elle est nulle, vous la jetterez.</li>
+          <li><strong>Lock une ligne de Genus Insight avant le niveau 10</strong> et faire exploser le coût des rerolls.</li>
+          <li><strong>Débloquer des titres et oublier de les équiper.</strong> Ça arrive plus souvent qu'on ne croit.</li>
+        </ol>
+
+        <div class="check" data-ck="lvl">
+          <div class="ck-hd"><span>Route vers le 45</span><span><span class="cnt">0/8</span> <button class="reset-btn" type="button" data-reset="lvl">Reset</button></span></div>
+          <label><input type="checkbox" id="ck-lvl-1"><span>Quick Slash spé <b>mana</b> dès les premiers niveaux</span></label>
+          <label><input type="checkbox" id="ck-lvl-2"><span>Palier 8 posé sur Ambush, Shadow Strike, Heart Gore, Shadow Fall — en lignes de survie</span></label>
+          <label><input type="checkbox" id="ck-lvl-3"><span>Carte dézoomée en permanence, détour systématique sur les plumes</span></label>
+          <label><input type="checkbox" id="ck-lvl-4"><span>Donjons scellés cochés sur ma carte <b>et</b> sur celle d'en face</span></label>
+          <label><input type="checkbox" id="ck-lvl-5"><span>Savage Roar monté au niveau 10</span></label>
+          <label><input type="checkbox" id="ck-lvl-6"><span>Aucun kinah claqué sur l'arme gold de fin de leveling</span></label>
+          <label><input type="checkbox" id="ck-lvl-7"><span>Heart Gore poussé vers le palier 16</span></label>
+          <label><input type="checkbox" id="ck-lvl-8"><span>Monolithe au niveau 20 → premier titre offensif équipé</span></label>
+        </div>
+
+        <div class="check" data-ck="cap">
+          <div class="ck-hd"><span>Première semaine au cap</span><span><span class="cnt">0/10</span> <button class="reset-btn" type="button" data-reset="cap">Reset</button></span></div>
+          <label><input type="checkbox" id="ck-cap-1"><span>Les quatre stigmas choisis et assumés</span></label>
+          <label><input type="checkbox" id="ck-cap-2"><span>Triniel's Dagger montée à 10 pour activer le CDR</span></label>
+          <label><input type="checkbox" id="ck-cap-3"><span>Macro montée : Shadow Strike → Triniel's Dagger → Insignia Explosion → Heart Gore → Savage Fang</span></label>
+          <label><input type="checkbox" id="ck-cap-4"><span>Delay de macro calé sur mon ping, ombres visibles à l'écran</span></label>
+          <label><input type="checkbox" id="ck-cap-5"><span>Indicateur de dos activé dans les options</span></label>
+          <label><input type="checkbox" id="ck-cap-6"><span>Arbres Zikel, Vaizel et Triniel identifiés, zéro point en défensif</span></label>
+          <label><input type="checkbox" id="ck-cap-7"><span>Arme du Fire Temple en objectif, tickets ramassés</span></label>
+          <label><input type="checkbox" id="ck-cap-8"><span>Trois titres équipés, même les moins bons</span></label>
+          <label><input type="checkbox" id="ck-cap-9"><span>Cinq arbres de Genus Insight au niveau 10 avant tout lock</span></label>
+          <label><input type="checkbox" id="ck-cap-10"><span>Premières heures d'Abîme faites pour lancer le stock d'AP</span></label>
+        </div>
+
+        <div class="check" data-ck="audit">
+          <div class="ck-hd"><span>Audit du build — chaque mois</span><span><span class="cnt">0/7</span> <button class="reset-btn" type="button" data-reset="audit">Reset</button></span></div>
+          <label><input type="checkbox" id="ck-audit-1"><span>Mes skills cœur sont sur un palier, pas entre deux</span></label>
+          <label><input type="checkbox" id="ck-audit-2"><span>Mes deux buffs partent bien dans la même seconde</span></label>
+          <label><input type="checkbox" id="ck-audit-3"><span>Je suis sous le cap d'accuracy du contenu que je fais vraiment</span></label>
+          <label><input type="checkbox" id="ck-audit-4"><span>J'ai tranché entre smite et CDR, et je m'y tiens</span></label>
+          <label><input type="checkbox" id="ck-audit-5"><span>Mon uptime dans le dos a été mesuré sur un combat entier</span></label>
+          <label><input type="checkbox" id="ck-audit-6"><span>J'ai rebasculé mes spés de survie vers l'offensif</span></label>
+          <label><input type="checkbox" id="ck-audit-7"><span>Mes manastones privilégient le back attack si le placement suit</span></label>
+        </div>
+      </section>
+
+      <!-- ============ 17 ============ -->
+      <section id="s17" class="rv">
+        <span class="sec-num"><svg class="ic"><use href="#i-scale"/></svg>Chapitre 17 — Recoupements</span>
+        <h2 class="sec">Là où mes sources ne disent pas la même chose</h2>
+        <p class="sec-intro">Je préfère afficher les désaccords plutôt que trancher en silence. Ces divergences s'expliquent presque toutes par une chose, mes sources ne parlent pas du même moment de la vie du perso.</p>
+
+        <div class="cmp">
+          <div class="row">
+            <div class="q">Slots de stigma</div>
+            <div class="a"><span class="who">DocDany &amp; aLuckyRO</span>Cinq slots au moment où les guides ont été filmés sur la KR.</div>
+            <div class="b"><span class="who">Dossiers écrits récents</span>Six depuis le Chapitre&nbsp;1. La globale en annonce quatre, et la bêta l'a confirmé.<span class="bta">tranché en bêta</span> C'est une limite de Saison 1, pas un chiffre définitif.</div>
+          </div>
+          <div class="row">
+            <div class="q">Ordre de montée des stigmas</div>
+            <div class="a"><span class="who">aLuckyRO</span>Ce qui donne des dégâts tout de suite, sans seuil : Throw Shadowblade et Savage Fang à 10, les buffs plus tard.</div>
+            <div class="b"><span class="who">DocDany</span>Triniel's Dagger à 10 d'abord parce qu'elle améliore tout le kit, puis les deux buffs montés ensemble. C'est l'école que je retiens (chapitre&nbsp;7).</div>
+          </div>
+          <div class="row">
+            <div class="q">Spés de Heart Gore</div>
+            <div class="a"><span class="who">Début de jeu</span>HP, parce qu'on meurt sans gear.</div>
+            <div class="b"><span class="who">Endgame</span>Crit, multi-hit et skill cooldown. Les deux ont raison, ce n'est pas le même perso.</div>
+          </div>
+          <div class="row">
+            <div class="q">Smite ou CDR</div>
+            <div class="a"><span class="who">Le build répandu</span>Tout en Wisdom, pour des coups plus lourds.</div>
+            <div class="b"><span class="who">DocDany</span>Sacrifier une dizaine de points de smite pour 42&nbsp;% de CDR et tenir l'uptime. Désaccord assumé des deux côtés, voir le chapitre&nbsp;9.</div>
+          </div>
+          <div class="row">
+            <div class="q">L'arbre Vaizel</div>
+            <div class="a"><span class="who">Autres joueurs TW</span>Attack speed + smite resist pour l'un, accuracy + evasion pour l'autre.</div>
+            <div class="b"><span class="who">DocDany &amp; aLuckyRO</span><strong>Crit damage boost</strong>, montré à l'écran par les deux. C'est ce que je retiens, deux sources qui montrent l'infobulle, ça vaut mieux que deux sources qui la racontent.</div>
+          </div>
+          <div class="row">
+            <div class="q">Armes de la classe</div>
+            <div class="a"><span class="who">Fiche de classe &amp; KR</span>Deux dagues, uniquement.</div>
+            <div class="b"><span class="who">Sites de revente</span>Parlent d'« épée + dague » et de « deux épées ». Aucune source sérieuse ne confirme, c'est le signe que ces pages recyclent des mécaniques d'Aion&nbsp;1.</div>
+          </div>
+        </div>
+
+        <div class="note ndlr">
+          <span class="lab n"><svg class="ic"><use href="#i-book"/></svg>Mon avis</span>
+          <p>La leçon de ce tableau, et elle vaut pour tous les guides de classe, quand deux joueurs sérieux se contredisent, demandez-vous d'abord <strong>à quel moment de la progression</strong> chacun parle. Neuf fois sur dix c'est ça l'explication, et les deux ont raison. Le seul vrai désaccord de fond dans cette page, c'est smite contre CDR, et celui-là je ne le tranche pas à votre place.</p>
+        </div>
+      </section>
+
+      <!-- ============ annexe ============ -->
+      <section id="s18" class="rv">
+        <span class="sec-num"><svg class="ic"><use href="#i-eye"/></svg>Annexe — Fiabilité</span>
+        <h2 class="sec">D'où viennent ces informations</h2>
+        <p class="sec-intro">Sur une classe, la quasi-totalité de ce qui circule décrit un jeu qui a un an d'avance sur le nôtre, avec un ou deux slots de stigma en plus et cinq niveaux de skill en plus. D'où le tri ci-dessous.</p>
+        <ul class="srclist">
+          <li><span class="lvl terr">Perso</span><span>Mes heures d'Assassin sur la TW, et mon Assassin monté au <strong>niveau 37 pendant le Launch Scale Test</strong>, donc sur le client global. C'est le filtre que j'applique à tout le reste. Ce qui ne collait pas avec ce que j'ai vu en jeu a été écarté ou signalé comme à vérifier, et quand une source décrit autre chose que ce que j'ai eu à l'écran sur la globale, c'est moi qui tranche.</span></li>
+          <li><span class="lvl off">Officiel</span><span>Les différences de la globale — 4 slots de stigma, cap 20, pas de gear héroïque, gates d'iLevel, tailles de groupe — viennent des communications NC sur la Saison&nbsp;1 et de leur reprise par la presse spé.</span></li>
+          <li><span class="lvl com">Test de lancement</span><span>Les retours publiés sur le Launch Scale Test, en vidéo et à l'écrit. Après mon propre temps de jeu, c'est ce qui a le plus de valeur aujourd'hui sur la globale, et c'est aussi le plus fragile, puisque rien ne dit que le playtest soit ce qui ouvrira au lancement. Tout est dans l'encadré doré en haut de page.</span></li>
+           <li><span class="lvl terr">DocDany</span><span>Deux guides vidéo FR : le guide PvE Assassin complet (stats, Daevanion, titres, pets, skills, cartes, gear) et l'update plus récente (skills, passifs, stigmas, macro, gameplay). C'est ma source la plus détaillée sur le Panthéon, les titres, le gear et l'arbitrage smite / CDR, et la seule qui raisonne avec notre latence.</span></li>
+          <li><span class="lvl terr">aLuckyRO</span><span>Deux guides vidéo EN construits explicitement pour la globale et pour un perso <em>fraîchement</em> au cap : skills et stigmas d'un côté, Daevanion et macro de l'autre. De là viennent les spés de début de jeu, le budget de ≈240 points, les priorités de Daevanion et le réglage du delay de macro.</span></li>
+          <li><span class="lvl com">Dossiers KR / TW</span><span>Quatre dossiers coréens détaillés sur l'Assassin, plus un manuel communautaire anglophone très méthodique. Les plus précis sur les numéros de spé et les stats d'endgame, et les plus décalés par rapport à ce qu'on aura, le manuel précise lui-même qu'il suppose 6 stigmas au niveau 25.</span></li>
+          <li><span class="lvl no">Peu fiable</span><span>Les pages de sites de revente de monnaie. Elles trustent les premiers résultats de recherche et décrivent l'Assassin avec des mécaniques d'Aion&nbsp;1, poison, épée et dague, deux épées. Rien n'en a été retenu, je les signale surtout pour que vous les reconnaissiez.</span></li>
+        </ul>
+
+        <h3><svg class="ic"><use href="#i-target"/></svg>À vérifier en jeu le 5 octobre</h3>
+        <ul>
+          <li>Le nombre réel de slots de stigma, et le cap de niveau des stigmas et des skills.</li>
+          <li>Les niveaux d'ouverture des spés : 8 / 16 / 20 comme retenu ici, ou un deuxième palier au 12.</li>
+          <li>Le nombre de slots d'arcane et d'arbres de Daevanion dispos au lancement.</li>
+          <li>Les noms FR de tout le kit, du smite en particulier.</li>
+          <li>Le coût des resets de mastery, de stigma et de nodes Daevanion.</li>
+          <li>Si l'arme du Fire Temple est bien la première arme accessible en Saison&nbsp;1.</li>
+        </ul>
+
+        <div class="note ndlr">
+          <span class="lab n"><svg class="ic"><use href="#i-book"/></svg>Sur les icônes</span>
+          <p>Les pictos de cette page sont dessinés à la main, en SVG, pas repris du jeu. C'était le choix le plus propre, ils s'adaptent au thème clair et sombre, restent nets à toutes les tailles, ne pèsent rien et ne dépendent d'aucun site externe qui pourrait tomber. Si les icônes officielles vous manquent, chaque emplacement est un simple bloc à remplacer.</p>
+        </div>
+      </section>
+
+      <footer>
+        <p>Dernière mise à jour le 19 septembre 2026, après le Launch Scale Test et avant l'ouverture des serveurs européens. Guide de classe uniquement, l'Assassin et sa progression sur la version globale. Une partie des noms et des chiffres bougera au lancement. Je mettrai la page à jour dans les premières semaines.</p>
+        <p>Merci à DocDany et à aLuckyRO, dont les guides vidéo ont servi de colonne vertébrale à ce document. Habillage graphique et pictogrammes originaux. Ni le logo ni les visuels d'Aion&nbsp;2 ne sont reproduits ici. Aion&nbsp;2 est une marque de NCSOFT Corporation.</p>
+      </footer>
+
+    </main>
+  </div>
+</div>
+
+<script>
+(function(){
+  var items = [
+    ["s1","La classe"],["s2","Les limitations"],["s3","Le budget de points"],
+    ["s4","Le kit"],["s5","Le leveling"],["s6","Les spés"],["s7","Les 4 stigmas"],
+    ["s8","Le Daevanion"],["s9","Les stats"],["s10","Arcanes, Panthéon, titres"],
+    ["s11","Genus Insight"],["s12","La macro"],["s13","La rotation"],["s14","Le gear"],
+    ["s15","PvP"],["s16","Semaine &amp; checklists"],["s17","Recoupements"],["s18","Les sources"]
+  ];
+  function fill(el){
+    if(!el) return;
+    el.innerHTML = items.map(function(it,i){
+      var n = String(i+1).padStart(2,"0");
+      return '<li><a href="#'+it[0]+'"><span class="n">'+n+'</span><span>'+it[1]+'</span></a></li>';
+    }).join("");
+  }
+  fill(document.getElementById("toc-desk"));
+  fill(document.getElementById("toc-mobile"));
+
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* barre de progression */
+  var prog = document.getElementById("prog"), ticking = false;
+  function onScroll(){
+    if(ticking) return;
+    ticking = true;
+    requestAnimationFrame(function(){
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+      prog.style.width = (h > 0 ? (window.scrollY / h) * 100 : 0) + "%";
+      ticking = false;
+    });
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  onScroll();
+
+  /* sommaire actif */
+  var links = {};
+  Array.prototype.forEach.call(document.querySelectorAll('nav.toc a'), function(a){
+    var id = a.getAttribute("href").slice(1);
+    (links[id] = links[id] || []).push(a);
+  });
+  if("IntersectionObserver" in window){
+    var spy = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        var ls = links[e.target.id]; if(!ls) return;
+        if(e.isIntersecting) ls.forEach(function(a){ a.classList.add("on"); });
+        else ls.forEach(function(a){ a.classList.remove("on"); });
+      });
+    }, {rootMargin:"-25% 0px -65% 0px"});
+    Array.prototype.forEach.call(document.querySelectorAll("main section"), function(s){ spy.observe(s); });
+
+    /* apparition au scroll */
+    if(!reduce){
+      var rev = new IntersectionObserver(function(es){
+        es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); rev.unobserve(e.target); } });
+      }, {rootMargin:"0px 0px -8% 0px"});
+      Array.prototype.forEach.call(document.querySelectorAll(".rv"), function(s){ rev.observe(s); });
+    } else {
+      Array.prototype.forEach.call(document.querySelectorAll(".rv"), function(s){ s.classList.add("in"); });
+    }
+  } else {
+    Array.prototype.forEach.call(document.querySelectorAll(".rv"), function(s){ s.classList.add("in"); });
+  }
+
+  /* checklists */
+  var KEY = "guide-assassin-aion2-v2", state = {};
+  try { state = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch(e){ state = {}; }
+  function save(){ try { localStorage.setItem(KEY, JSON.stringify(state)); } catch(e){} }
+  function counts(){
+    Array.prototype.forEach.call(document.querySelectorAll(".check"), function(box){
+      var all = box.querySelectorAll('input[type=checkbox]');
+      var done = box.querySelectorAll('input[type=checkbox]:checked');
+      var c = box.querySelector(".cnt");
+      if(c) c.textContent = done.length + "/" + all.length;
+    });
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('.check input[type=checkbox]'), function(b){
+    if(state[b.id]) b.checked = true;
+    b.addEventListener("change", function(){
+      if(b.checked) state[b.id] = 1; else delete state[b.id];
+      save(); counts();
+    });
+  });
+  counts();
+  Array.prototype.forEach.call(document.querySelectorAll("[data-reset]"), function(btn){
+    btn.addEventListener("click", function(){
+      var box = btn.closest(".check");
+      Array.prototype.forEach.call(box.querySelectorAll('input[type=checkbox]'), function(b){
+        b.checked = false; delete state[b.id];
+      });
+      save(); counts();
+    });
+  });
+
+  /* bandeau : poussière d'aether + lames qui filent */
+  var cv = document.getElementById("aether");
+  if(cv && cv.getContext && !reduce){
+    var ctx = cv.getContext("2d"), motes = [], blades = [], W = 0, H = 0;
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var hues = ["180,164,255", "87,206,220", "221,178,92"];
+    function size(){
+      var r = cv.getBoundingClientRect();
+      W = Math.max(1, r.width); H = Math.max(1, r.height);
+      cv.width = W*dpr; cv.height = H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+      motes = [];
+      var n = Math.round(Math.min(84, W/13));
+      for(var i=0;i<n;i++){
+        motes.push({
+          x: Math.random()*W, y: Math.random()*H,
+          r: Math.random()*1.5 + 0.4,
+          vy: -(Math.random()*0.2 + 0.05),
+          vx: (Math.random()-0.5)*0.1,
+          a: Math.random()*0.45 + 0.12,
+          h: hues[(Math.random()*hues.length)|0]
+        });
+      }
+      blades = [];
+    }
+    function spawnBlade(){
+      if(blades.length > 2) return;
+      var up = Math.random() < 0.5;
+      blades.push({
+        x: -80, y: Math.random()*H*0.85 + H*0.07,
+        len: 90 + Math.random()*130,
+        sp: 5 + Math.random()*4,
+        dy: up ? -0.22 : 0.22,
+        life: 1
+      });
+    }
+    var t = 0;
+    function frame(){
+      ctx.clearRect(0,0,W,H);
+      for(var i=0;i<motes.length;i++){
+        var m = motes[i];
+        m.y += m.vy; m.x += m.vx;
+        if(m.y < -4){ m.y = H + 4; m.x = Math.random()*W; }
+        if(m.x < -4) m.x = W + 4;
+        if(m.x > W + 4) m.x = -4;
+        ctx.beginPath(); ctx.arc(m.x, m.y, m.r, 0, 6.2832);
+        ctx.fillStyle = "rgba(" + m.h + "," + m.a + ")"; ctx.fill();
+      }
+      t++;
+      if(t % 220 === 0) spawnBlade();
+      for(var b=blades.length-1;b>=0;b--){
+        var bl = blades[b];
+        bl.x += bl.sp; bl.y += bl.dy * bl.sp; bl.life -= 0.004;
+        if(bl.x - bl.len > W || bl.life <= 0){ blades.splice(b,1); continue; }
+        var g = ctx.createLinearGradient(bl.x - bl.len, bl.y - bl.dy*bl.len, bl.x, bl.y);
+        g.addColorStop(0, "rgba(180,164,255,0)");
+        g.addColorStop(1, "rgba(214,203,255," + (0.30*bl.life).toFixed(3) + ")");
+        ctx.strokeStyle = g; ctx.lineWidth = 1.4; ctx.lineCap = "round";
+        ctx.beginPath();
+        ctx.moveTo(bl.x - bl.len, bl.y - bl.dy*bl.len);
+        ctx.lineTo(bl.x, bl.y);
+        ctx.stroke();
+      }
+      requestAnimationFrame(frame);
+    }
+    size(); frame();
+    var to = null;
+    window.addEventListener("resize", function(){
+      clearTimeout(to); to = setTimeout(size, 180);
+    });
+  }
+})();
+</script>
+
+<!-- ============================================================
+     ICÔNES OFFICIELLES — comment les brancher
+     ------------------------------------------------------------
+     Chaque skill de la page porte un attribut data-skill. Pour
+     remplacer mes pictogrammes par les icônes du jeu, il suffit de
+     renseigner une adresse en face du skill correspondant ci-dessous :
+     la page fait la substitution toute seule, partout, sans toucher
+     au reste du document.
+
+     Deux façons de renseigner une adresse :
+       1. un fichier posé à côté de la page      "icons/heart-gore.png"
+       2. une image encodée dans la page          "data:image/png;base64,..."
+
+     Évitez de pointer vers une image hébergée sur un site tiers :
+     le jour où il change ses adresses, toutes vos icônes disparaissent.
+     ============================================================ -->
+<script>
+var SKILL_ICONS = {
+  "heart-gore":           "icons/Heart_Gore.png",
+  "insignia-explosion":   "icons/Insignia_Explosion.png",
+  "quick-slash":          "icons/Quick_Slice.png",
+  "savage-roar":          "icons/Savage_Roar.png",
+  "storm-rampage":        "icons/Storm_Rampage.png",
+  "shadow-strike":        "icons/Shadowstrike.png",
+  "ambush":               "icons/Ambush.png",
+  "shadow-fall":          "icons/Shadow_Fall.png",
+  "whirlwind-slash":      "icons/Whirlwind_Slice.png",
+  "flash-slash":          "icons/Flash_Slice.png",
+  "infiltrate":           "icons/Infiltrate.png",
+  "defiance":             "icons/Defiance.png",
+  "illusion-clone":       "icons/Illusive_Clone.png",
+  "swift-contract":       "icons/Swift_Contract.png",
+  "triniels-dagger":      "icons/Triniel%27s_Dagger.png",
+  "savage-fang":          "icons/Savage_Fang.png",
+  "evasion-stance":       "icons/Evasion_Stance.png",
+  "throw-shadowblade":    "icons/Throw_Shadowblade.png",
+  "assault-stance":       "icons/Assault_Stance.png",
+  "rear-smite":           "icons/Rear_Smite.png",
+  "impact-hit":           "icons/Impact_Hit.png",
+  "sixth-sense":          "icons/Heightened_Sixth_Sen.png",
+  "contract-of-revival":  "icons/Revitalization_Contra.png",
+  "defense-break":        "icons/Defence_Break.png"
+};
+(function(){
+  if(typeof SKILL_ICONS !== "object") return;
+  Array.prototype.forEach.call(document.querySelectorAll("[data-skill]"), function(el){
+    var url = SKILL_ICONS[el.getAttribute("data-skill")];
+    if(!url) return;
+    var svg = (el.tagName.toLowerCase() === "svg") ? el : el.querySelector("svg.ic");
+    if(!svg || !svg.parentNode) return;
+    var img = document.createElement("img");
+    img.src = url; img.alt = ""; img.setAttribute("aria-hidden","true");
+    img.className = "ic-img";
+    svg.parentNode.replaceChild(img, svg);
+  });
+})();
+</script>
+
+</body>
+</html>
