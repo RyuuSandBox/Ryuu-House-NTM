@@ -65,21 +65,26 @@ travailler sur le PC. Sans ça, une modification faite sur github.com et une
 modification faite en local se retrouvent en conflit, et un conflit sur un
 fichier de 285 000 octets n'est pas une partie de plaisir.
 
-## Le dossier est dans OneDrive
+## Où vit le dépôt, et pourquoi pas ailleurs
 
-`C:\Users\rlope\OneDrive\Bureau\Workspace\`. Ça marche, mais deux outils
-synchronisent le même dossier en même temps, et ils ne se parlent pas.
+`C:\Users\rlope\Projets\Ryuu-House-for-us`, en dehors de OneDrive, et c'est
+volontaire.
 
-OneDrive recopie aussi le dossier caché `.git`, qui pèse déjà une vingtaine de
-mégaoctets et change à chaque commit. Dans le pire des cas il verrouille un
-fichier pendant que git écrit dedans, ou il pose une copie de conflit à côté.
-Le `.gitignore` écarte les copies de conflit, mais il ne peut rien contre un
-verrou.
+Le dépôt a d'abord vécu dans `OneDrive\Bureau\Workspace`. Deux outils
+synchronisaient le même dossier sans se parler. OneDrive recopiait aussi le
+`.git`, une vingtaine de mégaoctets qui changent à chaque commit, et il lui
+arrivait de restaurer une version qu'il avait en cache par-dessus un fichier
+fraîchement écrit. Trois fichiers sont revenus en arrière tout seuls dans la
+même journée. Rien n'a été perdu parce que tout était poussé sur GitHub, mais
+c'est exactement le genre de panne qu'on ne voit pas passer.
 
-Le jour où ça coince, la solution est de sortir le dossier de OneDrive, par
-exemple dans `C:\Users\rlope\Projets\`, et de poser un raccourci sur le Bureau.
-Il faudra alors reconnecter ce nouveau dossier à Claude pour que je continue à
-écrire dedans.
+Donc la règle, un dépôt git ne vit pas dans un dossier synchronisé. Ni OneDrive,
+ni Dropbox, ni Google Drive. Si le dossier manque sur le Bureau, un raccourci
+fait le travail sans rien synchroniser.
+
+La sauvegarde, c'est GitHub. Un `git push` vaut mieux qu'un dossier recopié dans
+le cloud, parce qu'il garde l'historique et qu'il ne se met jamais à écraser le
+présent avec le passé.
 
 ## Ajouter un guide de classe
 
