@@ -1,0 +1,18 @@
+# Les fins de ligne, une bonne fois pour toutes.
+#
+# Sans ca, git sous Windows convertit en CRLF a la sortie et en LF a l'entree,
+# et il suffit d'un aller-retour rate pour que les cinq pages apparaissent
+# modifiees alors que rien n'a bouge. On force donc le LF des deux cotes.
+* text=auto eol=lf
+
+# Les binaires, on n'y touche pas, aucune conversion.
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.avif  binary
+*.gif   binary
+*.ico   binary
+*.woff  binary
+*.woff2 binary
+*.mp4   binary

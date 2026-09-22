@@ -1,0 +1,33 @@
+# Ce que git doit laisser sur le disque sans jamais l'envoyer sur GitHub.
+
+# --- Windows ---------------------------------------------------------------
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# --- OneDrive --------------------------------------------------------------
+# Quand OneDrive n'arrive pas a decider quelle version garde la main, il pose
+# un doublon a cote, nomme avec le nom de la machine. Sans cette ligne il
+# finirait pousse sur GitHub et servi par le site.
+*-r-mi.*
+*conflit*
+*conflicted copy*
+
+# --- macOS, au cas ou un fichier transite par un Mac ------------------------
+.DS_Store
+
+# --- temporaires d'editeurs et d'Office ------------------------------------
+*~
+~$*
+*.tmp
+*.bak
+*.swp
+
+# --- reglages d'editeur, propres a cette machine ---------------------------
+.vscode/
+.idea/
+
+# --- outil de mise en place, pas du site -----------------------------------
+LIER-A-GITHUB.bat

@@ -17,9 +17,9 @@ build, aucune dépendance. On pousse, GitHub Pages sert.
 ```
 .
 ├─ index.html          la page d'accueil
-├─ art/                ses fonds et ses images  (fond1..3, carte, logo)
-├─ Faction icons/      les blasons Elyos et Asmodien
-├─ Symbole class/      les symboles de classe
+├─ art/                les fonds et les images  (fond, fond2, fond3, carte, logo,
+│                      les blasons elyos et asmodien)
+├─ Symbole class/      les symboles des huit classes
 │
 ├─ codex/index.html
 ├─ assassin/index.html
@@ -27,12 +27,59 @@ build, aucune dépendance. On pousse, GitHub Pages sert.
 ├─ gladiator/index.html
 ├─ gladiator/icons/    les png de sorts du guide Gladiator
 │
-└─ .nojekyll           dit à GitHub de servir les fichiers tels quels
+├─ .nojekyll           dit à GitHub de servir les fichiers tels quels
+├─ .gitignore          ce que git laisse sur le disque sans l'envoyer
+└─ .gitattributes      les fins de ligne, pour éviter les faux changements
 ```
 
 Chaque guide garde son dossier `icons/` **à côté de son `index.html`**. C'est ce
 qui fait que les chemins d'images à l'intérieur des guides n'ont pas eu besoin
 d'être retouchés.
+
+## Le cycle de travail
+
+Le dossier local et le dépôt GitHub sont la même chose, reliés par git. Trois
+gestes, toujours les mêmes.
+
+**Je modifie sur le PC.** Les fichiers changent dans le dossier. VS Code les
+liste dans l'onglet *Source Control*, avec le détail ligne par ligne. On écrit
+un message, on valide, on pousse. GitHub Pages reconstruit tout seul, il faut
+compter une minute ou deux avant que le site change.
+
+```
+git add -A
+git commit -m "ce que j'ai changé"
+git push
+```
+
+**Je modifie sur github.com.** Le crayon sur un fichier, on édite, on valide en
+bas de page. Le site se reconstruit pareil. Pour que le dossier du PC rattrape
+la modification, une seule commande.
+
+```
+git pull
+```
+
+**Le réflexe qui évite les ennuis.** Toujours `git pull` avant de se mettre à
+travailler sur le PC. Sans ça, une modification faite sur github.com et une
+modification faite en local se retrouvent en conflit, et un conflit sur un
+fichier de 285 000 octets n'est pas une partie de plaisir.
+
+## Le dossier est dans OneDrive
+
+`C:\Users\rlope\OneDrive\Bureau\Workspace\`. Ça marche, mais deux outils
+synchronisent le même dossier en même temps, et ils ne se parlent pas.
+
+OneDrive recopie aussi le dossier caché `.git`, qui pèse déjà une vingtaine de
+mégaoctets et change à chaque commit. Dans le pire des cas il verrouille un
+fichier pendant que git écrit dedans, ou il pose une copie de conflit à côté.
+Le `.gitignore` écarte les copies de conflit, mais il ne peut rien contre un
+verrou.
+
+Le jour où ça coince, la solution est de sortir le dossier de OneDrive, par
+exemple dans `C:\Users\rlope\Projets\`, et de poser un raccourci sur le Bureau.
+Il faudra alors reconnecter ce nouveau dossier à Claude pour que je continue à
+écrire dedans.
 
 ## Ajouter un guide de classe
 
@@ -52,8 +99,10 @@ rien à changer.
 
 Les trois dépôts d'avant (`codex-atreia-de-ryuu-for-us`,
 `Assassin-guide-de-Ryuu-for-us`, `Gladiator-guide-de-Ryuu-for-us`) ne servent
-plus à rien une fois ce dépôt en ligne. Les liens qui pointaient dessus ont été
-retirés, ils peuvent être supprimés ou archivés.
+plus à rien. Les liens qui pointaient dessus ont été retirés, ils peuvent être
+supprimés ou archivés. Pareil pour les quatre anciens dossiers de `Workspace`,
+`Codex Atreia`, `Guide Assassin`, `Guide Gladiator` et `Landing Page`, dont le
+contenu est intégralement repris ici.
 
 ## Les images
 
